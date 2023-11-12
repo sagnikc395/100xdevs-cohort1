@@ -69,5 +69,17 @@
   - Even if we try to distributing the thing by chunkifying the thing , we can't do that as the next one is blocked by the previos one to get fully processed as in as good as a serial processing itself.
 
   - If that could be done on parellelizing the thing, then could have processed it easily. single threaded  means one executore, so all jobs are executed sequencitally. cant delegate the thing or any side channels to distribute the load to multiple things.
-  - 
 
+- Asynchronous 
+  - Javascript is asynchronous in nature.
+  - or so do other tasks like file IO or any other task , sync code will block that code or file IO.
+  - need to do complex tasks :- sending http requests, waiting for input, database writes etc. 
+  - Something that needs to take time, async nature of JS is required.
+  - Still running a single thread, this small task, send a message (promise) that will do it later.
+  - async tasks do not work necessarily on the same thread as the main thread of javascript execution.
+  - until that happens, we can still do the thing.
+  - Once the file is read, can do whatever we want with the file.
+  - eg: reading from the os is a complex task as our operating system is doing a bunch of things and machine does a bunch of things. And machine does a bunch of things, a request goes out and a response goes out.
+  - if waiting for this to complete, then we are blocking on the thread here.
+  - **To take the advantage of the async nature of JS, we need to use callbacks**.
+    - a pass a function inside a function , sort of like a callback
