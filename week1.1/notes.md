@@ -83,3 +83,23 @@
   - if waiting for this to complete, then we are blocking on the thread here.
   - **To take the advantage of the async nature of JS, we need to use callbacks**.
     - a pass a function inside a function , sort of like a callback
+
+  - Before file was reached ,the control read to the business logic for coding and we continued reading from the stream to get data.
+  - Good thing about asynchronous tasks, the thread would have to wait. My CPU usage is low, until then do the other tasks, until then control logged to the screen and the thing went to other functions.
+  - We can do heavy things offloaded by asynchronous programming while we do the easier things.
+
+- Loosely Typed:
+  - Types are loose in Javascript. it could be anything, made into anything. Source of lots of bugs , easier on developement -> Typescript is the answer.
+
+- Interpreted:
+  - Executed line by line; not compiled into a mchine langauge.
+  - Easier and faster to develop and make applications to.
+  - Execution speed becomes slow, a lot depends on JIT performance.
+  - Compiled Languages wi`ll compile the Code to binary, proess of prechecking , does a bunch of checks and error checks.
+
+
+- Nativs JS vs Browser:
+  - variables, loops,Date(), functions,objects,arrays etc.
+  - fetch , setTimeout,setInterval -> Browser based APIs
+  - different envrionments expose different APIs , Nodejs ,browsers,flights ,mobile etcs.
+  - 
