@@ -30,8 +30,15 @@
 1. Variables 
 2. numbers 
 3. strings 
-4. arrays 
-5. loops 
+4. arrays  :- lets us iterate and store multiple data
+5. loops :- helpful for iterating over things.
     - for 
-    - while 
+    - while
+6. Objects :- key.value pairs ; helpuful for modelling real world things
+7. Functions :- primtiives ; passing functions inside functions ; takes a input , do some operations on it and returns a output.
 
+8. DRY ; max reuse of code and can be reused freeely.
+
+## Functions 
+- Functions can take other functions as input.
+- 
