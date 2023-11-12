@@ -16,3 +16,11 @@ let fileContent = readFile('./a.txt',function(contents) {
 
 
 console.log(counter);
+
+
+//similar with setTimeout
+//JS is single threaded in nature , so is the human brain 
+// if we are only the single human doing it, we need to do it asynchornously.
+
+//continue from https://harkirat.classx.co.in/video/105?courseId=2&ytFlag=0&isFolderCourse=1
+// at 24:40
