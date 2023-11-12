@@ -1,0 +1,14 @@
+- JS is the most populr and most used programming languages and used .
+- Entire applications are built around Javascript.
+- Frontend developer, Backend developer and FullStack developer.
+- For a long time JS was solely used in the browser to build interactive web pages.
+- ~2008 , Ryan Dhall ported the v8 engine to a runtime, allowing it to run async code in the webservers.
+- Web/mobile apps , real-time netwokring apps, games, and cli apps in Javascript.
+- Browser has a JS engine to execute JS engine. (spidermonkey in firefox and v8 in chrome)
+- Node is a C++ program that contains google's v8 engine.
+- With Javascript can build the backend of our code in Javascript and Node.
+
+- Javascript vs ECMAScript
+  - ECMAscript is just a specification for Javascript and takes care of the ECMAScript specification.(1997 onwards,2015 annually)
+  - ES2015/ES6 : -defined many new features for Javascript.
+  - 
