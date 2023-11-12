@@ -39,6 +39,35 @@
 
 8. DRY ; max reuse of code and can be reused freeely.
 
-## Functions 
 - Functions can take other functions as input.
-- 
+
+
+## Core Concepts of Javascript:
+   
+- single threaded 
+- asynchronous
+- loosely typed 
+- interpreterd 
+- native js vs apis
+
+- Where can JS run:
+  - browser 
+  - data centers 
+  - tvs 
+  - mobile devices
+
+- Single Threaded 
+  - Cores of the machine -> no of cpus in the mahcine.
+  - core is effectively a place where our code can execute.
+  - core runs in a place line by line.
+  - the more cores you have theretically more powerful your machine.
+  - Node.js was written in a very shabby fashion, it works in a single core.
+  - can't run multiple threads on it.
+  - it was designed to be single threaded from scratch.
+  - Hence, powerless language as compared to other.
+
+  - Even if we try to distributing the thing by chunkifying the thing , we can't do that as the next one is blocked by the previos one to get fully processed as in as good as a serial processing itself.
+
+  - If that could be done on parellelizing the thing, then could have processed it easily. single threaded  means one executore, so all jobs are executed sequencitally. cant delegate the thing or any side channels to distribute the load to multiple things.
+  - 
+
