@@ -48,4 +48,18 @@
 
 ## Promises :
 - Very hard and need time to marinate.
-- 
+- Promises will scare us as much as traits will be scary.
+- No inherent need for promises in javascript , help write clean async code.
+
+- Callback hell:
+  - direct async call;ie. setTimeout , they all execute parallelt and collected by main thread to display.
+  - if calling one async call inside another, that will **chain** the async call.
+  - The problem with async chaining here is that it looks ugly and when having a large number of such async calls we will have problems identifying the calls.
+  - To solve this syntax problems, Promises were introduced. To make syntactically more easier and used throughout. 
+  - Promise itself takes a function inside of it.
+  - can call .then() function on it (i.e properties of the objects on it).
+- Promise {<pending>} is also an object. It has the properties of(most used) : - then, resolved,reject.
+  - Javascript spec fold have now manadated that an async code bascially returns a promise.
+  - It is a async function , but whenever we call it it will return us the Promise immediately and go on to do its task, rather than us giving its own callback.
+  - In a callback , when we are calling a function , we tell the web api's that this is my callback, put them on callstack when done vs. when working with promisified code, they give us the promisified code immediately and immediately do something with this promise.
+  - 
