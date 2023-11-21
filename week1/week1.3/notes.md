@@ -58,7 +58,7 @@
   - To solve this syntax problems, Promises were introduced. To make syntactically more easier and used throughout. 
   - Promise itself takes a function inside of it.
   - can call .then() function on it (i.e properties of the objects on it).
-- Promise {<pending>} is also an object. It has the properties of(most used) : - then, resolved,reject.
+- Promise {<\pending>} is also an object. It has the properties of(most used) : - then, resolved,reject.
   - Javascript spec fold have now manadated that an async code bascially returns a promise.
   - It is a async function , but whenever we call it it will return us the Promise immediately and go on to do its task, rather than us giving its own callback.
   - In a callback , when we are calling a function , we tell the web api's that this is my callback, put them on callstack when done vs. when working with promisified code, they give us the promisified code immediately and immediately do something with this promise.
