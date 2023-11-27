@@ -17,10 +17,10 @@ function calculateSum(counter) {
     sum += i;
   }
   return sum;
-} 
+}
 function handleFirstRequest(req, res) {
-  // get the query from the user 
-  // when using the query parameter have to use like 
+  // get the query from the user
+  // when using the query parameter have to use like
   // localhost:3000/?counter=3000
   let counter = req.query.counter;
   const calculatedSum = calculateSum(counter);
@@ -28,11 +28,16 @@ function handleFirstRequest(req, res) {
   let answer = `the sum is ` + calculatedSum;
   res.send(answer);
 }
- 
+
 app.get("/", handleFirstRequest);
 function startHTTPServer() {
   console.log(`Started http server at : http://localhost:${PORT}`);
 }
+function createUser(req, res) {
+  res.send("hello world");
+}
+//other handlers
+app.post("/createUser", createUser);
 
 app.listen(PORT, startHTTPServer);
 
