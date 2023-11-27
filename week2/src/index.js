@@ -18,11 +18,14 @@ function calculateSum(counter) {
   }
   return sum;
 }
-//52:54
-app.get("/", (req, res) => {
-  //callbackFn
-  res.send(`Hello , world!`);
-});
+function handleFirstRequest(req, res) {
+  const calculatedSum = calculateSum(100);
+  console.log(calculatedSum);
+  let answer = `the sum is ` + calculatedSum;
+  res.send(answer);
+}
+
+app.get("/", handleFirstRequest);
 function startHTTPServer() {
   console.log(`Started http server at : http://localhost:${PORT}`);
 }
