@@ -17,9 +17,13 @@ function calculateSum(counter) {
     sum += i;
   }
   return sum;
-}
+} 
 function handleFirstRequest(req, res) {
-  const calculatedSum = calculateSum(100);
+  // get the query from the user 
+  // when using the query parameter have to use like 
+  // localhost:3000/?counter=3000
+  let counter = req.query.counter;
+  const calculatedSum = calculateSum(counter);
   console.log(calculatedSum);
   let answer = `the sum is ` + calculatedSum;
   res.send(answer);
