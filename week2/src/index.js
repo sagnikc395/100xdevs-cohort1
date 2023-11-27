@@ -28,7 +28,7 @@ function handleFirstRequest(req, res) {
   let answer = `the sum is ` + calculatedSum;
   res.send(answer);
 }
-
+ 
 app.get("/", handleFirstRequest);
 function startHTTPServer() {
   console.log(`Started http server at : http://localhost:${PORT}`);
