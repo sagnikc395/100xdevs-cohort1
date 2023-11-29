@@ -44,11 +44,24 @@ function startHTTPServer() {
 function createUser(req, res) {
   res.send("hello world");
 }
+//handler for put request
+function randomUserGenerate(req, res) {
+  res.send(`You have been made a random user !`);
+}
+
+function deleteUsers(req, res) {
+  //global purge of all users.
+  res.send(`All users have been succesfully deleted !`);
+}
 
 app.get("/handleSum", handleSum);
 app.get("/handleSum2", handleSecondRequest);
 
 app.post("/createUser", createUser);
+
+//adding more handlers
+app.put("/randomUser", randomUserGenerate);
+app.delete("/deleteUsers", deleteUsers);
 
 app.listen(PORT, startHTTPServer);
 
