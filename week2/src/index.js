@@ -44,11 +44,11 @@ function startHTTPServer() {
 function createUser(req, res) {
   res.send("hello world");
 }
-//other handlers
-app.post("/createUser", createUser);
 
 app.get("/handleSum", handleSum);
 app.get("/handleSum2", handleSecondRequest);
+
+app.post("/createUser", createUser);
 
 app.listen(PORT, startHTTPServer);
 
