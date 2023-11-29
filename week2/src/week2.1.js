@@ -63,6 +63,17 @@ app.post("/createUser", createUser);
 app.put("/randomUser", randomUserGenerate);
 app.delete("/deleteUsers", deleteUsers);
 
+function newUserSignup(req, res) {
+  //console.log(req.params.username);
+
+  const user = req.params.username;
+  //remove username from the user
+  const displayName = user.slice(0, user.length - 6);
+  res.send(`New user ${displayName} dropped!`);
+}
+
+app.get("/:username", newUserSignup);
+
 app.listen(PORT, startHTTPServer);
 
 let counter = 0;

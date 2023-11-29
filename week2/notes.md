@@ -62,6 +62,9 @@
 - From the URL bar , can only be received as a GET request.
 - everything in get request is present in browser history.
 
+- catchAll request handler can be created to created a new request to add a new user.(eg: instagram)
+(ref the newUserId signup handler fnction in week2.1js)
+
 ## week 2.2
 
 - 
