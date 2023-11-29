@@ -60,4 +60,4 @@
 - Ideally the request going to the backend should use those assigned request, but we can also do everything with GET request itself.These are standards.
 
 - From the URL bar , can only be received as a GET request.
-- 
+- everything in get request is present in browser history.
