@@ -16,4 +16,19 @@
 - How to listen to different routes?
   - Signifgicance of different routes are they provide different functionality.
   - app.get('/',()=>{...}) functionality is to invoke the callback requests whenver the particular route is being hit.
-  - 
+
+- Sending Data To the backend:
+  - Query Params 
+  - Headers
+  - Body 
+  are some ways in which we you can send data to the backend.
+
+  - Query Params:
+    - After the route add a ? and seperate them with &.
+
+  - To modify the backend code, to take i/o in the headers and send it back to the request parameters.
+  - It has everything including the routes,  the headers and the body will be stored.
+  - Can pass the value as req.query.counter.
+  - Can send more data along with the request.Not just the status of the server but also what inputs the server needs to use.
+
+- 
