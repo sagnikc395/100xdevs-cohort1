@@ -4,6 +4,13 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
+function middleware1(req, res, next) {
+  console.log(`from middleware : ${req.headers.counter}`);
+  next();
+}
+//registering the middleware.
+app.use(middleware1);
+
 //local file i/o
 function callbackFn(err, data) {
   console.log(data);
@@ -72,7 +79,23 @@ function newUserSignup(req, res) {
   res.send(`New user ${displayName} dropped!`);
 }
 
-app.get("/:username", newUserSignup);
+//week2.2
+//post handler
+
+function postHandlerSum3(req, res) {
+  // let counter = req.query.counter;
+  // let counter2 = req.query.counter2 ;
+  // let counter3 = req.query.counter3;
+  console.log(req.headers);
+  let counter = req.headers.counter;
+  const calculatedSum = calculateSum(counter);
+  console.log(calculatedSum);
+  let answer = `the sum is ` + calculatedSum;
+  res.send(answer);
+}
+app.post("/handleSum3", postHandlerSum3);
+
+//app.get("/:username", newUserSignup);
 
 app.listen(PORT, startHTTPServer);
 

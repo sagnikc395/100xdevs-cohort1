@@ -67,4 +67,35 @@
 
 ## week 2.2
 
-- 
+- Other ways to send data backend to backend servers.
+- Headers
+  - Different way to send data along with our requests.
+  - Ref from Postman 
+  - sent as key-value pairs (custom headers)
+  - default headers passed by default.
+  - counter no longer works as a query parameter,so by default post will give 0.
+  - have to make the changes in code also.
+  - use :
+    - var counter = req.headers.counter;(key-name of the header)
+
+- Body:
+  - Place where we sent most of our data in real world.
+  - need to understand middlewares first.
+
+
+### Middlewares 
+- are a way for us to capture requests before it hits the endpoint.
+  - middleware does some logic in it and then the middleware can pass the request to app.get() 
+  (lets say).
+  - usually done for authentication,telemetry etc.
+  - authneticate incoming requests and users are logged in.
+  - send all requests using authentication middleware and checks if it has passed all such cases and then it reached the required endpoint.
+
+- use app.use() to register the middleware callback function.
+- call it right below where we have defined the middleware callback function.
+- takes 3 arguments in the callback:
+  - req,res and next.
+  - it can then decide to stop it here or pass it next to the next handler.
+  - else the request ends here.
+- why next() calling makes the call go before and capture the request is a black box for now !
+- if we are not calling next, then send a error response from there via res.send('Error from inside middleware');
