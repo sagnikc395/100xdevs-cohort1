@@ -104,14 +104,17 @@ app.post("/handleSum3", postHandlerSum3);
 //app.get("/:username", newUserSignup);
 
 function postHandlerSum4(req, res) {
+  // console.log(req.body);
+  //read from the body properties
+  //i.e from the JSON file that we have sent.
   console.log(req.body);
-  let counter = req.headers.counter;
+  let counter = req.body.counter;
   let calcSum = calculateSum(counter);
   let ans = `the sum is ${calcSum}`;
   res.send(ans);
 }
 
-app.post('/handleSum4',postHandlerSum4);
+app.post("/handleSum4", postHandlerSum4);
 
 app.listen(PORT, startHTTPServer);
 
