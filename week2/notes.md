@@ -85,6 +85,14 @@
 
 ### Middlewares 
 - are a way for us to capture requests before it hits the endpoint.
+- (defn)middleware functions are functions that have access to the request object (req) and the response object(res) and the next middleware function in the applications request-response cycle.The next middleware function is commonly denoted by a variable named next().
+
+- Typically middlewares do:
+  - Execute any code.
+  - make changes to the request and the response objects.
+  - end the request response cycle.
+  - call the next middleware function in the stack.
+
   - middleware does some logic in it and then the middleware can pass the request to app.get() 
   (lets say).
   - usually done for authentication,telemetry etc.
@@ -111,4 +119,32 @@ then bind it with the middleware as:
 
 - this introduces a new middleware and then calls the next to the next handler.
 
+- For multiple middlewares , we need to chain the middlewares together in a chain.
+
+- The function within app.use() is the middleware.
+
+- we can also have route specific middleware.
+```js
+  app.post('/route',middle,callbackFn)
+```
+
+## Status Code 
+
+- Are the responses from the server.
+- The server can also send us back:
+  - status codes
+  - body
+  - headers
+- 404 ; a status code; server along with giving back a text can give us back a number.
+
+- Status Codes Ranges:
+  - Informational Responses 100-199
+  - Successful Responses 200-299
+  - Redirection Responses 300-399
+  - Client Error Responses 400-499
+  - Server Error Responses 500-599
+
+- Ideal things that server should return with.
+- The default status code by express is 200.
+- res.send can send a status code also.
 -  

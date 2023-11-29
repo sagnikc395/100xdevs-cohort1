@@ -109,9 +109,15 @@ function postHandlerSum4(req, res) {
   //i.e from the JSON file that we have sent.
   console.log(req.body);
   let counter = req.body.counter;
-  let calcSum = calculateSum(counter);
-  let ans = `the sum is ${calcSum}`;
-  res.send(ans);
+  if (counter < 100_000) {
+    let calcSum = calculateSum(counter);
+    let ans = `the sum is ${calcSum}`;
+    //using function currying
+    res.status(200).send(ans);
+  } else {
+    //throw a 401 error status
+    res.status(411).send("Large Compute not allowed !!");
+  }
 }
 
 app.post("/handleSum4", postHandlerSum4);
