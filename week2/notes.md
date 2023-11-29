@@ -61,3 +61,7 @@
 
 - From the URL bar , can only be received as a GET request.
 - everything in get request is present in browser history.
+
+## week 2.2
+
+- 
