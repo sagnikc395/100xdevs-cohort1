@@ -99,3 +99,16 @@
   - else the request ends here.
 - why next() calling makes the call go before and capture the request is a black box for now !
 - if we are not calling next, then send a error response from there via res.send('Error from inside middleware');
+ 
+- body is another such thing that caan't be passed in browser URL.
+- body -> JS object;key-value pair(JSON). Needs to be a valid JS object.
+- body is not something that express gives us out of the box.
+- req.body is undefined as there are various types of bodies, and express being a generic http server does not support them. Need to bring our own libraries to support them.
+
+- latest version of express has unbundled the middleware from core framework,and ned to use a external library to extract the diffrent things. use body-parser.
+then bind it with the middleware as:
+  app.use(bodyParser.json())
+
+- this introduces a new middleware and then calls the next to the next handler.
+
+-  

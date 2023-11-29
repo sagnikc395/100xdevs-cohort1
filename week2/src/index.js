@@ -1,3 +1,4 @@
+const bodyParser = require("body-parser");
 const express = require("express");
 const fs = require("fs");
 
@@ -9,7 +10,9 @@ function middleware1(req, res, next) {
   next();
 }
 //registering the middleware.
-app.use(middleware1);
+//app.use(middleware1);
+
+app.use(bodyParser.json());
 
 //local file i/o
 function callbackFn(err, data) {
@@ -62,7 +65,7 @@ function deleteUsers(req, res) {
 }
 
 app.get("/handleSum", handleSum);
-app.get("/handleSum2", handleSecondRequest);
+//app.get("/handleSum2", handleSecondRequest);
 
 app.post("/createUser", createUser);
 
@@ -86,6 +89,9 @@ function postHandlerSum3(req, res) {
   // let counter = req.query.counter;
   // let counter2 = req.query.counter2 ;
   // let counter3 = req.query.counter3;
+  //body not given by express
+  //logging the body
+  console.log(req.body);
   console.log(req.headers);
   let counter = req.headers.counter;
   const calculatedSum = calculateSum(counter);
@@ -96,6 +102,16 @@ function postHandlerSum3(req, res) {
 app.post("/handleSum3", postHandlerSum3);
 
 //app.get("/:username", newUserSignup);
+
+function postHandlerSum4(req, res) {
+  console.log(req.body);
+  let counter = req.headers.counter;
+  let calcSum = calculateSum(counter);
+  let ans = `the sum is ${calcSum}`;
+  res.send(ans);
+}
+
+app.post('/handleSum4',postHandlerSum4);
 
 app.listen(PORT, startHTTPServer);
 
