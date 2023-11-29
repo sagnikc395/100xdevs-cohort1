@@ -31,4 +31,32 @@
   - Can pass the value as req.query.counter.
   - Can send more data along with the request.Not just the status of the server but also what inputs the server needs to use.
 
-- 
+- The inputs to the request, should ideally be sent by the user using the methods seen above.
+
+- what methods can a handle request take?
+  - using the request parameters and using different routes and defining diffrent handlers for that routes.
+  
+  - Later the also added the thing where we need to specify if we needed to put some data to the backend,get some data from the backend,delete some data from the backend or need to update some data.
+  - This forms of the basis of CRUD functionality.
+    - CREATE
+    - READ
+    - UPDATE 
+    - DELETE
+
+  - Every http request has the third thing called the method, the important ones are called :
+    - GET
+    - POST 
+    - PUT
+    - DELETE
+
+  - whenever we are writing our handlers, we need to metion what type of request this will expect.by default we use the app.get() -> get method on the express instance.
+  - Anytime we pass the URL and send , we send a GET request, default request.
+  - check in request headers in dev tools.
+
+- Sign/Up -> Create a new data for me ; POST request.
+- Update Email/name etc. -> put request.
+- delete something -> delete request.
+
+- Ideally the request going to the backend should use those assigned request, but we can also do everything with GET request itself.These are standards.
+
+-

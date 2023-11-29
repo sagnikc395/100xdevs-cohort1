@@ -24,10 +24,18 @@ function handleSum(req, res) {
   // localhost:3000/?counter=3000
   //using query parameters
   let counter = req.query.counter;
+  let counter2 = req.query.counter2;
+  let counter3 = req.query.counter3;
   const calculatedSum = calculateSum(counter);
   console.log(calculatedSum);
+  console.log(`Counter 2 value is ${counter2}`);
+  console.log(`Counter 3  value is ${counter3}`);
   let answer = `the sum is ` + calculatedSum;
   res.send(answer);
+}
+
+function handleSecondRequest(req, res) {
+  res.send(`hello world`);
 }
 
 function startHTTPServer() {
@@ -39,7 +47,8 @@ function createUser(req, res) {
 //other handlers
 app.post("/createUser", createUser);
 
-app.get("/handleSum2", handleSum);
+app.get("/handleSum", handleSum);
+app.get("/handleSum2", handleSecondRequest);
 
 app.listen(PORT, startHTTPServer);
 
