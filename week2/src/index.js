@@ -103,6 +103,14 @@ app.post("/handleSum3", postHandlerSum3);
 
 //app.get("/:username", newUserSignup);
 
+function calculateMult(counter) {
+  let mult = 1;
+  for (let i = 1; i <= counter; i++) {
+    mult *= counter;
+  }
+  return mult;
+}
+
 function postHandlerSum4(req, res) {
   // console.log(req.body);
   //read from the body properties
@@ -111,9 +119,11 @@ function postHandlerSum4(req, res) {
   let counter = req.body.counter;
   if (counter < 100_000) {
     let calcSum = calculateSum(counter);
-    let ans = `the sum is ${calcSum}`;
+    // let ans = `the sum is ${calcSum}`;
+    let answerObj = { sum: calcSum };
     //using function currying
-    res.status(200).send(ans);
+    //sending now JSON.
+    res.status(200).send(answerObj);
   } else {
     //throw a 401 error status
     res.status(411).send("Large Compute not allowed !!");
@@ -126,3 +136,5 @@ app.listen(PORT, startHTTPServer);
 
 let counter = 0;
 console.log(calculateSum(counter));
+
+//start from 01:01:48

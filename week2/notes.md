@@ -146,5 +146,12 @@ then bind it with the middleware as:
 
 - Ideal things that server should return with.
 - The default status code by express is 200.
-- res.send can send a status code also.
--  
+- res.status sends a status code.
+
+- Bunch of body type:
+  - HTML
+  - JSON
+  - Simple Text
+
+- sending in JSON or XML is a more structured way to send the data. It is a data interchange format.
+
