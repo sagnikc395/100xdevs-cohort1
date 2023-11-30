@@ -158,4 +158,8 @@ then bind it with the middleware as:
 - send can send object -> maps to a JSON.
 - third thing we can send is HTML.
 - browsers job is to render the HTML tag.
+- Text and HTML are similar only ; HTML is parsed by the browser and make it pretty.
+
+- To send the HTML file directly use res.sendFile with 
+the __dirname .(current directly and path)
 

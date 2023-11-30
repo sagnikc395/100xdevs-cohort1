@@ -137,18 +137,20 @@ function postHandlerSum4(req, res) {
 
 function givePage(req, res) {
   res.status(200).send(`<html>
-  <head>
-    <title>Hello from page</title>
-  </head>
   <body>
-    <p>hi there</p>
+    <h1>lOL</h1>
   </body>
 </html>`);
+}
+
+function givePage2(req, res) {
+  res.sendFile(__dirname + "/index.html");
 }
 
 app.post("/handleSum4", postHandlerSum4);
 
 app.get("/", givePage);
+app.get("/page2", givePage2);
 
 app.listen(PORT, startHTTPServer);
 
