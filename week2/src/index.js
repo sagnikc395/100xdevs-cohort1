@@ -123,6 +123,11 @@ function postHandlerSum4(req, res) {
     let answerObj = { sum: calcSum };
     //using function currying
     //sending now JSON.
+    //hard to encode string like this everytime
+    // 99% time it is encoded in JSON.
+    // let stringAns = `The sum is ${calculateSum(
+    //   counter
+    // )} and the mul is ${calculateMult(counter)}`;
     res.status(200).send(answerObj);
   } else {
     //throw a 401 error status
@@ -130,11 +135,22 @@ function postHandlerSum4(req, res) {
   }
 }
 
+function givePage(req, res) {
+  res.status(200).send(`<html>
+  <head>
+    <title>Hello from page</title>
+  </head>
+  <body>
+    <p>hi there</p>
+  </body>
+</html>`);
+}
+
 app.post("/handleSum4", postHandlerSum4);
+
+app.get("/", givePage);
 
 app.listen(PORT, startHTTPServer);
 
 let counter = 0;
 console.log(calculateSum(counter));
-
-//start from 01:01:48

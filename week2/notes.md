@@ -155,3 +155,7 @@ then bind it with the middleware as:
 
 - sending in JSON or XML is a more structured way to send the data. It is a data interchange format.
 
+- send can send object -> maps to a JSON.
+- third thing we can send is HTML.
+- browsers job is to render the HTML tag.
+
