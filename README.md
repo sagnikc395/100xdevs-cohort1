@@ -5,14 +5,14 @@ Course Notes and Solutions for 100x devs Cohort1.
 
 ## Content: 
 1. Week1 : Javascript Complete:
-   1. Week1.1 Recapping Prerequisites, Basics of Javascript
-   2. Week1.2 Extra Class For JS 
-   3. Week1.3 Async,Await,callbacks and promises
-   4. Week1.4  Git and Assignments 
+   - [x] Week1.1 Recapping Prerequisites, Basics of Javascript
+   - [x] Week1.2 Extra Class For JS 
+   - [x] Week1.3 Async,Await,callbacks and promises
+   - [x] Week1.4  Git and Assignments 
 
 2. Week2 : Express and Making Backend using Nodejs
-   1. Week 2.1 Express ,Node.js and Intro to Backend Systems 
-   2. Week 2.2 Middleware , Requests and Responses 
+   - [x] Week 2.1 Express ,Node.js and Intro to Backend Systems 
+   - [x] Week 2.2 Middleware , Requests and Responses 
    
 3. Week3 : Backend and Frontend Integration 
    1. Finishing backend , starting frontend 
