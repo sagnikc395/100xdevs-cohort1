@@ -163,3 +163,12 @@ then bind it with the middleware as:
 - To send the HTML file directly use res.sendFile with 
 the __dirname .(current directly and path)
 
+## Servers can talk to servers
+
+- Postman can talk to HTTP servers.
+- Even nodejs processes can send http requests to other http servers.
+- Machine can run multiple Nodejs process,the Nodejs process can run a request to http server and get back responses.
+- One nodejs process, that is different from HTTPN server can send different data to other.
+
+- fetch send post-body:
+  -  

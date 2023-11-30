@@ -1,25 +1,25 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const fs = require("fs");
+//const fs = require("fs");
 
 const app = express();
 const PORT = 3000;
 
-function middleware1(req, res, next) {
-  console.log(`from middleware : ${req.headers.counter}`);
-  next();
-}
+// function middleware1(req, res, next) {
+//   console.log(`from middleware : ${req.headers.counter}`);
+//   next();
+// }
 //registering the middleware.
 //app.use(middleware1);
 
 app.use(bodyParser.json());
 
 //local file i/o
-function callbackFn(err, data) {
-  console.log(data);
-}
+// function callbackFn(err, data) {
+//   console.log(data);
+// }
 
-fs.readFile("./a.txt", "utf-8", callbackFn);
+// fs.readFile("./a.txt", "utf-8", callbackFn);
 
 function calculateSum(counter) {
   let sum = 0;
@@ -28,59 +28,60 @@ function calculateSum(counter) {
   }
   return sum;
 }
-function handleSum(req, res) {
+function getSumHandler1(req, res) {
   // get the query from the user
   // when using the query parameter have to use like
   // localhost:3000/?counter=3000
   //using query parameters
   let counter = req.query.counter;
-  let counter2 = req.query.counter2;
-  let counter3 = req.query.counter3;
   const calculatedSum = calculateSum(counter);
   console.log(calculatedSum);
-  console.log(`Counter 2 value is ${counter2}`);
-  console.log(`Counter 3  value is ${counter3}`);
-  let answer = `the sum is ` + calculatedSum;
-  res.send(answer);
+  // console.log(`Counter 2 value is ${counter2}`);
+  // console.log(`Counter 3  value is ${counter3}`);
+  // //let answer = `the sum is ` + calculatedSum;
+  //res.send(answer);
+  let ansObj = {
+    sum: calculatedSum,
+  };
+  res.send(ansObj);
 }
 
-function handleSecondRequest(req, res) {
-  res.send(`hello world`);
-}
+// function handleSecondRequest(req, res) {
+//   res.send(`hello world`);
+// }
 
 function startHTTPServer() {
   console.log(`Started http server at : http://localhost:${PORT}`);
 }
-function createUser(req, res) {
-  res.send("hello world");
-}
-//handler for put request
-function randomUserGenerate(req, res) {
-  res.send(`You have been made a random user !`);
-}
+// function createUser(req, res) {
+//   res.send("hello world");
+// }
+// //handler for put request
+// function randomUserGenerate(req, res) {
+//   res.send(`You have been made a random user !`);
+// }
 
-function deleteUsers(req, res) {
-  //global purge of all users.
-  res.send(`All users have been succesfully deleted !`);
-}
+// function deleteUsers(req, res) {
+//   //global purge of all users.
+//   res.send(`All users have been succesfully deleted !`);
+// }
 
-app.get("/handleSum", handleSum);
 //app.get("/handleSum2", handleSecondRequest);
 
-app.post("/createUser", createUser);
+// app.post("/createUser", createUser);
 
-//adding more handlers
-app.put("/randomUser", randomUserGenerate);
-app.delete("/deleteUsers", deleteUsers);
+// //adding more handlers
+// app.put("/randomUser", randomUserGenerate);
+// app.delete("/deleteUsers", deleteUsers);
 
-function newUserSignup(req, res) {
-  //console.log(req.params.username);
+// function newUserSignup(req, res) {
+//   //console.log(req.params.username);
 
-  const user = req.params.username;
-  //remove username from the user
-  const displayName = user.slice(0, user.length - 6);
-  res.send(`New user ${displayName} dropped!`);
-}
+//   const user = req.params.username;
+//   //remove username from the user
+//   const displayName = user.slice(0, user.length - 6);
+//   res.send(`New user ${displayName} dropped!`);
+// }
 
 //week2.2
 //post handler
@@ -99,17 +100,16 @@ function postHandlerSum3(req, res) {
   let answer = `the sum is ` + calculatedSum;
   res.send(answer);
 }
-app.post("/handleSum3", postHandlerSum3);
 
 //app.get("/:username", newUserSignup);
 
-function calculateMult(counter) {
-  let mult = 1;
-  for (let i = 1; i <= counter; i++) {
-    mult *= counter;
-  }
-  return mult;
-}
+// function calculateMult(counter) {
+//   let mult = 1;
+//   for (let i = 1; i <= counter; i++) {
+//     mult *= counter;
+//   }
+//   return mult;
+// }
 
 function postHandlerSum4(req, res) {
   // console.log(req.body);
@@ -148,11 +148,11 @@ function givePage2(req, res) {
 }
 
 app.post("/handleSum4", postHandlerSum4);
-
 app.get("/", givePage);
 app.get("/page2", givePage2);
-
+app.post("/handleSum3", postHandlerSum3);
+app.get("/handleSum", getSumHandler1);
 app.listen(PORT, startHTTPServer);
 
-let counter = 0;
-console.log(calculateSum(counter));
+// let counter = 0;
+// console.log(calculateSum(counter));
