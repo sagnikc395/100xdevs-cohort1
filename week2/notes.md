@@ -170,5 +170,9 @@ the __dirname .(current directly and path)
 - Machine can run multiple Nodejs process,the Nodejs process can run a request to http server and get back responses.
 - One nodejs process, that is different from HTTPN server can send different data to other.
 
-- fetch send post-body:
-  -  
+- fetch send post-body,
+
+- with  this different process can be any other code(python,go etc.) that hits our express endpoint or nodejs using fetch library.
+
+- fetch lets us easily send http requests.
+
