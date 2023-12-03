@@ -14,7 +14,7 @@
 
 - similarly we could define a function for get and get all the data.
 
-
+# DOM Manipulation : to change the Dom elements on the fly.
 ## Websites are dynamic 
 - put extra html when using the particular data
 - the problem is that we dont know the HTML upfront.

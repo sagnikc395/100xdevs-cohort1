@@ -7,6 +7,25 @@
   </head>
   <body>
     <script>
+      function parsedResponse2(data) {
+        //
+        let parentElement = document.getElementById("mainarea");
+        //render all the data
+        parentElement.innerHTML = JSON.stringify(data);
+      }
+
+      function callback2(resp) {
+        resp.json().then(parsedResponse2);
+      }
+
+      //get the data
+      function getData() {
+        fetch(`http://localhost:3000/todos`, {
+          method: "GET",
+        }).then(callback2);
+      }
+      getData();
+
       function parsedResponse(data) {
         console.log(data);
       }
@@ -39,7 +58,7 @@
     <input type="text" id="description" />
     <br />
     <br />
-    <button onclick="onPress()">Send Todo</button>
+    <button onclick="onPress()">Submit</button>
     <div id="mainarea"></div>
   </body>
 </html>
