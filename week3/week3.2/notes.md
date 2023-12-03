@@ -23,4 +23,19 @@
 - To change the inner HTML of a div we can use 
 document.getElementById('item').innerHTML = `html for it`
 
+- Insert js variables inside HTML, that is what dynamic websites are.
+- Use Javascript to create HTML -> dynamic websites.
+- createElement(elementname) -> to add a new dom element in it.
+- helps to insert div inside another div programmatically through Javascript.
+
+
+## The child element that needs to be inserted needs itself to have 3 childs itself. It has 3 spans inside. 
+- Rather than inserting 3 spans we will create 3 childs inside it.
+- Frankly we could also go 1 level deeper as children can also have children.
+- Frontend doesnt update automatically,have to click the refresh button.
+** List of todos to enter in JS ** -> 
+- after the fetch completes we call the callback, we can just append the data in the callback.
+- only difference is that data we add has the title and  convert whatever we have got into parsed response and callback it.
+
+- the backpack uses the title and the description.
 - 
