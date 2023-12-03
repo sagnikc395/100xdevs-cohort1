@@ -38,4 +38,7 @@ document.getElementById('item').innerHTML = `html for it`
 - only difference is that data we add has the title and  convert whatever we have got into parsed response and callback it.
 
 - the backpack uses the title and the description.
-- 
+- using form tag will automatically refresh it, or calling getData inside the function.
+
+- for the delete button we need to add a onClickHandler to it.
+- and using setAttribute can set up the attirbute for the onlcick handler for it. 
