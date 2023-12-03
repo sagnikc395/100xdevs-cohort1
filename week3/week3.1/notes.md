@@ -84,3 +84,8 @@ app.get('/todos',(req,res)=> {
 - add a body withe the content and make sure to JSON.stringify it (fetch requirement)
 - add mandatory headers:
   - 'Content-Type':'application/json'
+
+## TASK
+1. When the page loads write a function to get all the todos and try to show it the browser.
+(hint: dom manipulation)
+2. 

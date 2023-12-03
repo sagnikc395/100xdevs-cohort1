@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoApp</title>
+  </head>
+  <body>
+    <script>
+      function todoCallBack(data) {
+        console.log(data);
+        let parentElement = document.getElementById("mainarea");
+        //change the innerHTML
+        parentElement.innerHTML = JSON.stringify(data);
+
+        
+      }
+
+      function callback2(resp) {
+        resp.json().then(todoCallBack);
+      }
+
+      function getData() {
+        fetch(`http://localhost:3000/todos`, {
+          method: "GET",
+        }).then(callback2);
+      }
+
+      function parsedResponse(data) {
+        console.log(data);
+      }
+      function callback(resp) {
+        resp.json().then(parsedResponse);
+      }
+      getData(); //call it once ,when the data gets logged.
+      function onPress() {
+        // get the id and the title
+        // using getElementById
+
+        const title = document.getElementById("title").value;
+        // get the description value
+        const description = document.getElementById("descp").value;
+        console.log(title);
+        console.log(description);
+        fetch(`http://localhost:3000/todos/`, {
+          method: "POST",
+          body: JSON.stringify({
+            // and send the value got from user
+            title: title,
+            desc: description,
+          }),
+          headers: {
+            "Content-Type": "applcation/json",
+          },
+        }).then(callback);
+      }
+    </script>
+    Todo Title
+    <input type="text" id="title" />
+    <br />
+    <br />
+    Todo Description
+    <input type="text" id="descp" />
+    <br />
+    <br />
+    <button onclick="onPress()">Send Todo</button>
+    <div id="mainarea">hi there</div>
+  </body>
+</html>
