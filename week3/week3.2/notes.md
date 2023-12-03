@@ -29,7 +29,7 @@ document.getElementById('item').innerHTML = `html for it`
 - helps to insert div inside another div programmatically through Javascript.
 
 
-## The child element that needs to be inserted needs itself to have 3 childs itself. It has 3 spans inside. 
+## The child element that needs to be inserted needs itself to have 3 childs itself. It has 3 spans inside. Recursively insert the item inside the 3 spans .
 - Rather than inserting 3 spans we will create 3 childs inside it.
 - Frankly we could also go 1 level deeper as children can also have children.
 - Frontend doesnt update automatically,have to click the refresh button.
