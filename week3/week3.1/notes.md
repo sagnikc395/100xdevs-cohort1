@@ -77,4 +77,10 @@ app.get('/todos',(req,res)=> {
 - how to solve ?
   - Make sure your frontend requests are being sent from the same origin where your backend requests are being served.
   -  or can have the backend allow requests from everywhere or specificed ports using cors module.
-  -  
+
+## Post request (hw)
+
+- In index.html add a method for Post 
+- add a body withe the content and make sure to JSON.stringify it (fetch requirement)
+- add mandatory headers:
+  - 'Content-Type':'application/json'
