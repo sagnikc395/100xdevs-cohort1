@@ -11,7 +11,12 @@
         //
         let parentElement = document.getElementById("mainarea");
         //render all the data
-        parentElement.innerHTML = JSON.stringify(data);
+        // parentElement.innerHTML = JSON.stringify(data);
+        for (let i = 0; i < data.length; i++) {
+          let childElement = document.createElement("div");
+          childElement.innerHTML = data[i].length;
+          parentElement.appendChild(childElement);
+        }
       }
 
       function callback2(resp) {
