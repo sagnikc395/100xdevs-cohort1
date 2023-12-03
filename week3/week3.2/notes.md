@@ -42,3 +42,18 @@ document.getElementById('item').innerHTML = `html for it`
 
 - for the delete button we need to add a onClickHandler to it.
 - and using setAttribute can set up the attirbute for the onlcick handler for it. 
+
+## Reconciliation 
+
+- People realissed that having a list of varibales and converting to HTML is very hard and repetitive and should not be used by the developer.
+- But frameworks like React and Vue came to hide this complexity of createChild,appendChild etc. from developers.
+- What is we as developers only focused on the state ? (or the JS variables)
+-  Only have to worry about putting the right thing in the right variable. Get the right get calls to put into the right todo and the operation fo adding the stuff will be handled by the framework.
+
+- The framewokr will then do what to add or remove from there.
+
+- The idea of reconciliation is to take the update of the state byt the framework and updating it on the DOM.
+
+- Create random lengths of todos.
+- For react ,we give the state and react renders the stuff.
+- 
