@@ -1,3 +1,3 @@
-## Authentication and Databases (MongoDB)
+## Authentication (JWT)
 
 - 
