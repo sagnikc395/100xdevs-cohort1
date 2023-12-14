@@ -21,4 +21,41 @@
   - STORING IN MEMORY
   - DONT WANT USER TO SEND PASSWORD AND USERNAME in every request.
 
-- 
+- Authorization Header:
+  - send username and password in a single requests and not in a plaintext format 
+  - otherwise people can inspect the requests and can check it.
+  - Soln: Hash this out to some token and send that token out in every request.
+
+- In real world, send a single token, generate this token when we sign up or log in.
+- /singUp -> sing up request
+- /login -> Log in request 
+- we did send the username and password , but the server will return us back a very long string. we store this on client side, and the server sort of knows that this token is the users token and can set a expiry for that token.
+
+- tokens are transitory and non human redable. Any qauthenticated route you need to hit, please use this route.
+
+- In JWT, only the first time does the username and password go into the backend, rest of the time, they pass the authorization header token.
+```json
+  {"application" : "bearer": {...}}
+```
+
+- In headers it should Authorization as the key and the value as Bearer--space--token.This token is encapsualting the user identity. 
+- Better to send a token (non human readble string); only the server can decode and humans cant.
+
+
+## Encryption and Hashing :
+
+- Given a username and password , generate a JWT token.
+- Encapsualte some plaintext human readable string and encrypt to some random gibberish.
+
+- The property of the random gibberish should also reversibly return the human gibberish in plaintext.
+
+- Another property of encryption is that it has a server side secret.
+- We want one method to encrypt and one method to decrypt.
+- Using the string and this thing we have we get back ABC.
+- this secret of ours can drastically change what the thing is going to be .
+- Evryone in the world can convert back what this secret is going to be.
+- in jsonwebtokens, the sign function to sign the input key-value pair to a encrypted string and the verify thing could check and return a bool for any other request if that is the same thing or not. and another function like decode to decrypt the response.
+
+
+
+
