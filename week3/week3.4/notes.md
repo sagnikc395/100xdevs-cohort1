@@ -56,6 +56,12 @@
 - Evryone in the world can convert back what this secret is going to be.
 - in jsonwebtokens, the sign function to sign the input key-value pair to a encrypted string and the verify thing could check and return a bool for any other request if that is the same thing or not. and another function like decode to decrypt the response.
 
+- In the assignment solution we are just encapsulating the username not the password , as the user will in the future send us the username and we dont need to check the password, we can simply check the token from the username and verify.
+
+- to prevent the bug of creating multiple courses(not a admin),  can use different secret keys for users and admin for generating JWT.
+- or create 2 different JWT creation and authentication for admin and users.
+
+
 
 
 
