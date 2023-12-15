@@ -17,16 +17,15 @@ console.log(ans);
 console.log(obj);
 //convert this string back
 
-let res = jwt.verify(ans, secret, (err, val) => {
+jwt.verify(ans, secret, (err, val) => {
   if (err) {
     console.error(err);
   }
   console.log(`Original string was ${val}`);
 });
 
-console.log(res);
 
-let res2 = jwt.verify(obj, secret, (err, res) => {
+jwt.verify(obj, secret, (err, res) => {
   if (err) {
     console.error(err);
   }
