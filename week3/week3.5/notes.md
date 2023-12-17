@@ -13,4 +13,7 @@
 - Database:
   - Place where you store your application data resides.
 
+- Databases to be reviews. setup mongodb cloud and integrate with mongodb atlas.
+
+
 - 
