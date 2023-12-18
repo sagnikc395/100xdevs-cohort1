@@ -25,6 +25,14 @@ let singleTodo = {
 //   console.log(singleTodo);
 // }, 1000);
 
+function PersonName() {
+  return (
+    <div>
+      By @ <em>sagnikc</em>
+    </div>
+  );
+}
+
 function App() {
   // react knows that this is part of react's state and this is what
   // react needs to keep track of.
@@ -36,7 +44,7 @@ function App() {
       ...todo,
       title: String(Math.random() * 1000),
     });
-  }, 1000);
+  }, 5000);
 
   return (
     <>
@@ -46,6 +54,7 @@ function App() {
       <div>
         Todo Count : <em>{todo.id}</em>
       </div>
+      <PersonName />
     </>
   );
 }
