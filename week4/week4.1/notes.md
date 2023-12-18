@@ -64,5 +64,32 @@ Current DOM as a variable -> lean repr of the DOM (not the actual DOM tree, just
 
 - You as the application developer only need to update state (State), you should also tell react given a state, how it should iterate over it to render things -> (Components). 
 
--  
+-  State is what your app looks like in a object, components is what the UI looks like.
+Then we keep giving it state updates and looks on that.
+
+- createDOMElement() api (react api) should take 2 inputs:
+  - a state on which to mutate(state)
+  - given a single state, how should the framework should render it.(components)  
+
+- jsx -> javascript ajax -> a repr of code that can encapsulate the UI also. Components are essnetially HTML,CSS and JS code.
+
+- A component file must start with a capital letter.
+- App.jsx is the entry point of the react app.
+
+- whenever we are definfing the state varibale(varibales that can change state) in react, we need to define them in a certain way.
+We are not just calling a function anymore,we are simply updating todo, and want react to be smart about to know to be able to make the change, to update the todo and update the change.
+
+- we define then using hooks. eg: useState , to change using the state 
+```js 
+
+const someTodo = {
+  title: "some title",
+  description:"some descp",
+  id:1
+};
+
+//react contenxt
+const [todo,setTodo] = useState({...someTodo});
+```
+now to mutate the state variable we need to use setTodo (the callback), with the business logic on what we want to do on the todo variable.
 
