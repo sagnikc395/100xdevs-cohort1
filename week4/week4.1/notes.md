@@ -93,3 +93,7 @@ const [todo,setTodo] = useState({...someTodo});
 ```
 now to mutate the state variable we need to use setTodo (the callback), with the business logic on what we want to do on the todo variable.
 
+- State can be passed using props(an object) and then render it. If it changes, then update with the new value
+Props are like argument for our component to render/ update the DOM tree node with.
+
+- 

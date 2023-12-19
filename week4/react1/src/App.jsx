@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // let todos = [
 //   {
 //     title: "go to gym",
@@ -33,6 +34,16 @@ function PersonName() {
   );
 }
 
+function PersonNameProps(props) {
+  return (
+    <div>
+      <em>
+        {props.first_name} {props.last_name}
+      </em>
+    </div>
+  );
+}
+
 function App() {
   // react knows that this is part of react's state and this is what
   // react needs to keep track of.
@@ -44,7 +55,7 @@ function App() {
       ...todo,
       title: String(Math.random() * 1000),
     });
-  }, 5000);
+  },7000);
 
   return (
     <>
@@ -55,6 +66,7 @@ function App() {
         Todo Count : <em>{todo.id}</em>
       </div>
       <PersonName />
+      <PersonNameProps first_name={"sagnik"} last_name={"chatterjee"} />
     </>
   );
 }
