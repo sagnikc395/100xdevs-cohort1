@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 // let todos = [
 //   {
@@ -57,6 +58,15 @@ let multitodos = [
 //   );
 // }
 
+function Todo(props) {
+  return (
+    <div>
+      {props.title}
+      {props.description}
+    </div>
+  );
+}
+
 function App() {
   // react knows that this is part of react's state and this is what
   // react needs to keep track of.
@@ -90,6 +100,22 @@ function App() {
     // </>
     <>
       <div>{JSON.stringify(multitodos)}</div>
+      <div>
+        <h2>Render todos using map</h2>
+        {
+          //write Javascript like this inside of react
+          todos.map((todo) => {
+            return (
+              // <div>
+              //   {todo.title}
+              //   {todo.description}
+              //   <h3>Goal : {todo.id}</h3>
+              // </div>
+              <Todo title={todo.title} description={todo.description} />
+            );
+          })
+        }
+      </div>
     </>
   );
 }
