@@ -14,7 +14,7 @@
 // ];
 
 import { useState } from "react";
-import App2 from "./App2";
+//import App2 from "./App2";
 
 // let singleTodo = {
 //   title: "todo",
@@ -28,18 +28,18 @@ import App2 from "./App2";
 //   console.log(singleTodo);
 // }, 1000);
 
-let multitodos = [
-  {
-    title: "Go to gym",
-    description: "Hit the gym from 7-9",
-    id: 1,
-  },
-  {
-    title: "Go to gym X2",
-    description: "Hit the gym from 6-8",
-    id: 2,
-  },
-];
+// let multitodos = [
+//   {
+//     title: "Go to gym",
+//     description: "Hit the gym from 7-9",
+//     id: 1,
+//   },
+//   {
+//     title: "Go to gym X2",
+//     description: "Hit the gym from 6-8",
+//     id: 2,
+//   },
+// ];
 
 // function PersonName() {
 //   return (
@@ -61,13 +61,12 @@ let multitodos = [
 
 function Todo(props) {
   return (
-    <div style={{ backgroundColor: "gray", padding: "2rem",}}>
+    <div key={props.id} style={{ backgroundColor: "gray", padding: "2rem" }}>
       {props.title}
       {props.description}
     </div>
   );
 }
-
 
 function App() {
   // react knows that this is part of react's state and this is what
@@ -87,7 +86,33 @@ function App() {
   //   title: String("1"),
   // });
 
-  const [todos, setTodos] = useState(multitodos);
+  const [todoForToday, setTodoForToday] = useState({
+    title: "Go to gym",
+    description: "Hit the gym from 7-9",
+    id: 1,
+  });
+
+  const [counter, setCounter] = useState(Math.floor(Math.random() * 1000));
+
+  let nonstateVar = Math.random();
+
+  console.log(counter);
+  console.log(nonstateVar);
+  console.log(todoForToday);
+
+  console.log("render");
+  // let ctr = 0;
+  // if (ctr === 0) {
+  //   //guarded changes
+  setInterval(() => {
+    setTodoForToday({
+      title: " Go to swim" + Math.random(),
+      description: `Swimming`,
+      id: 1,
+    });
+  }, 10000);
+  //   ctr = 1;
+  // }
 
   return (
     // <>
@@ -101,12 +126,12 @@ function App() {
     //   <PersonNameProps first_name={"sagnik"} last_name={"chatterjee"} />
     // </>
     <>
-      <div>{JSON.stringify(multitodos)}</div>
+      {/* <div>{JSON.stringify(multitodos)}</div> */}
       <div>
-        <h2>Render todos using map</h2>
-        {
+        <h2>Hooks In React</h2>
+        {/* {
           //write Javascript like this inside of react
-          todos.map((todo) => {
+          todoForToday.map((todo) => {
             return (
               // <div>
               //   {todo.title}
@@ -117,7 +142,8 @@ function App() {
             );
           })
         }
-        {/* <App2 /> */}
+        <App2 />
+      </div> */}
       </div>
     </>
   );

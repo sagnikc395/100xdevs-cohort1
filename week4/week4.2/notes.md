@@ -27,4 +27,10 @@
 
 - setInterval and setTimeout is a slow infinite loop, but still prevents the stack from crashing.
 
-## 
+## react in strict mode is rendering it twice, else it would only renders once.
+
+## Hooks 
+
+- useState is a hook in React. Like a function.
+- Sort of a thing that remains independent of re - renders.
+- 
