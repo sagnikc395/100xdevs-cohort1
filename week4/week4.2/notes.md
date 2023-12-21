@@ -33,4 +33,6 @@
 
 - useState is a hook in React. Like a function.
 - Sort of a thing that remains independent of re - renders.
+- counter and nonStateVariable have the difference that in every re-render , counter is not chaning the value even thought it is random , but nonStateVariable is infact changing the value.
+
 - 

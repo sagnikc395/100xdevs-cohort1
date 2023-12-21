@@ -104,13 +104,18 @@ function App() {
   // let ctr = 0;
   // if (ctr === 0) {
   //   //guarded changes
-  setInterval(() => {
+  setTimeout(() => {
     setTodoForToday({
       title: " Go to swim" + Math.random(),
       description: `Swimming`,
       id: 1,
     });
   }, 10000);
+
+  // setTimeout(() => {
+  //   setCounter(Number(counter) * 10 + 2);
+  // }, 15000);
+
   //   ctr = 1;
   // }
 
@@ -144,6 +149,7 @@ function App() {
         }
         <App2 />
       </div> */}
+        <div>{counter}</div>
       </div>
     </>
   );
