@@ -60,7 +60,7 @@ let multitodos = [
 
 function Todo(props) {
   return (
-    <div>
+    <div style={{ backgroundColor: "gray", padding: "2rem",}}>
       {props.title}
       {props.description}
     </div>
