@@ -40,3 +40,8 @@
   - guard logic inside and  only runs the first time our component is rendered.
   - in future , to avoid infinite loop, we define these hooks inside the useEffect.
   - during subseqeunt re-renders the code inside useEffect wont get called.
+
+## Can also write our own hook in React !
+- Every hook that we define has to start with a use.
+- Any function that uses another hook  and returns a hook value  is a custom hook.
+- 
