@@ -96,4 +96,17 @@ now to mutate the state variable we need to use setTodo (the callback), with the
 - State can be passed using props(an object) and then render it. If it changes, then update with the new value
 Props are like argument for our component to render/ update the DOM tree node with.
 
-- 
+## React, effects and Custom Hooks:
+- React has a different mental model than other tradiitonal programming thing.
+- Array rendering (maps,filter) -> one lifecycle hook  on how the things happen happen over and over again.
+- render (setInterval example)
+- hooks (useStatem useEffect)
+- TODO app
+- Custom Hooks 
+
+- Start building things is better in React.
+
+### Rendering Arrays 
+- Need a for loop inside the JSX to render all the elements of the array.
+- best use maps (higher order function technique -> to map each item to another function to mutate on the iterable.)
+- Map creates a new copy and does not mutate the original array.
