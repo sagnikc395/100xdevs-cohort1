@@ -18,4 +18,13 @@
 ## How does Rendering Happen ?
 - Even though the update in setTimeout should happend in 1s , the title should keep changing to something random but it is changing much more quickly than 1s.
 - The re-render will occur whenever the state changes, the reconciler will call it whenever the state will change it and check the diff and apply the changes.
-- 
+- react.usestate protects the state variable as and when we call it. someone calls it when we change the state.
+
+- whenever the re-render happens the hook protects the state variable, until a unless the method to it is being used to mutate the state variable.
+- one-way direction ; no 2 way data binding.
+
+- The way react works internally is, when we update the state , similar to the function we call, which then recursively at sometime calls App again. setMethod is called againa and again infinitely and this will crash React.
+
+- setInterval and setTimeout is a slow infinite loop, but still prevents the stack from crashing.
+
+## 
