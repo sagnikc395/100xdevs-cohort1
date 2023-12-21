@@ -32,7 +32,11 @@
 ## Hooks 
 
 - useState is a hook in React. Like a function.
-- Sort of a thing that remains independent of re - renders.
+- Hooks are Sort of a thing that remains independent of re - renders.
 - counter and nonStateVariable have the difference that in every re-render , counter is not chaning the value even thought it is random , but nonStateVariable is infact changing the value.
 
-- 
+- useEffect Hook:
+  - takes in a function and a array.
+  - guard logic inside and  only runs the first time our component is rendered.
+  - in future , to avoid infinite loop, we define these hooks inside the useEffect.
+  - during subseqeunt re-renders the code inside useEffect wont get called.
