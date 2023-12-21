@@ -14,6 +14,7 @@
 // ];
 
 import { useState } from "react";
+import App2 from "./App2";
 
 // let singleTodo = {
 //   title: "todo",
@@ -67,6 +68,7 @@ function Todo(props) {
   );
 }
 
+
 function App() {
   // react knows that this is part of react's state and this is what
   // react needs to keep track of.
@@ -115,6 +117,7 @@ function App() {
             );
           })
         }
+        <App2 />
       </div>
     </>
   );
