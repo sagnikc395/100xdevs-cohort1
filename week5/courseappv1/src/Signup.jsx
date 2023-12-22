@@ -4,7 +4,6 @@ import { Card } from "@mui/material";
 import { Typography } from "@mui/material";
 import { useState } from "react";
 
-
 function Signup() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -42,6 +41,11 @@ function Signup() {
             label="Email"
             variant="outlined"
             fullWidth={true}
+            onChange={(e) => {
+              //every time user presses something; store the current value ;
+              // this is how react shares state
+              setEmail(e.target.value);
+            }}
           />
           <br />
           <br />
@@ -51,6 +55,9 @@ function Signup() {
             label="Password"
             variant="outlined"
             fullWidth={true}
+            onChange={(e) => {
+              setPass(e.target.value);
+            }}
           />
           <br />
           <br />
@@ -65,8 +72,8 @@ function Signup() {
               // //send the fetch request to the backend simply
 
               //new way to do it
-              setEmail(document.getElementById("username").value);
-              setPass(document.getElementById("password").value);
+              // setEmail(document.getElementById("username").value);
+              // setPass(document.getElementById("password").value);
               fetch(`http://localhost:3000/admin/signup`, {
                 method: "POST",
                 //body: JSON.stringify({ username, password }),
