@@ -1,7 +1,7 @@
 import "./App.css";
 import AppBar from "./AppBar";
 import Signin from "./Signin";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Signup from "./Signup";
 
 function App() {
@@ -12,12 +12,10 @@ function App() {
       >
         <AppBar />
 
-        <Router>
-          <Routes>
-            <Route path="/login" element={<Signin />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
       </div>
     </>
   );

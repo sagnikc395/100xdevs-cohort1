@@ -44,3 +44,14 @@ Practing React.
 - The most generic way to solve this is using state management.
 - There are libraries that help us do routing.
 
+- using window.location, will lead to realod on that page, this page 
+  - React creates SPA , the structure of the page changes, but it does not need to create a full page reload.
+  - the reason is using window.location.
+  - Rather than that we want the routing to happen in this only.
+
+- using useNavigate to route in and out.
+
+- different ways to route:
+  - hashrouter : encrypted router
+  - browserrouter
+  - 
