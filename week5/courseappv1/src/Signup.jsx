@@ -87,7 +87,10 @@ function Signup() {
                   return res.json();
                 })
                 .then((data) => {
+                  //this is the jwtToken the browser will send to the backend server
                   console.log(data);
+                  // storing it in localStorage
+                  localStorage.setItem("token", data.token);
                 });
             }}
           >
