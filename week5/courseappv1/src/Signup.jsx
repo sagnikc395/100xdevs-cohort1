@@ -14,8 +14,8 @@ function Signup() {
           <div>
             <TextField
               id="username"
-              type="text"
-              label="sagnikc"
+              type="email"
+              label="sagnikc@gmail.com"
               variant="outlined"
             />
             <TextField
