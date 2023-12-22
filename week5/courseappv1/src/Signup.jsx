@@ -1,3 +1,6 @@
+import { Button } from "@mui/material";
+import { TextField } from "@mui/material";
+
 function Signup() {
   return (
     <>
@@ -7,16 +10,23 @@ function Signup() {
         </div>
       </center>
       <center>
-        <div
-          style={{ border: "2px solid black", width: "400px" }}
-        >
+        <div style={{ border: "2px solid black", width: "400px", padding: 10 }}>
           <div>
-            Username : <input type="text"></input>
-            <br />
-            Password : <input type="password"></input>
+            <TextField
+              id="username"
+              type="text"
+              label="sagnikc"
+              variant="outlined"
+            />
+            <TextField
+              id="password"
+              type="password"
+              label="sagnikc#123"
+              variant="outlined"
+            />
           </div>
           <br />
-          <button>Sign Up</button>
+          <Button variant="contained">SignUp</Button>
         </div>
       </center>
     </>
