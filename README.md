@@ -15,18 +15,18 @@ Course Notes and Solutions for 100x devs Cohort1.
    - [x] Week 2.2 Middleware , Requests and Responses 
    
 3. Week3 : Backend and Frontend Integration 
-   1. Finishing backend , starting frontend 
-   2. Foundation of frontend and reconcilation 
-   3. (Extra) System Design of a Video Transcoder 
-   4. Authentication and Assignment 
-   5. MongoDB and Intro to DBs
+   - [x]  Finishing backend , starting frontend 
+   - [x]  Foundation of frontend and reconcilation 
+   - [x] (Extra) System Design of a Video Transcoder 
+   - [x] Authentication and Assignment 
+   - [x] MongoDB and Intro to DBs
 
 4. Week4: React 
-   1. More reconcilers, Intro to React using Vite 
-   2. React, effects and custom hooks 
+   - [x] More reconcilers, Intro to React using Vite 
+   - [x] React, effects and custom hooks 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
-   1. Recapping few things 
+   - [x] Recapping few things 
    2. Axios,object destructuring, grids and complete assignment 
    3. Contenxt,Recoil and prop drilling 
 
