@@ -33,7 +33,7 @@ function Signup() {
           }}
         >
           <TextField
-            id="username"
+            id={"username"}
             type="email"
             label="Email"
             variant="outlined"
@@ -42,7 +42,7 @@ function Signup() {
           <br />
           <br />
           <TextField
-            id="password"
+            id={"password"}
             type="password"
             label="Password"
             variant="outlined"
@@ -50,7 +50,21 @@ function Signup() {
           />
           <br />
           <br />
-          <Button size="large" variant="contained">
+          <Button
+            size={"large"}
+            variant="contained"
+            onClick={() => {
+              //get the ids
+              // old way to do it
+              let username = document.getElementById("username").value;
+              let password = document.getElementById("password").value;
+              //send the fetch request to the backend simply
+              fetch(`http://localhost:3000/admin/signup`, {
+                method: "POST",
+                body: JSON.stringify({ username, password }),
+              });
+            }}
+          >
             SignUp
           </Button>
         </Card>
