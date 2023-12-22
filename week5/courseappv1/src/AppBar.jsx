@@ -11,10 +11,26 @@ function AppBar() {
       </div>
       <div style={{ display: "flex" }}>
         <div style={{ marginRight: 10 }}>
-          <Button variant="contained">SignUp</Button>
+          <Button
+            variant="contained"
+            onClick={() => {
+              //route to signin
+              //bad version
+              window.location = "/signup";
+            }}
+          >
+            SignUp
+          </Button>
         </div>
         <div style={{ marginRight: 10 }}>
-          <Button variant="contained">SignIn</Button>
+          <Button
+            variant="contained"
+            onClick={() => {
+              window.location = "/login";
+            }}
+          >
+            SignIn
+          </Button>
         </div>
       </div>
     </div>
