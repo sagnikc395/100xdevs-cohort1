@@ -54,4 +54,9 @@ Practing React.
 - different ways to route:
   - hashrouter : encrypted router
   - browserrouter
-  - 
+
+
+## State Management:
+- getElementbyId is not the right way to get the right way to get usernames and passwords in react.
+- the way to do that is to use the state variable at the top.
+- 

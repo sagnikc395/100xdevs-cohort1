@@ -2,8 +2,12 @@ import { Button } from "@mui/material";
 import { TextField } from "@mui/material";
 import { Card } from "@mui/material";
 import { Typography } from "@mui/material";
+import { useState } from "react";
+
 
 function Signup() {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
   return (
     <>
       <div
@@ -56,13 +60,18 @@ function Signup() {
             onClick={() => {
               //get the ids
               // old way to do it
-              let username = document.getElementById("username").value;
-              let password = document.getElementById("password").value;
-              //send the fetch request to the backend simply
+              // let username = document.getElementById("username").value;
+              // let password = document.getElementById("password").value;
+              // //send the fetch request to the backend simply
+
+              //new way to do it
+              setEmail(document.getElementById("username").value);
+              setPass(document.getElementById("password").value);
               fetch(`http://localhost:3000/admin/signup`, {
                 method: "POST",
-                body: JSON.stringify({ username, password }),
+                //body: JSON.stringify({ username, password }),
                 //solving 403 by passing this header
+                body: JSON.stringify({ email, pass }),
                 headers: {
                   "Content-Type": "application/json",
                 },
