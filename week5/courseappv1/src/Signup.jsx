@@ -16,38 +16,45 @@ function Signup() {
       >
         <Typography variant="h6">Welcome to Coursera! SignUp Below</Typography>
       </div>
-      <Card
-        variant="outlined"
+      <div
         style={{
-          width: 400,
-          padding: 20,
-
           display: "flex",
           justifyContent: "center",
         }}
       >
-        <TextField
-          id="username"
-          type="email"
-          label="Email"
+        <Card
           variant="outlined"
-          fullWidth={true}
-        />
-        <br />
-        <br />
-        <TextField
-          id="password"
-          type="password"
-          label="Password"
-          variant="outlined"
-          fullWidth={true}
-        />
-        <br />
-        <br />
-        <Button size="large" variant="contained">
-          SignUp
-        </Button>
-      </Card>
+          style={{
+            width: 400,
+            padding: 20,
+
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <TextField
+            id="username"
+            type="email"
+            label="Email"
+            variant="outlined"
+            fullWidth={true}
+          />
+          <br />
+          <br />
+          <TextField
+            id="password"
+            type="password"
+            label="Password"
+            variant="outlined"
+            fullWidth={true}
+          />
+          <br />
+          <br />
+          <Button size="large" variant="contained">
+            SignUp
+          </Button>
+        </Card>
+      </div>
     </>
   );
 }
