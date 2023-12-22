@@ -35,4 +35,4 @@ Practing React.
   - when we have done flex to a parent it doesnt mean its grand child will also see a flex.
   - makes the change at the child level as well.
 
-- 
+- Start from 43:27
