@@ -35,4 +35,12 @@ Practing React.
   - when we have done flex to a parent it doesnt mean its grand child will also see a flex.
   - makes the change at the child level as well.
 
-- Start from 43:27
+- Routing :
+  - We want to make sure that clicking on Signup takes the user to Signup page and clicking on Signin takes the user to the Signin page.
+  - i.e we want to conditionally render page depending on what the user in clicking.
+  - if the person has clicked on signup we want the signup page to be rendered.
+  - if the person has clicked on signin , we want the signin page to be rendered.
+
+- The most generic way to solve this is using state management.
+- There are libraries that help us do routing.
+
