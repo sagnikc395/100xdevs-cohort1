@@ -62,6 +62,10 @@ function Signup() {
               fetch(`http://localhost:3000/admin/signup`, {
                 method: "POST",
                 body: JSON.stringify({ username, password }),
+                //solving 403 by passing this header
+                headers: {
+                  "Content-Type": "application/json",
+                },
               });
             }}
           >
