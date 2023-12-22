@@ -19,4 +19,20 @@ Practing React.
 
 - Using MUI to style our Components, add customizing our components based on that.
 
+- AppBar:
+  - UserPROFILE pic,LOGO, SIGNUP, SIGNIN
+  - flexbox to render in 1 line.
+  - search about vw and vh in CSS.
+  - Flexbox:
+    - position elements to left,right,top,bottom and center of the screen.
+    - we know that elements that shouldnt take the full width , the parent div, that we want it to take it give it css :- display: flex.
+    - and then can use justifyContent to justify where the children can reside:
+      - flex-start :default 
+      - flex-end 
+      - justify
+      - space-between -> one to left, second to right 
+
+  - when we have done flex to a parent it doesnt mean its grand child will also see a flex.
+  - makes the change at the child level as well.
+
 - 

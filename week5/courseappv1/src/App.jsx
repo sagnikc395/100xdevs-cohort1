@@ -1,12 +1,14 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import AppBar from "./AppBar";
 import Signup from "./Signup";
 
 function App() {
   return (
     <>
-      <Signup />
+      <div style={{ width: "100vw", height: "100vh", backgroundColor: "#e5e5e5" }}>
+        <AppBar />
+        <Signup />
+      </div>
     </>
   );
 }
