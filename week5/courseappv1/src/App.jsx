@@ -11,13 +11,14 @@ function App() {
         style={{ width: "100vw", height: "100vh", backgroundColor: "#e5e5e5" }}
       >
         <AppBar />
+
+        <Router>
+          <Routes>
+            <Route path="/login" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+          </Routes>
+        </Router>
       </div>
-      <Router>
-        <Routes>
-          <Route path="/login" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
-      </Router>
     </>
   );
 }
