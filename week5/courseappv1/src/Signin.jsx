@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 
 function Signin() {
   return (
-    <>
+    <div>
       <div
         style={{
           paddingTop: 150,
@@ -14,48 +14,33 @@ function Signin() {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6">Welcome back ! Signin Below</Typography>
+        <Typography variant={"h6"}>Welcome back, sign in below.</Typography>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Card
-          variant="outlined"
-          style={{
-            width: 400,
-            padding: 20,
-
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Card variant={"outlined"} style={{ width: 400, padding: 20 }}>
           <TextField
-            id="username"
-            type="email"
+            fullWidth={true}
+            id="outlined-basic"
             label="Email"
             variant="outlined"
-            fullWidth={true}
           />
           <br />
           <br />
           <TextField
-            id="password"
-            type="password"
+            fullWidth={true}
+            id="outlined-basic"
             label="Password"
             variant="outlined"
-            fullWidth={true}
+            type={"password"}
           />
           <br />
           <br />
-          <Button size="large" variant="contained">
-            Signin
+          <Button size={"large"} variant="contained">
+            SignIn
           </Button>
         </Card>
       </div>
-    </>
+    </div>
   );
 }
 

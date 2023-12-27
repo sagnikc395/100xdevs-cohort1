@@ -6,9 +6,9 @@ import { useState } from "react";
 
 function Signup() {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
+  const [password, setPassword] = useState("");
   return (
-    <>
+    <div>
       <div
         style={{
           paddingTop: 150,
@@ -17,88 +17,63 @@ function Signup() {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6">Welcome to Coursera! SignUp Below</Typography>
+        <Typography variant={"h6"}>
+          Welcome to Coursera. Sign up below
+        </Typography>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Card
-          variant="outlined"
-          style={{
-            width: 400,
-            padding: 20,
-
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Card varint={"outlined"} style={{ width: 400, padding: 20 }}>
           <TextField
-            id={"username"}
-            type="email"
+            onChange={(evant11) => {
+              let elemt = evant11.target;
+              setEmail(elemt.value);
+            }}
+            fullWidth={true}
             label="Email"
             variant="outlined"
-            fullWidth={true}
-            onChange={(e) => {
-              //every time user presses something; store the current value ;
-              // this is how react shares state
-              setEmail(e.target.value);
-            }}
           />
           <br />
           <br />
           <TextField
-            id={"password"}
-            type="password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            fullWidth={true}
             label="Password"
             variant="outlined"
-            fullWidth={true}
-            onChange={(e) => {
-              setPass(e.target.value);
-            }}
+            type={"password"}
           />
           <br />
           <br />
+
           <Button
             size={"large"}
             variant="contained"
             onClick={() => {
-              //get the ids
-              // old way to do it
-              // let username = document.getElementById("username").value;
-              // let password = document.getElementById("password").value;
-              // //send the fetch request to the backend simply
-
-              //new way to do it
-              // setEmail(document.getElementById("username").value);
-              // setPass(document.getElementById("password").value);
-              fetch(`http://localhost:3000/admin/signup`, {
+              function callback2(data) {
+                localStorage.setItem("token", data.token);
+              }
+              function callback1(res) {
+                res.json().then(callback2);
+              }
+              fetch("http://localhost:3000/admin/signup", {
                 method: "POST",
-                //body: JSON.stringify({ username, password }),
-                //solving 403 by passing this header
-                body: JSON.stringify({ email, pass }),
+                body: JSON.stringify({
+                  username: email,
+                  password: password,
+                }),
                 headers: {
-                  "Content-Type": "application/json",
+                  "Content-type": "application/json",
                 },
-              })
-                .then((res) => {
-                  return res.json();
-                })
-                .then((data) => {
-                  //this is the jwtToken the browser will send to the backend server
-                  console.log(data);
-                  // storing it in localStorage
-                  localStorage.setItem("token", data.token);
-                });
+              }).then(callback1);
             }}
           >
-            SignUp
+            {" "}
+            Signup
           </Button>
         </Card>
       </div>
-    </>
+    </div>
   );
 }
 
