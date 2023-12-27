@@ -2,7 +2,7 @@ import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import { Card } from "@mui/material";
 
-function AddCourse() {
+function AddCourses() {
   return (
     <>
       <Card
@@ -25,4 +25,4 @@ function AddCourse() {
   );
 }
 
-export default AddCourse;
+export default AddCourses;
