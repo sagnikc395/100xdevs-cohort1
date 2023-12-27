@@ -6,12 +6,14 @@ import { useNavigate } from "react-router-dom";
 function AppBar() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(null);
+  const [isLoading,setIsLoading] = useState(true);
 
   useEffect(() => {
     function callback2(data) {
       //console.log(data);
       if (data.username) {
         setUserEmail(data.username);
+        setIsLoading(false);
       }
     }
 
@@ -26,6 +28,11 @@ function AppBar() {
       },
     }).then(callback1);
   }, []);
+
+  //show some amount of loading state
+  if(isLoading){
+    return <div>Loading state .... </div>
+  }
 
   if (userEmail) {
     //ugly
