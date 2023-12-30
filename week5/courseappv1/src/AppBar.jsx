@@ -6,32 +6,27 @@ import { useNavigate } from "react-router-dom";
 function AppBar() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(null);
-  const [isLoading,setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    function callback2(data) {
-      //console.log(data);
-      if (data.username) {
-        setUserEmail(data.username);
-        setIsLoading(false);
-      }
-    }
-
-    function callback1(res) {
-      res.json().then(callback2);
-    }
-
     fetch(`http://localhost:3000/admin/me`, {
       method: "GET",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },
-    }).then(callback1);
+    }).then((res) =>
+      res.json().then((data) => {
+        if (data.username) {
+          setUserEmail(data.username);
+          setIsLoading(false);
+        }
+      })
+    );
   }, []);
 
   //show some amount of loading state
-  if(isLoading){
-    return <div>Loading state .... </div>
+  if (isLoading) {
+    return <div>Loading state .... </div>;
   }
 
   if (userEmail) {
@@ -71,9 +66,7 @@ function AppBar() {
           <Button
             variant="contained"
             onClick={() => {
-              //route to signin
-              //bad version
-              //window.location = "/signup";
+              // dom specific method is to use window.location
               navigate("/signup");
             }}
           >
