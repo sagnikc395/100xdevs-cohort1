@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+      // select element
+      const app = document.getElementById("app");
+      // create a new child elemnt
+      const h1elem = document.createElement("h1");
+
+      //new txt node for the h1 element
+      const text = "Develop , preview and ship!";
+      const headerContent = document.createTextNode(text);
+
+      //append the text to the h1 element
+      h1elem.appendChild(headerContent);
+      //place the h1 element inside the div
+      app.appendChild(h1elem);
+    </script>
+  </body>
+</html>
