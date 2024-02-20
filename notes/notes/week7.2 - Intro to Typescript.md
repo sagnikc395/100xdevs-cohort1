@@ -25,3 +25,5 @@
 npm install -g tsc 
  
 ```
+- -g means install this dependency globally -> helps to install typescript globally.
+- 
