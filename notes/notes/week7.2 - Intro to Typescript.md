@@ -67,5 +67,9 @@ npm install -g tsc
 - Interfaces can be implemented by classes.
 - Problems with defining the types inlining , violate the DRY prinicple.
 - Better to define a interface  directly and use that as a type.
-	
+- Interfaces that we created, can be implemented by the classes also.
+- IMP: **Interfaces can be implemented by classes, they cannot be implemented by types**.
+- constructor is what constructs the object.
+- we can also defines not only types and state but also functions in interfaces.
+- 
 	
