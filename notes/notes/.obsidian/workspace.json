@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7c0ea420bf3026c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "week7.3- assignment on typescript.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week7.2 - Intro to Typescript.md",
+                "file": "week7.3- assignment on typescript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week7.2 - Intro to Typescript.md",
+                "file": "week7.3- assignment on typescript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week7.2 - Intro to Typescript.md"
+                "file": "week7.3- assignment on typescript.md"
               }
             }
           }
@@ -147,9 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f09c15088876a89",
+  "active": "7c0ea420bf3026c3",
   "lastOpenFiles": [
     "week7.2 - Intro to Typescript.md",
+    "week7.3- assignment on typescript.md",
     "Welcome.md"
   ]
 }
