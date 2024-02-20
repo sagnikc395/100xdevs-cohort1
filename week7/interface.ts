@@ -79,3 +79,22 @@ console.log(
     },
   })
 );
+
+// interfaces extending other interfaces.
+// animal and human
+interface PersonGenderProperties2 {
+  gender: string;
+  orientation: string;
+  pronouns: string;
+}
+
+interface Person4 extends PersonGenderProperties2 {
+  name: string;
+  age: number;
+  // genderProps: PersonGenderProperties2;
+}
+
+interface Animal extends Person4 {
+  foodType: string;
+  primaryLocation: string;
+}
