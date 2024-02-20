@@ -65,5 +65,7 @@ npm install -g tsc
 - Interfaces can use other interfaces.
 - Interfaces can extend interfaces.
 - Interfaces can be implemented by classes.
+- Problems with defining the types inlining , violate the DRY prinicple.
+- Better to define a interface  directly and use that as a type.
 	
 	
