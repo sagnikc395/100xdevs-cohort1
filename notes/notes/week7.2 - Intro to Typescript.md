@@ -95,4 +95,10 @@ npm install -g tsc
 
 
 ### Enums:
-- 
+- we can use types to restrict the types of the value that we can take.
+- problem of 1 out of multiple things, can be very well encapsulated with enums.
+- sort of interchangeable with Java's enums types.
+- it wont work well with complex interfaces or types. need object of same keys and values.
+- When we write the code at compiletime, we know that there is a central place where all the keys are present and autocomplete on that , rather than checking in runtime.
+- lets us define various versions of things.
+- Under the hood, Enums by default get a value associated with them starting with 0 and set them. In JS code, we also get an object with keys as the values and the value as the index.
