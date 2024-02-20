@@ -80,4 +80,9 @@ npm install -g tsc
 - vey useful for unions and ors.
 - cannot be extended.
 - types cannot extended other interfaces; use interfaces instead !
-	
+- types can have subproperties which are interfaces.
+- types can nest other types.
+- in interface we can defined multiple interfaces that have multiple properties and define a method for all of them.
+- however they can grow in size and difficult to manage and send the union type over and over in the function parameter.
+- best to define using types and using unions.
+- future shapes to be implemented can also be added directly to this.
