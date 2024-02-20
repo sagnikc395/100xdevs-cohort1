@@ -16,6 +16,8 @@ function greet(person: PersonInterface): string {
 
 interface Circle {
   radius: number;
+  //optional property in ts 
+  borderWidth?: number;
 }
 
 interface Square {

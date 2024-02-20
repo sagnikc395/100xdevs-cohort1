@@ -86,3 +86,13 @@ npm install -g tsc
 - however they can grow in size and difficult to manage and send the union type over and over in the function parameter.
 - best to define using types and using unions.
 - future shapes to be implemented can also be added directly to this.
+- interfaces doesnt lets us do unions or ors.
+
+### Difference Between types and interfaces:
+- Interfaces can be implemented by classes.
+- Interfaces can extend each other.
+- Types can do unions and intersections.
+
+
+### Enums:
+- 
