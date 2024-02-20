@@ -26,4 +26,44 @@ npm install -g tsc
  
 ```
 - -g means install this dependency globally -> helps to install typescript globally.
-- 
+### tsconfig:
+- we can configure TS directly in a single file in the root of the application called the tsconfig.json file.
+- provides a bunch of configurations options.
+- generate use npx tsc --init.
+- 10% of the thing are actually useful for application developers, the 90% things are not useful. 
+- target :
+	- denotes the final ECMAScript version of the Javascript that is there.
+	- versions of the new ECMAScript provide new features , some polyfilling. 
+	- es3 and es5 is very old. 
+	- es2016 - es2020 is incrementally better 
+	- ESnext -> latest features.
+	- in prod, we mostly target ES2016 for most browsers and ES2020 and ESNext to target newest and freshest features of Javascript
+- module:
+	- module type - target system.
+	- if the TS file we have written is a module, module is something which exports something or not.
+	- what type of module we want TS to export.
+	- export vs require (esmodule vs commonjs)
+	- in TS we can use esmoudle easily, if we have commonjs as module , it will use exports. To change to the new versions we use esmodulee(es6,esnext).
+- Constraints:
+	- does casing matter when importing modules 
+	- strict 
+	- how stricltly should Typescript be evaluated.
+	- forceConsistentCaseInFileNames: 
+		- make the case in file names consistent.
+	- strict:
+		- how strictly we want our TS to conform to strict .
+		- esmodules are not strict.
+		- does not allow any, unknown type implicitly.
+		- boolean value
+
+## interfaces, types and enums :
+- Types in the real world are really complex.
+- an type that is more thatn primitive types.
+- interfaces, types and enums help in generating that and create custom types and storage.
+### Interfaces:
+- Let us accumulate data of a specific type.
+- Interfaces can use other interfaces.
+- Interfaces can extend interfaces.
+- Interfaces can be implemented by classes.
+	
+	
