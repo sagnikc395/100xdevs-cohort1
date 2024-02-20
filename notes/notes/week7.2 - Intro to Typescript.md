@@ -74,5 +74,10 @@ npm install -g tsc
 - any function that implements the interface must implement the state and the associated methods with that interface.
 - with interfaces we can create different type of classes with some overlap with the base interface properties. It could be used in multiple places.
 ### Types:
-- 
+- very slighlty different from interfaces.
+- need to be equated.
+- cannot be implemented by classes .
+- vey useful for unions and ors.
+- cannot be extended.
+- types cannot extended other interfaces; use interfaces instead !
 	
