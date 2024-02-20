@@ -102,3 +102,4 @@ npm install -g tsc
 - When we write the code at compiletime, we know that there is a central place where all the keys are present and autocomplete on that , rather than checking in runtime.
 - lets us define various versions of things.
 - Under the hood, Enums by default get a value associated with them starting with 0 and set them. In JS code, we also get an object with keys as the values and the value as the index.
+- we cant return interfaces, but we can return the value of an enum value.
