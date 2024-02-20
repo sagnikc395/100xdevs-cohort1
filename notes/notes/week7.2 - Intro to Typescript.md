@@ -71,5 +71,8 @@ npm install -g tsc
 - IMP: **Interfaces can be implemented by classes, they cannot be implemented by types**.
 - constructor is what constructs the object.
 - we can also defines not only types and state but also functions in interfaces.
+- any function that implements the interface must implement the state and the associated methods with that interface.
+- with interfaces we can create different type of classes with some overlap with the base interface properties. It could be used in multiple places.
+### Types:
 - 
 	

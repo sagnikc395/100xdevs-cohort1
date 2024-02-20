@@ -49,3 +49,33 @@ class Person2 implements PersonInterface {
 const personObject = new Person2("Harkirat", 123);
 // this function will have the state of the name and the age.
 console.log(personObject.greet());
+
+//interface can use other interfaces
+interface PersonGenderProperties {
+  gender: string;
+  orientation: string;
+  pronouns: string;
+}
+
+// can use this in another interface
+interface Person3 {
+  name: string;
+  age: number;
+  genderProps: PersonGenderProperties;
+}
+
+function greet3(person: Person3): string {
+  return `Hi ${person.name} , (${person.genderProps.pronouns}) ! You are ${person.genderProps.orientation}.`;
+}
+
+console.log(
+  greet3({
+    name: "Omega",
+    age: 22,
+    genderProps: {
+      gender: "male",
+      orientation: "straight",
+      pronouns: "he/him",
+    },
+  })
+);
