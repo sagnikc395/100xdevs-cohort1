@@ -4,4 +4,4 @@
 	- DOM operations are expensive.
 	- very hard for application developer to modify DOM.
 - Updating the DOM is very hard 
-	- Need a reconciler for the update operations to maintain the global state of the 
+	- Need a reconciler for the update operations to maintain the global state of the g
