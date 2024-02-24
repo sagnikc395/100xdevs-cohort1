@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "229f030d194d8525",
+        "id": "3c15137b99eb8ab9",
         "type": "tabs",
         "children": [
           {
-            "id": "3f09c15088876a89",
+            "id": "b9cf5afd3ee0d921",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week7.2 - Intro to Typescript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c0ea420bf3026c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "week7.3- assignment on typescript.md",
+                "file": "week4/week4.1 - react + state.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week7.3- assignment on typescript.md",
+                "file": "week4/week4.1 - react + state.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week7.3- assignment on typescript.md",
+                "file": "week4/week4.1 - react + state.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week7.3- assignment on typescript.md"
+                "file": "week4/week4.1 - react + state.md"
               }
             }
           }
@@ -160,10 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c0ea420bf3026c3",
+  "active": "b9cf5afd3ee0d921",
   "lastOpenFiles": [
-    "week7.2 - Intro to Typescript.md",
-    "week7.3- assignment on typescript.md",
+    "week3/week3.4- Databases(MongoDB).md",
+    "week4/week4.1 - react + state.md",
+    "week7",
+    "week3",
+    "week4",
+    "week7/week7.2 - Intro to Typescript.md",
+    "week7/week7.3- assignment on typescript.md",
     "Welcome.md"
   ]
 }

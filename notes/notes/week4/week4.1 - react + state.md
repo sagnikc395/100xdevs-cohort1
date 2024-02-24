@@ -1,0 +1,7 @@
+- why React was introduced ?
+- Optimize the reconciler that was made and how components and state are connected together.
+- Why React ? 
+	- DOM operations are expensive.
+	- very hard for application developer to modify DOM.
+- Updating the DOM is very hard 
+	- Need a reconciler for the update operations to maintain the global state of the 
