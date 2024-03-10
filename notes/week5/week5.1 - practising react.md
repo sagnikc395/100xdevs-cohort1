@@ -1,2 +1,6 @@
 - need to move over this bump is react and understanding the great start. we incrementally build up and is a good starting point.
-- 
+- in react there are components:
+	- defining our own html tags.
+	- effectively created our new HTML tag which returns the html stored .
+	- Components are used to abstract a lot of HTML together.
+- can send data to components and also used it inside our components.
