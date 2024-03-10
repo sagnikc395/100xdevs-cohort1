@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
-import AppBar from "./components/AppBar";
+import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import AppBar from "./components/AppBar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -8,12 +10,16 @@ function App() {
       style={{
         width: "100vw",
         height: "100vh",
-        backgroundColor: "#0a0a0a",
-        color: "#fafafa",
+        backgroundColor: "#a8a29e",
       }}
     >
       <AppBar />
-      <SignUp />
+      <Router>
+        <Routes>
+          <Route path="/login" elemen={<SignIn />} />
+          <Route path="/signup" elemen={<SignUp />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

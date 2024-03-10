@@ -23,3 +23,8 @@
 		- if end ; then eveyrhting appears at the end.
 		- space-between ; 3 elemetns equi spaced.
  - if we have added flex to a parent doesnt mean its gradnchild also will have that, check the most immediate parent tag property. only works in 1 level.
+
+### Routing:
+- routing to a path when redirecting a component.
+- if path is / then render component1, else render component2 etc.
+- conditional rendering

@@ -1,24 +1,10 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
 
 function SignUp() {
   return (
     <div>
-      <div
-        style={{
-          marginTop: 150,
-          marginBottom: 10,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <Typography variant="h5" paddingBottom={"1em"}>
-          Welcome to Coursera! Sign up below
-        </Typography>
-      </div>
       <div
         style={{
           display: "flex",
