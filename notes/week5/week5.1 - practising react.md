@@ -4,3 +4,8 @@
 	- effectively created our new HTML tag which returns the html stored .
 	- Components are used to abstract a lot of HTML together.
 - can send data to components and also used it inside our components.
+
+
+
+- vw -> complete view width 
+- vh -> complete view height 

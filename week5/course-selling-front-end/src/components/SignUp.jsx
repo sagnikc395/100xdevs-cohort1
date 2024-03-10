@@ -1,13 +1,16 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
 
 function SignUp() {
   return (
     <div>
       <center>
         <div style={{ marginTop: 150, marginBottom: 10 }}>
-          Welcome to Coursera! Sign up below
+          <Typography variant="h6" style={{ color: "#fafafa" }}>
+            Welcome to Coursera! Sign up below
+          </Typography>
         </div>
       </center>
       <center>

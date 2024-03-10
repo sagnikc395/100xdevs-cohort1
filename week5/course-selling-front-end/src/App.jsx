@@ -13,11 +13,15 @@ function TodoApp(props) {
 
 function App() {
   return (
-    <>
-      <div>
-        <SignUp />
-      </div>
-    </>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: "#0a0a0a",
+      }}
+    >
+      <SignUp />
+    </div>
   );
 }
 
