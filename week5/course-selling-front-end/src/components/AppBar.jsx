@@ -7,9 +7,12 @@ function AppBar() {
       style={{
         display: "flex",
         justifyContent: "space-between",
+        padding: '2em',
       }}
     >
-      <Typography>Coursera</Typography>
+      <Typography variant="h4">
+        Coursera
+      </Typography>
       <div style={{ display: "flex" }}>
         <div style={{ marginRight: 10 }}>
           <Button variant="contained">Sign Up</Button>

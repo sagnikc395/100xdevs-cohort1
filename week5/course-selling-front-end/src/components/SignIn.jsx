@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 
-function SignUp() {
+function SignIn() {
   return (
     <div>
       <div
@@ -70,4 +70,4 @@ function SignUp() {
     </div>
   );
 }
-export default SignUp;
+export default SignIn;
