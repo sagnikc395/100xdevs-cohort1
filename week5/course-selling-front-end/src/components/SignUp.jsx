@@ -1,3 +1,7 @@
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import Card from "@mui/material/Card";
+
 function SignUp() {
   return (
     <div>
@@ -7,20 +11,27 @@ function SignUp() {
         </div>
       </center>
       <center>
-        <div
-          style={{
-            border: "2px solid black",
-            wdth: 400,
-          }}
-        >
-          <div>
-            Username <input type={"text"} />
-          </div>
-          <div>
-            Password <input type={"password"} />
-          </div>
-          <button>Sign Up</button>
-        </div>
+        <Card variant="outlined" style={{ width: 400, padding: 20 }}>
+          <TextField
+            fullWidth={true}
+            id="outlined-basic"
+            label="Email"
+            variant="outlined"
+          />
+          <br />
+          <br />
+          <TextField
+            fullWidth={true}
+            id="outlines-basic"
+            label="Password"
+            variant="filled"
+          />
+          <br />
+          <br />
+          <Button size={"large"} variant="contained">
+            Sign Up
+          </Button>
+        </Card>
       </center>
     </div>
   );
