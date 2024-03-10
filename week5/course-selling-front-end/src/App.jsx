@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+import SignUp from "./components/SignUp";
+
 /* eslint-disable react/prop-types */
 function TodoApp(props) {
   return (
@@ -12,8 +15,7 @@ function App() {
   return (
     <>
       <div>
-        <h2>ra ra rasputin</h2>
-        <TodoApp />
+        <SignUp />
       </div>
     </>
   );
