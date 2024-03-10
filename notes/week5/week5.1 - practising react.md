@@ -1,0 +1,2 @@
+- need to move over this bump is react and understanding the great start. we incrementally build up and is a good starting point.
+- 
