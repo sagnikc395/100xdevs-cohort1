@@ -8,7 +8,7 @@ function SignUp() {
     <div>
       <center>
         <div style={{ marginTop: 150, marginBottom: 10 }}>
-          <Typography variant="h6" style={{ color: "#fafafa" }}>
+          <Typography variant="h6">
             Welcome to Coursera! Sign up below
           </Typography>
         </div>

@@ -1,15 +1,6 @@
 /* eslint-disable no-unused-vars */
+import AppBar from "./components/AppBar";
 import SignUp from "./components/SignUp";
-
-/* eslint-disable react/prop-types */
-function TodoApp(props) {
-  return (
-    <div>
-      Todo item
-      <h2>{props.text}</h2>
-    </div>
-  );
-}
 
 function App() {
   return (
@@ -18,8 +9,10 @@ function App() {
         width: "100vw",
         height: "100vh",
         backgroundColor: "#0a0a0a",
+        color: "#fafafa",
       }}
     >
+      <AppBar />
       <SignUp />
     </div>
   );
