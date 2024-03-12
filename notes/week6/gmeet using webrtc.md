@@ -68,4 +68,9 @@
 - in video it's fine if we skip some segment. So websockets dont work, rather we use WebRTC protocol.
 - webrtc designed in a peer-to-peer fashion. meaning , browsers talk to each other, and we do not necessarily need a server.
 ## How does webRTC work peer-to-peer?
-- 
+- simple p2p architecture 
+- we dont know what the other user's URL is 
+- the way to identify a server is via url and port 
+- how do i as a browser find the other side ?
+- the way to do that is using **[STUN](https://www.3cx.com/pbx/what-is-a-stun-server/)**
+	- from 1:11:39
