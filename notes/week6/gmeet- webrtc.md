@@ -1,11 +1,13 @@
 
+## About:
 - making a gmeet clone using webRTC and socket.io
 - NICHE CLASS 
+
+## Why go nicher?
 - webRTC -> niche tech ; huge growth in 2020
 - pure video streaming 
 - actual theoretically is very huge and theoretical.
 - know how to search niche technologies and how to target them.
-### Why go nicher?
 - Easier for people to know base technolgoies and not marketable.
 - Everyone mostly uses meta-frameworks like Nuxt and Next and at base uses React and Vue. not a better job, purely because it is harder to understand and oppurtunities are more.
 - there are good niches and bad niches (in terms of money):
@@ -49,8 +51,21 @@
 - Eg: chat is also a bidirectional use of websockets. can also poll or can can ask the server using websockets.
 - can run websockets without express as well, but socket.io uses express.
 ### Socket.io basics:
+- websocket library.
 - it is composed of 2 parts:
 	- a server that integrated with on the Node.js HTTP server socket.io
 	- a client library that loads on the browser side socket.io-client
 - socket.emit will send the event to the websocket the event to the server and the server's responsibility is to forward it to other clients.
+
+## How can to send video across tabs ?
+- for chat, there is a central server , taking input from a tab and sending back data to different tabs/ clients.
+- every 1s , 60 frames of phots need to be send.
+- 30 frames/second -> 30 images / second.
+- WebRTC needs to take video and need to send to the other browser. (30 images to be send in 1 sec.)
+- very hard to do via TCP protocol.
+- in video , even if a frame is missed, its fine. so we use UDP for that.
+- UDP -> Another protocol, not as reliable or retries as TCP. It just sends the data and not just care if sent or not.
+- in video it's fine if we skip some segment. So websockets dont work, rather we use WebRTC protocol.
+- webrtc designed in a peer-to-peer fashion. meaning , browsers talk to each other, and we do not necessarily need a server.
+## How does webRTC work peer-to-peer?
 - 
