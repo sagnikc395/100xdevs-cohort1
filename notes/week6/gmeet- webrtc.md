@@ -52,5 +52,5 @@
 - it is composed of 2 parts:
 	- a server that integrated with on the Node.js HTTP server socket.io
 	- a client library that loads on the browser side socket.io-client
-- socket.emit will send the websocket the event to the server and the server's responsibility is to send to other clients.
+- socket.emit will send the event to the websocket the event to the server and the server's responsibility is to forward it to other clients.
 - 
