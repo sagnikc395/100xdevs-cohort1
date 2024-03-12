@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "303c62fd64cd305e",
+        "id": "709504d82d478c58",
         "type": "tabs",
         "children": [
           {
-            "id": "8a12ef7609475b20",
+            "id": "02955b4527326708",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "week6/gmeet- webrtc.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "week6/gmeet- webrtc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "week6/gmeet- webrtc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week5/week5.1 - practising react.md"
+                "file": "week6/gmeet- webrtc.md"
               }
             }
           }
@@ -147,9 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a12ef7609475b20",
+  "active": "c8acbec674774c74",
   "lastOpenFiles": [
+    "week6/Screenshot 2024-03-12 at 7.49.51 PM.png",
     "week5/week5.1 - practising react.md",
+    "week6/gmeet- webrtc.md",
+    "week6",
     "week5",
     "week3/week3.4- Databases(MongoDB).md"
   ]
