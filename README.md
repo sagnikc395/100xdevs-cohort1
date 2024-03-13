@@ -27,17 +27,17 @@ Course Notes and Solutions for 100x devs Cohort1.
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
    - [x] Recapping few things 
-   2. Axios,object destructuring, grids and complete assignment 
-   3. Contenxt,Recoil and prop drilling 
+   - [x] Axios,object destructuring, grids and complete assignment 
+   - [x] Contenxt,Recoil and prop drilling 
 
 6. Project 2: Building a GMeet Clone 
    1. Part 1
    2. Part 2
    
 7. State Management React 
-   1. Recoil and State Management 
-   2. Intro to TS.
-   3. Assignment on TS 
+   - [x] Recoil and State Management 
+   - [x] Intro to TS.
+   - [x] Assignment on TS 
 
 8. Hooks and React 
    1. Custom hooks, generics and zod 
