@@ -103,3 +103,8 @@ npm install -g tsc
 - lets us define various versions of things.
 - Under the hood, Enums by default get a value associated with them starting with 0 and set them. In JS code, we also get an object with keys as the values and the value as the index.
 - we cant return interfaces, but we can return the value of an enum value.
+
+## Generics:
+- language independent concept.
+- to know the types during runtime and support operations during runtime.
+- generics enable us to create functions that work with any data type while still providing compile-time type safety.
