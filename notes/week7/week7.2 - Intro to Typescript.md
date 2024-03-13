@@ -108,3 +108,6 @@ npm install -g tsc
 - language independent concept.
 - to know the types during runtime and support operations during runtime.
 - generics enable us to create functions that work with any data type while still providing compile-time type safety.
+## Exporting and Importing Modules:
+- Typescript follows the ES6 module system, using import and export statements to share code between different files.
+- 
