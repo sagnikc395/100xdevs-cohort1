@@ -10,12 +10,13 @@ function AppBar() {
         padding: "2em",
       }}
     >
-      <Typography variant="h4">Coursera</Typography>
+      <Typography variant="h3">coursera</Typography>
       <div style={{ display: "flex" }}>
         <div style={{ marginRight: 10 }}>
           <Button
             variant="contained"
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
               window.location = "/signup";
             }}
           >
@@ -25,8 +26,9 @@ function AppBar() {
         <div>
           <Button
             variant="contained"
-            onClick={() => {
-              window.localtion = "/signin";
+            onClick={(e) => {
+              e.preventDefault();
+              window.location = "/signin";
             }}
           >
             Sign In
