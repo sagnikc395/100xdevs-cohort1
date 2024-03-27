@@ -9,13 +9,18 @@ const signupInput = z.object({
   password: z.string().min(8).max(50),
 });
 
+const loginInput = z.object({
+  username: z.string().min(2).max(50),
+  password: z.string().min(2).max(50),
+});
+
 const router = express.Router();
 
 router.post("/signup", async (req, res) => {
-  let parsedInput = signupInput.safeParse(req.body);
+  const parsedInput = signupInput.safeParse(req.body);
   if (!parsedInput.success) {
     return res.status(403).json({
-      msg: "error",
+      error: parsedInput.error,
     });
   }
   const username = parsedInput.data.username;
@@ -33,7 +38,15 @@ router.post("/signup", async (req, res) => {
 });
 
 router.post("/login", async (req, res) => {
-  const { username, password } = req.body;
+  const parsedInput = loginInput.safeParse(req.body);
+  if (!parsedInput.success) {
+    return res.status(403).json({
+      error: parsedInput.error,
+    });
+  }
+  const username = parsedInput.data.username;
+  const password = parsedInput.data.password;
+
   const user = await User.findOne({ username, password });
   if (user) {
     const token = jwt.sign({ id: user._id }, SECRET, { expiresIn: "1h" });

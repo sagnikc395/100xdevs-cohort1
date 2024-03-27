@@ -1,31 +1,42 @@
-import express from 'express';
+import express from "express";
 import { authenticateJwt, SECRET } from "../middleware/index";
 import { Todo } from "../db";
+import { z } from "zod";
 const router = express.Router();
 
-interface CreateTodoInput {
-  title: string;
-  description: string;
-}
+const todoInput = z.object({
+  title: z.string().min(2).max(100),
+  description: z.string().min(2).max(100),
+});
 
-router.post('/todos', authenticateJwt, (req, res) => {
-  const { title, description } = req.body;
+router.post("/todos", authenticateJwt, (req, res) => {
+  const parsedInput = todoInput.safeParse(req.body);
+  if (!parsedInput.success) {
+    res.status(403).json({
+      error: parsedInput.error,
+    });
+    return;
+  }
+
+  const title = parsedInput.data.title;
+  const description = parsedInput.data.description;
+
   const done = false;
   const userId = req.headers["userId"];
 
   const newTodo = new Todo({ title, description, done, userId });
 
-  newTodo.save()
+  newTodo
+    .save()
     .then((savedTodo) => {
       res.status(201).json(savedTodo);
     })
     .catch((err) => {
-      res.status(500).json({ error: 'Failed to create a new todo' });
+      res.status(500).json({ error: "Failed to create a new todo" });
     });
 });
 
-
-router.get('/todos', authenticateJwt, (req, res) => {
+router.get("/todos", authenticateJwt, (req, res) => {
   const userId = req.headers["userId"];
 
   Todo.find({ userId })
@@ -33,23 +44,23 @@ router.get('/todos', authenticateJwt, (req, res) => {
       res.json(todos);
     })
     .catch((err) => {
-      res.status(500).json({ error: 'Failed to retrieve todos' });
+      res.status(500).json({ error: "Failed to retrieve todos" });
     });
 });
 
-router.patch('/todos/:todoId/done', authenticateJwt, (req, res) => {
+router.patch("/todos/:todoId/done", authenticateJwt, (req, res) => {
   const { todoId } = req.params;
   const userId = req.headers["userId"];
 
   Todo.findOneAndUpdate({ _id: todoId, userId }, { done: true }, { new: true })
     .then((updatedTodo) => {
       if (!updatedTodo) {
-        return res.status(404).json({ error: 'Todo not found' });
+        return res.status(404).json({ error: "Todo not found" });
       }
       res.json(updatedTodo);
     })
     .catch((err) => {
-      res.status(500).json({ error: 'Failed to update todo' });
+      res.status(500).json({ error: "Failed to update todo" });
     });
 });
 

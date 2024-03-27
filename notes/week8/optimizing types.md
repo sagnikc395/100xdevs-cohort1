@@ -22,4 +22,5 @@
 	- and we describe the object , what constraints that we have and what final form it should be.
 	- in the object that we create, we pass the input in the safeParse method for it and checking its validity and gives a value and a error.
 	- zod is a runtime checker, the final js also has this checks, unlike the compile time checks present in ts in the form of interfaces and types.
-	- 
+### custom fetch hooks:
+- 
