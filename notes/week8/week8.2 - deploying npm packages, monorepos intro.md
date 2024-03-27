@@ -67,4 +67,8 @@
 - lerna 
 - turborepo
 
-- 
+- rather than using npm, use npm workspaces and with turborepo(mono repo handling repos). without installing anything and can be used.
+- ### Turborepo:
+	- one of many monorepo frameworks(actually a build system for js and ts)
+	- can also help us created new monorepo.
+	- 
