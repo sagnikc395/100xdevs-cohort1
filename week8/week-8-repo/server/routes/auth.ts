@@ -2,14 +2,7 @@ import jwt from "jsonwebtoken";
 import express from "express";
 import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
-import { z } from "zod";
 
-
-
-const loginInput = z.object({
-  username: z.string().min(2).max(50),
-  password: z.string().min(2).max(50),
-});
 
 const router = express.Router();
 

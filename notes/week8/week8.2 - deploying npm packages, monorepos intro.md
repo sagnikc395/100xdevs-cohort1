@@ -35,3 +35,10 @@
 - here will write our zod types here 
 - create a src/ in common and keep the code here ,so as to differentiate from top level dist/ folder.
 - in here src/index.ts has all the types for our app in zod.
+
+
+
+
+
+- pre mono-repo , we publish our package to npm and other people would pull from it.
+- 
