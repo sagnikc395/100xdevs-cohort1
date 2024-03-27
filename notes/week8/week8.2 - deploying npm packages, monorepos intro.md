@@ -35,11 +35,6 @@
 - here will write our zod types here 
 - create a src/ in common and keep the code here ,so as to differentiate from top level dist/ folder.
 - in here src/index.ts has all the types for our app in zod.
-
-
-
-
-
 - pre mono-repo , we publish our package to npm and other people would pull from it.
 
 ## npm.js ->
@@ -57,3 +52,13 @@
 - .npmignore (root folder) ->
 	- add files and folders that we dont want to publish to the registry.
 - also again when we publish , need to change the version again , and cannot use the previous verison.
+
+- when we install in client and server , it will give a declaration file does not exist.
+- i.e the types for the files are not as it has only .js files.
+- we have not published the files for it and we need to create declaration files for it.
+## .d.ts ->
+- very useful in declaration files.
+- just gives the types for the code.
+- this contains just the interfaces and the types and not the runtime javascript code.
+- enable declarations : true in tsconfig; helpful for others to get our modules as dependency.
+- 
