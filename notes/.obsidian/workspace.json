@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "tailwind/notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "tailwind/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week5/week5.1 - practising react.md",
+                "file": "tailwind/notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week5/week5.1 - practising react.md"
+                "file": "tailwind/notes.md"
               }
             }
           }
@@ -149,10 +149,13 @@
   },
   "active": "38dced07a3e0a150",
   "lastOpenFiles": [
+    "week7/week7.1 - recoil and typescript.md",
+    "tailwind/notes.md",
+    "tailwind",
+    "week5/week5.1 - practising react.md",
     "week7/week7.2 - Intro to Typescript.md",
     "week6/gmeet using webrtc.md",
     "week6/Screenshot 2024-03-12 at 7.49.51 PM.png",
-    "week5/week5.1 - practising react.md",
     "week6",
     "week5",
     "week3/week3.4- Databases(MongoDB).md"
