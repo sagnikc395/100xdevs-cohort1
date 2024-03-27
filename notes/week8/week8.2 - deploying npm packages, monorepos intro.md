@@ -41,4 +41,19 @@
 
 
 - pre mono-repo , we publish our package to npm and other people would pull from it.
-- 
+
+## npm.js ->
+- registry to put all code that can be used by others.
+- we can create and publish our code here.
+- common repo locally and things will just work. 
+- npm login to authenticate npm.org to login.
+- generally prefix name with own account name/repo name
+- eg: @sagnikc395/common 
+- main should repr where the main index.js file is there and configure and also add a outdir as dist.
+- main js file would be pushed.
+- not recommended to publishing the ts files, rather push js files. bur created conflcits as types are not given.
+- publish using npm publish --access=public .
+- npm pack will show us what packages and folders have we actually published.
+- .npmignore (root folder) ->
+	- add files and folders that we dont want to publish to the registry.
+- also again when we publish , need to change the version again , and cannot use the previous verison.
