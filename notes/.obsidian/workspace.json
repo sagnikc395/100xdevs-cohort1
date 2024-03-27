@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9c693ba8aae464ff",
+        "id": "36c0bd7ffdb7a942",
         "type": "tabs",
         "children": [
           {
-            "id": "3d29121ac0ef9d18",
+            "id": "25b9d4370468dd25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week8/optimizing types.md",
+                "file": "week8/week8.2 - deploying npm packages, monorepos intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week8/optimizing types.md",
+                "file": "week8/week8.2 - deploying npm packages, monorepos intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week8/optimizing types.md",
+                "file": "week8/week8.2 - deploying npm packages, monorepos intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week8/optimizing types.md"
+                "file": "week8/week8.2 - deploying npm packages, monorepos intro.md"
               }
             }
           }
@@ -147,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d29121ac0ef9d18",
+  "active": "25b9d4370468dd25",
   "lastOpenFiles": [
-    "week8/optimizing types.md",
+    "week8/week8.2 - deploying npm packages, monorepos intro.md",
+    "week8/week8.1 - optimizing types, custom hooks.md",
     "week8",
     "tailwind/notes.md",
     "week7/week7.1 - recoil and typescript.md",

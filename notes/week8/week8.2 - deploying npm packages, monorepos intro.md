@@ -1,0 +1,25 @@
+
+- how big projects are structured and how to re-use packages
+	- multiple parts
+	- backend,
+	- types and common utilities.
+	- multiple frontends
+	- generally a single Github repo, contain in the same repo.
+	- have multiple modules in our repos.
+- before monorepos:
+	- why packages / modules ?
+		- reusable code
+		- people use to shove their repos together in different folders.
+		- or different repos for client and server code.
+		- npm workspaces made it easier to have client and server code and import code between each other.
+	- multiple modules in our repo.
+- cal.com:
+	- has a bunch of folders 
+	- most important things happen in packages and apps folder.
+	- apps:
+		- has modules 
+		- directories.
+		- modules are reusable code and seperation of concerns -> each module does what it is supposed to do.
+		- emails, onboards etc. -> teams can work independently on modules.
+	- breaking big app into small modules.
+- zod inference.
