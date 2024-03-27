@@ -64,3 +64,23 @@ let swap2 = swap<boolean,boolean>(false,true);
 console.log(swap1,swap2);
 swap1 = swapMulti<number,boolean>(123,false);
 console.log(swap1);
+
+
+//using partials 
+//
+interface Todo {
+  title: string;
+  description: string;
+  id: number;
+  done: boolean;
+}
+
+type UpdateTodoInput = Partial<Todo>;
+
+function updateTodo(id: number, newProp: UpdateTodoInput){
+  //
+}
+
+updateTodo(1,{
+  description: "some description"
+});
