@@ -23,4 +23,10 @@
 	- in the object that we create, we pass the input in the safeParse method for it and checking its validity and gives a value and a error.
 	- zod is a runtime checker, the final js also has this checks, unlike the compile time checks present in ts in the form of interfaces and types.
 ### custom fetch hooks:
-- 
+- needs to start with use and is simply a function 
+- need to return two keys : loading and todos
+- useTodos ->
+	- sends a backend request and set the value in the todos and is populated eventually from the db.
+	- helpful for making it resuable across many things 
+	- can use swr and useSWR to cache the thing.
+- good refactor and can be use in many parts.
