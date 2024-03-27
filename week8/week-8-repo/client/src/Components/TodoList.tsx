@@ -90,7 +90,7 @@ const TodoList = () => {
       </div>
       <h2>Todo List</h2>
       <input
-        type="text"
+        type="text" 
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"

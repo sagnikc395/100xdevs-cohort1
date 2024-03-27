@@ -22,4 +22,10 @@
 		- modules are reusable code and seperation of concerns -> each module does what it is supposed to do.
 		- emails, onboards etc. -> teams can work independently on modules.
 	- breaking big app into small modules.
-- zod inference.
+- zod inference:
+	- can make backend code safer by doing input validation and protect from attacks.
+	- if the schema changes in the input, then we would have to change the schema in 2 places.
+	- given the zod object , can you change the zod inference to typescript without writing additional code.
+			- yes ! ; call using types z.infer.
+	- trying to write reusable code that can be written in both frontend and backend.
+	- 
