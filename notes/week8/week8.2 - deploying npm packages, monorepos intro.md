@@ -66,9 +66,14 @@
 - npm workspaces
 - lerna 
 - turborepo
-
 - rather than using npm, use npm workspaces and with turborepo(mono repo handling repos). without installing anything and can be used.
-- ### Turborepo:
-	- one of many monorepo frameworks(actually a build system for js and ts)
-	- can also help us created new monorepo.
-	- 
+
+
+## Turborepo:
+- one of many monorepo frameworks(actually a build system for js and ts)
+- can also help us created new monorepo.
+- kitchen sink has frontend and backend code also
+- can also integrate react-native with it.
+- the whole point is to allow one module to import from other module.
+- general practice to package these things in signup ui and other.
+-  
