@@ -4,22 +4,12 @@ import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
 import { z } from "zod";
 
-//zod object
-const signupInput = z.object({
-  username: z.string().min(2).max(50),
-  password: z.string().min(8).max(50),
-});
+
 
 const loginInput = z.object({
   username: z.string().min(2).max(50),
   password: z.string().min(2).max(50),
 });
-
-//zod object type, that we can use in the frontend
-// can import using monorepos.
-//dont want the backend logic in the backend and just want a type 
-// to import them.
-type SignUpParams = z.infer<typeof signupInput>;
 
 const router = express.Router();
 

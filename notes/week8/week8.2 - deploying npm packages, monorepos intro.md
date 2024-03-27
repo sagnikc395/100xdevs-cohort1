@@ -28,4 +28,10 @@
 	- given the zod object , can you change the zod inference to typescript without writing additional code.
 			- yes ! ; call using types z.infer.
 	- trying to write reusable code that can be written in both frontend and backend.
-	- 
+### common:
+- common folder that can be shared across.
+- common/core -> very small modules that are used by both client and server.
+- eg: present even in backpack repo in packages/
+- here will write our zod types here 
+- create a src/ in common and keep the code here ,so as to differentiate from top level dist/ folder.
+- in here src/index.ts has all the types for our app in zod.
