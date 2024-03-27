@@ -43,3 +43,24 @@ const arr3 = firstElement3<number>([100,200,300]);
 const arr4 = firstElement3<string>(["lambda","beta","gamma"]);
 
 console.log(arr3,arr4);
+
+
+// ASSIGNMENT 2: Create a swap function that can takes 2 arguments of the same type , args can be eithter  2 strings, numbers, or booleans, (Same type) 
+// the function should swap them and return an array with the first element as the second one and vice versa
+
+
+function swap<T>(item1: T, item2: T): ([T,T]){
+  return [item2,item1];
+}
+
+function swapMulti<T,K>(item1:T | K, item2:T | K): ([K|T,T|K]){
+  return [item2,item1];
+}
+
+
+let swap1= swap<number,number>(123,456);
+let swap2 = swap<boolean,boolean>(false,true);
+
+console.log(swap1,swap2);
+swap1 = swapMulti<number,boolean>(123,false);
+console.log(swap1);
