@@ -1,0 +1,6 @@
+- more typescript
+- zod for backend validation and why we need it.
+- custom fetch hooks -> write our own custom hooks
+- useSWR
+- why used all thoughout all open source projects.
+- 
