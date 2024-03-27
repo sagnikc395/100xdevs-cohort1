@@ -61,4 +61,10 @@
 - just gives the types for the code.
 - this contains just the interfaces and the types and not the runtime javascript code.
 - enable declarations : true in tsconfig; helpful for others to get our modules as dependency.
+
+## Mono Repos:
+- npm workspaces
+- lerna 
+- turborepo
+
 - 
