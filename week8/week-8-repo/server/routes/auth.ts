@@ -4,7 +4,7 @@ import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
 import { z } from "zod";
 
-let signupInput = z.object({
+const signupInput = z.object({
   username: z.string().min(2).max(50),
   password: z.string().min(8).max(50),
 });
