@@ -73,4 +73,49 @@
 	```bash
 psql --set=sslmode=require -h ep-noisy-mountain-a51vsivi.us-east-2.aws.neon.tech -p 5432 -U postgres-1_owner -d postgres-1 
 		```
-	- 
+
+- src/utils.ts has the boilerplate to connect to a postgres client and takes the connection string as input.
+- src/create-table.ts ->
+	- query to create a table in our database.
+
+
+### Inserts:
+```sql
+INSERT INTO todos (title,description,user_id,done)
+values("buy groceries","milk,bread and eggs",1,FALSE);
+```
+- why seperate values into $1,$2 etc?
+	- to prevent SQL injection directly from the user in the frontend.
+	- very common vuln, as we are letting users to inject queries directly.
+	- instead use variable templates to add the data dynamically.
+
+- check src/insert-data.ts
+
+### Gets:
+```sql
+SELECT * FROM todos where user_id = desired_user_id;
+```
+- we inserted data, but we also need to fetch data eventually.
+- select the rows you want from the table you want with optionally the condition given.
+- src/get-data.ts
+
+### Updates:
+- user needs to set that the todo has been done and to update the specific todo.
+- and toggle the previous done flag from false to true.
+- src/update-data.ts
+- these queries can get larger and larger over time.
+
+### Delete:
+```sql
+delete from todos where id = specific_todo_id;
+```
+
+```ts
+async function deleteTodo(todoId: number) {
+	const client = await getClient();
+	const deleteTodoText = 'DELETE FROM todos where id = $1';
+	await client.query(deleteTodoText,[todoId]);
+	console.log(`Todo with ID ${todoId} deleted!`);
+}
+```
+- 
