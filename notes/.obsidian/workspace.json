@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0f04fbd9e38acc85",
+        "id": "14055418873de07d",
         "type": "tabs",
         "children": [
           {
-            "id": "9e577bdaa96779f8",
+            "id": "f70d6b0186613169",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week13/week13.1/SQL.md",
+                "file": "week13/week13.2/Prisma ORM.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week13/week13.1/SQL.md",
+                "file": "week13/week13.2/Prisma ORM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week13/week13.1/SQL.md",
+                "file": "week13/week13.2/Prisma ORM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week13/week13.1/SQL.md"
+                "file": "week13/week13.2/Prisma ORM.md"
               }
             }
           }
@@ -147,11 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e577bdaa96779f8",
+  "active": "f70d6b0186613169",
   "lastOpenFiles": [
+    "week13/week13.2/Prisma ORM.md",
+    "week13/week13.2",
+    "week13/week13.1/SQL.md",
     "week13/week13.1/Screenshot 2024-04-01 at 6.02.28 AM.png",
     "week13/week13.1/Screenshot 2024-04-01 at 5.55.48 AM.png",
-    "week13/week13.1/SQL.md",
     "week13/week13.1",
     "week13",
     "week8/week8.2 - deploying npm packages, monorepos intro.md",
