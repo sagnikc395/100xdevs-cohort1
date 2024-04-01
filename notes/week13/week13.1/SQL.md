@@ -67,13 +67,11 @@
 	- done will default to false, unless we pass todo.
 	- references -> relationships, need to be able to tell what one todo is doing with another todo, need to be able to relate these todos.
 	- harden this of maintaining the relationship is using FOREGIN KEYS which in postgres is REFERENCES.
-
 - cli that is used to connect to a postgres instances with the given host and username and password.
 	- connecting to postgres using psql(libpg) and then connecting as:
-	```bash
-psql --set=sslmode=require -h ep-noisy-mountain-a51vsivi.us-east-2.aws.neon.tech -p 5432 -U postgres-1_owner -d postgres-1 
+		```bash
+				psql --set=sslmode=require -h ep-noisy-mountain-a51vsivi.us-east-2.aws.neon.tech -p 5432 -U postgres-1_owner -d postgres-1 
 		```
-
 - src/utils.ts has the boilerplate to connect to a postgres client and takes the connection string as input.
 - src/create-table.ts ->
 	- query to create a table in our database.
@@ -118,4 +116,49 @@ async function deleteTodo(todoId: number) {
 	console.log(`Todo with ID ${todoId} deleted!`);
 }
 ```
+- in prod, you generally just mark a flag as delete and dont actually delete data.
+- to have an audit log for them to exist.
+### DROP:
+- completely drops the schema and drop and have to design the database again from scratch.
+ ```sql
+ DROP TABLE if exists <table_name>;
+```
+
+
+
+
+## Advanced SQL:
+### Foreign Keys 
+### Joins 
+
+### Indexes
+
+- how to keep unrelated data together without creating direct relationships ?
+- Foreign keys :
+	- delete via cascade 
+	- relationships integrity present in database level
+	- can also do that at application level.
+	- these checks will be at the db level.
+
+- join data across tables.
+	- q: Get me the email of the user and all their todos ?
+	- better way to do queries and make queries faster and decrease the number of db queries to be done.
+	- check src/joins/advance-1.ts, join on users.id = todos.user_id condition.
+	- so if 2 tables , with first have 3 todos , 2nd having 2 todos
+	- using join it will have 5 rows -> email,password,description,done 
+	- for a given id, do a join of these tables , on the given constraint and construct the reponse for the given query.
+
+- LEFT JOIN:
+	- for every user, if the second table has no entry entry , their entry will never come in the table unless we do a left join on them.
+	- on a high level, we need to join tables, and even if no entry is in some table, we still need to return tables.
+	- the high level:
+		- give me the metadata of the users and their raw data and do a join ; if there are no rows present, do a left join for them.
+
+- Types of Joins:
+	- FULL JOIN -> Should be present in either tables.
+	- INNER JOIN -> Should be present in both tables.
+	- LEFT JOIN -> Should have all entries from the left table.
+	- RIGHT JOIN -> Opposite of left join.
+
+
 - 
