@@ -161,4 +161,24 @@ async function deleteTodo(todoId: number) {
 	- RIGHT JOIN -> Opposite of left join.
 
 
-- 
+- Indexes:
+	- Make queries on a certain column faster
+	- In our case, we can add an index like given.
+	- since we are using postgres, it doesnt matter since the foreign key relation creates an index by default.
+	```ts 
+			async function addIndex() {
+				const client = await getClient();
+			const createIndexQuery = `CREATE INDEX idx_todos_user_id on todos(user_id)`;
+			await client.query(createIndexQuery);
+			console.log(`Index added successfully on user_id column of todos table!`);
+			
+			}
+			await addIndex();
+	```
+
+### Problems with these approaches:
+- have to write raw sql queries by hand -> not great
+	- plenty of security and maintainence risk.
+- migrations are hard 
+- dont have the best types 
+- Solution: ORMs
