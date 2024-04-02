@@ -85,3 +85,6 @@ they will all go thorugh src/todos and convert all files having Controller in th
 
 server.ts -> can act as server with express and tsoa routes; updates and build/routes for us.
 
+can provide a UI to our swagger docs using swagger UI.
+-swagger-ui-express:
+- given a openapi file, lets us build the file.
