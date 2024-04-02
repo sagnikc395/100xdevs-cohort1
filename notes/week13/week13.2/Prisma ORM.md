@@ -31,3 +31,6 @@
 - setup ts config with tsc --init 
 - init prisma in our project:
 	- npx prisma init --datasource=provider postgresql
+	- creates a file in prisma/schema.prisma
+- dont commit secret to Github, add .env file to gitignore
+- 
