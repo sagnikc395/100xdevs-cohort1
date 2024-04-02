@@ -76,3 +76,12 @@ model Post {
 - whenever prisma creates migrations , needs access to hidden table to run these migrations.
 - This will create a new folder under migrations folder called migrations which will have the generated sql files.
 - \_prisma_migrations is the database is what Prisma looks for and has a track of what all migrations are present here and what all migrations need to be run.
+
+
+### adding data:
+- create a create-data.ts in src directory , and import the prismaClient dynamically generated for our codebase.
+- add the query to insert into the database entries
+- run the build and then run node dist/crete-data.js to make the changes and see 
+### to visualize:
+- use npx prisma studio to view the tables and the entries.
+- 
