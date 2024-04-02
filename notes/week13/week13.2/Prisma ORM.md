@@ -103,3 +103,16 @@ model Post {
 
 
 ### delete data:
+- same as update data.
+
+
+
+### delete on cascade:
+- delete all the post for a user.
+- ![[Screenshot 2024-04-02 at 8.09.24 AM.png]]
+- can go more and more deeper and nest it to delete it.
+- can also add another update and do deleteMany to delete another query.
+
+### filtering and sorting:
+- ![[Screenshot 2024-04-02 at 8.12.44 AM.png]]
+- findMany and then add other conditions as required.
