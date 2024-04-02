@@ -67,21 +67,21 @@ Course Notes and Solutions for 100x devs Cohort1.
     - []  Adavanced SQL 
 
 16.  Docker 
-    1.  Docker 2 
+17.  Docker 2 
 
-17.  GraphQL 
+18.  GraphQL 
     1.  graphql and setting up locally 
 
-18.  Freelancing masterclass 1 
-    1.  Freelancing masterclass 2
+19.  Freelancing masterclass 1 
+20.  Freelancing masterclass 2
 
-19.  Open Source setup 1
-    1.  Open source contribution 2 
+21.  Open Source setup 1
+22.  Open source contribution 2 
 
-20.  Real time communication, Distributed Computing 
+23.  Real time communication, Distributed Computing 
     1.  Redis + Distributed Computing 
     2.  Scalable chat systems
     
-21.  Autoscaling Backends
+24.  Autoscaling Backends
     1.  Serverless and EB.
     2.  Ad-hoc open source contribution.
