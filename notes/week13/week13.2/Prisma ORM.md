@@ -96,4 +96,10 @@ model Post {
 - ![[Screenshot 2024-04-02 at 7.46.46 AM.png]]'
 - find specific thing using findMany , using a where clause.
 - to find a unique thing, use findUnique.
-- 
+
+### update data:
+- update using await prisma.users.update and pass the row id with the field that we want to update.
+- ![[Screenshot 2024-04-02 at 8.05.57 AM.png]]
+
+
+### delete data:
