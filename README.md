@@ -13,75 +13,90 @@ Course Notes and Solutions for 100x devs Cohort1.
 2. Week2 : Express and Making Backend using Nodejs
    - [x] Week 2.1 Express ,Node.js and Intro to Backend Systems 
    - [x] Week 2.2 Middleware , Requests and Responses 
+   - [ ] Week 2.3 Assignment
    
 3. Week3 : Backend and Frontend Integration 
-   - [x]  Finishing backend , starting frontend 
-   - [x]  Foundation of frontend and reconcilation 
-   - [x] (Extra) System Design of a Video Transcoder 
-   - [x] Authentication and Assignment 
-   - [x] MongoDB and Intro to DBs
+   - [x] Week 3.1 Finishing backend , starting frontend 
+   - [x] Week 3.2 Foundation of frontend and reconcilation 
+   - [x] Week 3.3 (Extra) System Design of a Video Transcoder 
+   - [x] Week 3.4 Authentication and Assignment 
+   - [x] Week 3.5 MongoDB and Intro to DBs
 
 4. Week4: React 
-   - [x] More reconcilers, Intro to React using Vite 
-   - [x] React, effects and custom hooks 
+   - [x] Week 4.1 More reconcilers, Intro to React using Vite 
+   - [x] Week 4.2 React, effects and custom hooks 
+   - [x] Week 4.3 Assignment 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
-   - [x] Recapping few things 
-   - [x] Axios,object destructuring, grids and complete assignment 
-   - [x] Context, Recoil and prop drilling 
+   - [x] Week 5.1 Recapping few things 
+   - [x] Week 5.2 Axios,object destructuring, grids and complete assignment 
+   - [x]  Week 5.2 Axios,object destructuring, grids and complete assignment - 2
+   - [ ]  Week 5.4 Context , Recoil and Prop Drilling 
+   - [ ]  Week 5.5 Assignment 
 
 6. Project 2: Building a GMeet Clone 
-   1. Part 1
-   2. Part 2
+   - [ ] Part 1
+   - [ ] Part 2
    
 7. State Management React 
-   - [x] Recoil and State Management 
-   - [x] Intro to TS.
-   - [x] Assignment on TS 
+   - [x] Week 7.1 Recoil and State Management 
+   - [x] Week 7.2 Intro to TS.
+   - [x] Week 7.3 Assignment on TS 
 
 8. Hooks and React 
-   1. Custom hooks, generics and zod 
-   2. deploying npm packages and intro to mono repos 
+   - [x] Week 8.1 Custom hooks, generics and zod 
+   - [x] Week 8.2 deploying npm packages and intro to mono repos 
 
 9. Github CI/CD 
 
 10. Frontend Deployments, certificate management 
-    1. Next.js
-    2. Assignemnt 
+    - [x] Week 10.1 Frontend Deployments, certificate Management
+    - [ ] Week 10.2 Next.js
+    - [ ] Week 10.3 Assignemnt 
 
-11. Mono Repos 
-    1. Building an End to End MonoRepo.
-    2. Auth using next-auth 
-    3. Monorepo Deployment
+11. Mono Repos: 
+    - [ ] Week 11.1 Building an End to End MonoRepo.
+    - [ ] Week 11.2 Auth using next-auth 
 
-12. - [x] OpenAPI Spec 
-13. Tailwind,flex,grids and react recap 
-    
-14.  SQL 
-    - [x] Prisma ORM 
-    -  Assignment 
+12. BE for Prod
+    - [x] Week 11.3 OpenAPI Spec
+    - [ ] Week 11.4  Tailwind , Flex , grids and react recap 
+    - [ ] Week 11.5 Monorepo Deployment 
 
-15.  tRPC
-    - []  tRPC Part 1 
-    - []  tRPC Part 2 
-    - []  Adavanced SQL 
+13. DB and ORM
+    - [x] Week 13.1 SQL
+    - [x] Week 13.2 Prisma ORM
+    - [ ] Week 13.3 Assignment 
 
-16.  Docker 
-17.  Docker 2 
+14. Advanced Backend: tRPC and Advanced SQL
+    - [ ]  tRPC Part 1 
+    - [ ]  tRPC Part 2 
+    - [ ]  Advanced SQL 
 
-18.  GraphQL 
-    1.  graphql and setting up locally 
+15. Docker
+    - [x] Docker 1 
+    - [x] Docker 2    
 
-19.  Freelancing masterclass 1 
-20.  Freelancing masterclass 2
+16. GraphQL and alternative backend tech 
+    - [ ]  GraphQL
+    - [ ]  Graphql and setting up project locally 
 
-21.  Open Source setup 1
-22.  Open source contribution 2 
+17. Freelancing Masterclass 
+    - [ ] Freelancing Masterclass 1 
+    - [ ] Freelancing Masterclass 2
+    - [ ] Assignment 
 
-23.  Real time communication, Distributed Computing 
-    1.  Redis + Distributed Computing 
-    2.  Scalable chat systems
-    
-24.  Autoscaling Backends
-    1.  Serverless and EB.
-    2.  Ad-hoc open source contribution.
+18. Open Source Contribution
+    - [ ] Open Source - 1 
+    - [ ] Open Source - 2
+
+19. Distributed Systems + RTC 
+    - [ ] Real time communication, Distributed computing 
+    - [ ] Redis + Distributed Computing 
+    - [ ] Scalable Chat Systems 
+  
+20. Extra:
+    - [ ] Autoscaling Backends 1 
+    - [ ] Serverless and Elastic Balancer
+    - [ ] Ad hoc OS Contributions 
+    - [ ] System Design 
