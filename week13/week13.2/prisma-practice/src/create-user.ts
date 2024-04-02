@@ -8,12 +8,21 @@ const prisma = new PrismaClient();
 
 async function main() {
   // client queries here
+
+  //adding data
+  await prisma.user.create({
+    data: {
+      email: "sagnik321@gmail.com",
+      name: "sagnik",
+    },
+  });
 }
 
 //standard promise to start and end connection and log errors
 
 main()
   .then(async () => {
+    console.log(`Done with the query!`);
     await prisma.$disconnect();
   })
   .catch(async (e) => {
