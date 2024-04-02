@@ -75,4 +75,4 @@ model Post {
 - npx prisma migrate dev --name init
 - whenever prisma creates migrations , needs access to hidden table to run these migrations.
 - This will create a new folder under migrations folder called migrations which will have the generated sql files.
-- 
+- \_prisma_migrations is the database is what Prisma looks for and has a track of what all migrations are present here and what all migrations need to be run.
