@@ -82,3 +82,6 @@ need to clearly define input and the outputs as openapi file needs the clear ins
 all the controllers and go thorugh the folders and convert them into express routes.
 
 they will all go thorugh src/todos and convert all files having Controller in their names as express routes.
+
+server.ts -> can act as server with express and tsoa routes; updates and build/routes for us.
+
