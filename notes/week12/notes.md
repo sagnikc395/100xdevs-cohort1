@@ -65,3 +65,4 @@
   - under the hood , decorators are pure functions, but if we use them in a class as @\<decorator-name> , wherever the code it is being called, it will understand whatever it has to do and then finally output that to the screen.
   - 
 
+- Start from https://harkirat.classx.co.in/video/173?courseId=2&ytFlag=0&isFolderCourse=1, 57:36
