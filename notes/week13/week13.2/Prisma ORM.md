@@ -116,3 +116,13 @@ model Post {
 ### filtering and sorting:
 - ![[Screenshot 2024-04-02 at 8.12.44 AM.png]]
 - findMany and then add other conditions as required.
+
+### pagination and offset:
+- min query return using limit and to limit the number of response.
+- offset: need users after this number of offset.
+```sql
+select * from question offset 0 limit 1;
+```
+- take and skip properties in Prisma.
+- ![[Screenshot 2024-04-02 at 8.22.18 AM.png]]
+
