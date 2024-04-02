@@ -63,6 +63,14 @@
   - collection of some helpful decorators in TS , that can be used multiple places:
     - https://github.com/NetanelBasal/helpful-decorators
   - under the hood , decorators are pure functions, but if we use them in a class as @\<decorator-name> , wherever the code it is being called, it will understand whatever it has to do and then finally output that to the screen.
-  - 
 
-- Start from https://harkirat.classx.co.in/video/173?courseId=2&ytFlag=0&isFolderCourse=1, 57:36
+
+### mvc structure:
+
+model -> the shape of our data ; storing in db 
+view -> ui 
+controller -> the thing that joins both of them.
+
+service -> similar to our route handlers, just a bunch of functions that are abstraction to a database calls, abstract over the database. put all of the logic to connect to the database.
+
+controller -> create a controller where most of the middleware work happens.
