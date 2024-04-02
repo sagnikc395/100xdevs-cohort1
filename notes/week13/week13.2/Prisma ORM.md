@@ -26,4 +26,8 @@
 - Prisma used a lot in the industry and used by cal.com and dub.sh.
 - Running migrations and creating tables , Prisma needs access to a database and also needs to create temporary database on it to manage the migrations.
 
-- 
+### setup prisma (refer the official docs):
+- create typescript project and install prisma, typescript, @types/node as dev dependencies.
+- setup ts config with tsc --init 
+- init prisma in our project:
+	- npx prisma init --datasource=provider postgresql
