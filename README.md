@@ -28,7 +28,7 @@ Course Notes and Solutions for 100x devs Cohort1.
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
    - [x] Recapping few things 
    - [x] Axios,object destructuring, grids and complete assignment 
-   - [x] Contenxt,Recoil and prop drilling 
+   - [x] Context, Recoil and prop drilling 
 
 6. Project 2: Building a GMeet Clone 
    1. Part 1
@@ -50,37 +50,38 @@ Course Notes and Solutions for 100x devs Cohort1.
     2. Assignemnt 
 
 11. Mono Repos 
-    1.  Building an End to End MonoRepo.
+    1. Building an End to End MonoRepo.
     2. Auth using next-auth 
+    3. Monorepo Deployment
 
 12. OpenAPI Spec 
-    1.  Tailwind,flex,,grids and react recap 
-    2.  Monorepo deployment 
+13. Tailwind,flex,grids and react recap 
+    
+14.  SQL 
+    - [x] Prisma ORM 
+    -  Assignment 
 
-13. SQL 
-    1.  Prisma ORM 
-    2.  Assignment 
+15.  tRPC
+    - []  tRPC Part 1 
+    - []  tRPC Part 2 
+    - []  Adavanced SQL 
 
-14. tRPC 
-    1.  tRPC part 2 
-    2.  Adavanced SQL 
-
-15. Docker 
+16.  Docker 
     1.  Docker 2 
 
-16. GraphQL 
+17.  GraphQL 
     1.  graphql and setting up locally 
 
-17. Freelancing masterclass 1 
+18.  Freelancing masterclass 1 
     1.  Freelancing masterclass 2
 
-18. Open Source setup 1
+19.  Open Source setup 1
     1.  Open source contribution 2 
 
-19. Real time communication, Distributed Computing 
+20.  Real time communication, Distributed Computing 
     1.  Redis + Distributed Computing 
     2.  Scalable chat systems
     
-20. Autoscaling Backends
+21.  Autoscaling Backends
     1.  Serverless and EB.
     2.  Ad-hoc open source contribution.
