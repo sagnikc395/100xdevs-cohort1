@@ -19,4 +19,4 @@ class DateClass {
 }
 
 const dateObj = new DateClass("11 Dec 2023");
-dateObj.getTime();
+console.log(dateObj.getTime());
