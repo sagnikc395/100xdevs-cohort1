@@ -84,4 +84,16 @@ model Post {
 - run the build and then run node dist/crete-data.js to make the changes and see 
 ### to visualize:
 - use npx prisma studio to view the tables and the entries.
+
+
+### debug:
+- add log info and query in our prisma client to give log queries under the hood for our prisma queries to give underlying query info.
+-  ![[Screenshot 2024-04-02 at 7.22.19 AM.png]] 
+- does a transaction, send these queries as a single query.
+
+### get data:
+- find all users using findMany().
+- ![[Screenshot 2024-04-02 at 7.46.46 AM.png]]'
+- find specific thing using findMany , using a where clause.
+- to find a unique thing, use findUnique.
 - 
