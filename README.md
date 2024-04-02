@@ -54,7 +54,7 @@ Course Notes and Solutions for 100x devs Cohort1.
     2. Auth using next-auth 
     3. Monorepo Deployment
 
-12. OpenAPI Spec 
+12. - [x] OpenAPI Spec 
 13. Tailwind,flex,grids and react recap 
     
 14.  SQL 
