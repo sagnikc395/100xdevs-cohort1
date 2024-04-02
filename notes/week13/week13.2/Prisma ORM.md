@@ -33,4 +33,46 @@
 	- npx prisma init --datasource=provider postgresql
 	- creates a file in prisma/schema.prisma
 - dont commit secret to Github, add .env file to gitignore
+- Model your data in the Prisma Schema:
+	- a single source of truth of our schema 
+	- only once we have defined our schema we can put our data and connect to the db.
+	- the migrations and the dx experience is provided by prisma itself.
+
+### Prisma Constructs:
+- @id @default(autoincrement())
+- @unqiue
+- @default(false)
+- @relation(fields:\[authorId],references:\[id])
+- Eg:
+```prisma
+	model User{
+	id Int @id @default(autoincrement()) -> id is integer type, with a default value and it increments automatically
+	email String @unqiue ->  email should be a string and should be uniuqe type
+	name String? ->  name is optional type
+	posts Post[] -> for a user, posts array for the user.
+	}
+```
+### relate data together:
+- todos are related to users. every todo will have a user here and a foreign key.
+- making a database construct strong -> no orphan todo present.
+- same as can't delete user with multiple todos.
+- Using foreign keys in prisma
+```prisma 
+model Post {
+	id Int @id @default(autoincrement())
+	title String 
+	content String?
+	published Boolean @default(false)
+	author User @relation(fields :[authorId],references:[id])
+	authorId Int
+}
+```
+- the authorId is a foreign key for the Post table.
+- Author is never stored in Post database, high level abstraction and are related conceptually and can use them using foreign keys and constraints.
+
+### run a migration :
+- run a migration with prisma/migrate library.
+- npx prisma migrate dev --name init
+- whenever prisma creates migrations , needs access to hidden table to run these migrations.
+- This will create a new folder under migrations folder called migrations which will have the generated sql files.
 - 
