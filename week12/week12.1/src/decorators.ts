@@ -9,6 +9,7 @@ class DateClass2 {
   //methods
   getTime() {
     const d = new Date();
+    console.log("hi from getTime");
     return d.getTime();
   }
 

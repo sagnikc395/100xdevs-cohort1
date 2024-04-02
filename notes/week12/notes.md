@@ -60,3 +60,8 @@
 
 - Classes In TS.
 - Decorators in TS.
+  - collection of some helpful decorators in TS , that can be used multiple places:
+    - https://github.com/NetanelBasal/helpful-decorators
+  - under the hood , decorators are pure functions, but if we use them in a class as @\<decorator-name> , wherever the code it is being called, it will understand whatever it has to do and then finally output that to the screen.
+  - 
+
