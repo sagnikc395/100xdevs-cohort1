@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week12/notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week12/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week12/notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md"
+                "file": "week12/notes.md"
               }
             }
           }
@@ -147,12 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8acbec674774c74",
+  "active": "4b778f222abef118",
   "lastOpenFiles": [
+    "week14/week14.1- trpc Intro.md",
     "week14/Screenshot 2024-04-02 at 8.50.19 AM.png",
     "week14/Screenshot 2024-04-02 at 8.42.40 AM.png",
     "week14/Screenshot 2024-04-02 at 8.40.03 AM.png",
-    "week14/week14.1- trpc Intro.md",
     "week14/week14.1",
     "week14",
     "week13/week13.2/Screenshot 2024-04-02 at 8.22.18 AM.png",
@@ -165,7 +165,6 @@
     "week13/week13.2",
     "week13/week13.1/SQL.md",
     "week13/week13.1/Screenshot 2024-04-01 at 6.02.28 AM.png",
-    "week13/week13.1/Screenshot 2024-04-01 at 5.55.48 AM.png",
     "week13/week13.1",
     "week13",
     "week8/week8.2 - deploying npm packages, monorepos intro.md",

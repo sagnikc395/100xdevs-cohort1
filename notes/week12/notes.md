@@ -73,4 +73,12 @@ controller -> the thing that joins both of them.
 
 service -> similar to our route handlers, just a bunch of functions that are abstraction to a database calls, abstract over the database. put all of the logic to connect to the database.
 
-controller -> create a controller where most of the middleware work happens.
+controller -> create a controller where most of the magic happens with the decorator.
+
+service file is where we write the logic to connect to db , write to db and etc.
+
+need to clearly define input and the outputs as openapi file needs the clear instruction of what all todo.
+
+all the controllers and go thorugh the folders and convert them into express routes.
+
+they will all go thorugh src/todos and convert all files having Controller in their names as express routes.
