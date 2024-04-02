@@ -26,5 +26,4 @@
 - Prisma used a lot in the industry and used by cal.com and dub.sh.
 - Running migrations and creating tables , Prisma needs access to a database and also needs to create temporary database on it to manage the migrations.
 
--- need to continue from 18:25 --
-https://harkirat.classx.co.in/video/178?courseId=2&ytFlag=0&isFolderCourse=1
+- 
