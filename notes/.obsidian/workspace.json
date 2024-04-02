@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c59caa4ab3873d39",
@@ -147,11 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f70d6b0186613169",
+  "active": "c8acbec674774c74",
   "lastOpenFiles": [
-    "Screenshot 2024-04-02 at 8.22.18 AM.png",
-    "Screenshot 2024-04-02 at 8.12.44 AM.png",
-    "Screenshot 2024-04-02 at 8.09.24 AM.png",
+    "week13/week13.2/Screenshot 2024-04-02 at 8.22.18 AM.png",
+    "week13/week13.2/Screenshot 2024-04-02 at 8.12.44 AM.png",
+    "week13/week13.2/Screenshot 2024-04-02 at 8.09.24 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 8.05.57 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 7.46.46 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 7.22.19 AM.png",
