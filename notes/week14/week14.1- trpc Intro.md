@@ -70,4 +70,5 @@
 - export router := t.router
 - export publicProcedure -> a procedure that lets us create other procedures.
 - lets us create a bunch of queries and mutations.
-- 
+
+## todo: start from 1:00:02 mark
