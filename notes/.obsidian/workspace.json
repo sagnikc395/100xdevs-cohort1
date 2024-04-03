@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week12/week12.2 - tailwind,grids,react recap.md",
+                "file": "week14/week14.1- trpc Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week12/week12.2 - tailwind,grids,react recap.md",
+                "file": "week14/week14.1- trpc Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week12/week12.2 - tailwind,grids,react recap.md",
+                "file": "week14/week14.1- trpc Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week12/week12.2 - tailwind,grids,react recap.md"
+                "file": "week14/week14.1- trpc Intro.md"
               }
             }
           }
@@ -147,11 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8acbec674774c74",
+  "active": "c4d02707efb524cc",
   "lastOpenFiles": [
+    "Screenshot 2024-04-03 at 8.31.40 AM.png",
+    "week12/week12.2 - tailwind,grids,react recap.md",
     "week12/Screenshot 2024-04-03 at 6.07.36 AM.png",
     "week12/week 12.1 - open api and spec.md",
-    "week12/week12.2 - tailwind,grids,react recap.md",
     "week14/week14.1- trpc Intro.md",
     "week14/Screenshot 2024-04-02 at 8.50.19 AM.png",
     "week14/Screenshot 2024-04-02 at 8.42.40 AM.png",
@@ -167,7 +168,6 @@
     "week13/week13.2/Prisma ORM.md",
     "week13/week13.2",
     "week13/week13.1/SQL.md",
-    "week13/week13.1/Screenshot 2024-04-01 at 6.02.28 AM.png",
     "week13/week13.1",
     "week13",
     "week8/week8.2 - deploying npm packages, monorepos intro.md",
