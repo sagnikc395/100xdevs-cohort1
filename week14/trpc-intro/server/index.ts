@@ -6,6 +6,7 @@ import { createHTTPServer } from "@trpc/server/adapters/standalone";
 const todoInputType = z.object({
   title: z.string(),
   description: z.string(),
+  done: z.boolean(),
 });
 
 //create a top level approuter
