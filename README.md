@@ -60,7 +60,7 @@ Course Notes and Solutions for 100x devs Cohort1.
 
 12. BE for Prod
     - [x] Week 11.3 OpenAPI Spec
-    - [ ] Week 11.4  Tailwind , Flex , grids and react recap 
+    - [x] Week 11.4  Tailwind , Flex , grids and react recap 
     - [ ] Week 11.5 Monorepo Deployment 
 
 13. DB and ORM
