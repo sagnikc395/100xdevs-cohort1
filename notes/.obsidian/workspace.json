@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f7d1d627cf623361",
+        "id": "c2c85b5997412e2f",
         "type": "tabs",
         "children": [
           {
-            "id": "c4d02707efb524cc",
+            "id": "4363fdd25f6a3090",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week10/week10.1 - Certificate Management , Frontend Deployments , nginx as reverse proxy.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week10/week10.1 - Certificate Management , Frontend Deployments , nginx as reverse proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md",
+                "file": "week10/week10.1 - Certificate Management , Frontend Deployments , nginx as reverse proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week14/week14.1- trpc Intro.md"
+                "file": "week10/week10.1 - Certificate Management , Frontend Deployments , nginx as reverse proxy.md"
               }
             }
           }
@@ -147,13 +147,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c4d02707efb524cc",
+  "active": "4363fdd25f6a3090",
   "lastOpenFiles": [
-    "Screenshot 2024-04-03 at 8.31.40 AM.png",
+    "week14/week14.1- trpc Intro.md",
+    "week10/week10.1 - Certificate Management , Frontend Deployments , nginx as reverse proxy.md",
+    "week10",
+    "week14/Screenshot 2024-04-03 at 8.31.40 AM.png",
     "week12/week12.2 - tailwind,grids,react recap.md",
     "week12/Screenshot 2024-04-03 at 6.07.36 AM.png",
     "week12/week 12.1 - open api and spec.md",
-    "week14/week14.1- trpc Intro.md",
     "week14/Screenshot 2024-04-02 at 8.50.19 AM.png",
     "week14/Screenshot 2024-04-02 at 8.42.40 AM.png",
     "week14/Screenshot 2024-04-02 at 8.40.03 AM.png",
@@ -164,7 +166,6 @@
     "week13/week13.2/Screenshot 2024-04-02 at 8.09.24 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 8.05.57 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 7.46.46 AM.png",
-    "week13/week13.2/Screenshot 2024-04-02 at 7.22.19 AM.png",
     "week13/week13.2/Prisma ORM.md",
     "week13/week13.2",
     "week13/week13.1/SQL.md",

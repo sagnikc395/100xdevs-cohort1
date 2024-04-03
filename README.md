@@ -50,7 +50,7 @@ Course Notes and Solutions for 100x devs Cohort1.
 9. Github CI/CD 
 
 10. Frontend Deployments, certificate management 
-    - [x] Week 10.1 Frontend Deployments, certificate Management
+    - [ ] Week 10.1 Frontend Deployments, certificate Management
     - [ ] Week 10.2 Next.js
     - [ ] Week 10.3 Assignemnt 
 
@@ -74,8 +74,8 @@ Course Notes and Solutions for 100x devs Cohort1.
     - [ ]  Advanced SQL 
 
 15. Docker
-    - [x] Docker 1 
-    - [x] Docker 2    
+    - [ ] Docker 1 
+    - [ ] Docker 2    
 
 16. GraphQL and alternative backend tech 
     - [ ]  GraphQL
