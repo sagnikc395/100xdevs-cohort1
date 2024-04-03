@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "07fe43e9075812e9",
+        "id": "f7d1d627cf623361",
         "type": "tabs",
         "children": [
           {
-            "id": "4b778f222abef118",
+            "id": "c4d02707efb524cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week12/notes.md",
+                "file": "week12/week12.2 - tailwind,grids,react recap.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week12/notes.md",
+                "file": "week12/week12.2 - tailwind,grids,react recap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week12/notes.md",
+                "file": "week12/week12.2 - tailwind,grids,react recap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week12/notes.md"
+                "file": "week12/week12.2 - tailwind,grids,react recap.md"
               }
             }
           }
@@ -147,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8acbec674774c74",
+  "active": "c4d02707efb524cc",
   "lastOpenFiles": [
+    "Screenshot 2024-04-03 at 6.07.36 AM.png",
+    "week12/week 12.1 - open api and spec.md",
+    "week12/week12.2 - tailwind,grids,react recap.md",
     "week14/week14.1- trpc Intro.md",
     "week14/Screenshot 2024-04-02 at 8.50.19 AM.png",
     "week14/Screenshot 2024-04-02 at 8.42.40 AM.png",

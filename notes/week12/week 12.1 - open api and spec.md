@@ -1,4 +1,3 @@
-## Open API Specification 
 
 ### Goals:
 - End goals:
