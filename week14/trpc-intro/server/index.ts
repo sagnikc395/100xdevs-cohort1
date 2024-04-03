@@ -23,6 +23,17 @@ const appRouter = router({
       id: "1",
     };
   }),
+  signup: publicProcedure
+    .input(
+      z.object({
+        email: z.string(),
+        password: z.string(),
+      })
+    )
+    .mutation(async (opts) => {
+      let email = opts.input.email;
+      let password = opts.input.password;
+    }),
 });
 
 //expose via a simple httprouter from trpc
