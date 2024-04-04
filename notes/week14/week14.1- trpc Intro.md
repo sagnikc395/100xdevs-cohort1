@@ -99,4 +99,5 @@
 	- defining the type during initialization 
 	- and then creating the runtime context for each request.
 
+- in the client, define a function called headers, right next to the url , which will return whatever headers we want in the backend.
 - 
