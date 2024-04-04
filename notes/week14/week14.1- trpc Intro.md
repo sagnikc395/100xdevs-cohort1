@@ -71,7 +71,32 @@
 - export publicProcedure -> a procedure that lets us create other procedures.
 - lets us create a bunch of queries and mutations.
 
+- can't get specific data in trpc like graphql, all though we send all the data in graphql.
+
 ## authentication:
+- using header information
 - create a users procedure:
 	- signup 
 	- input 
+
+### Contexts and Middleware:
+- very very important for various tech and used everywhere.
+
+### Context:
+- When we initialize our router, trpc allows us to:
+	- setup request context
+		- whenever the user sends back a context, it is context for the specific response, usually id/session for the particular user.
+		- contexts are important i.e some extra information in headers along with the standard header information.
+		- another thing that is put into the context is the global database variable.
+	- assign metadata to procedures
+	- format and handle the errors
+	- transform the data as required.
+	- customize our runtime configurator.
+- we can then use method chaining to initalize our t object on initialization.
+- context is a request specific information.
+- Your context holds data that all of your tRPC procedures will have access to, and is a great place to put things like database connections or authentication information.
+- setting up the context is done in 2 steps:
+	- defining the type during initialization 
+	- and then creating the runtime context for each request.
+
+- 

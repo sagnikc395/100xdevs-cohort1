@@ -23,6 +23,12 @@ async function main() {
     done: false,
   });
   console.log(response);
+
+  let response2 = trpc.signup.mutate({
+    email: "sagnik321@gmail.com",
+    password: "123456",
+  });
+  console.log(response2);
 }
 
 main();
