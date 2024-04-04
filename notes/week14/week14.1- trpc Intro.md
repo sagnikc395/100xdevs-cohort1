@@ -100,4 +100,17 @@
 	- and then creating the runtime context for each request.
 
 - in the client, define a function called headers, right next to the url , which will return whatever headers we want in the backend.
-- 
+
+### Dont have to use zod:
+- can also other things , or can write our own validation libraries and functions of our own.
+
+### Merging Routers:
+- all the routers defined currently in a single file.
+- can also define in different locations and then merge those routers together.
+- add support with mergeRouter.
+- can structure and merge them as routers.
+
+### TBD in Lec2:
+- Data Tranformers 
+- connecting with Next.js
+- Middlewares
