@@ -11,9 +11,11 @@
             "id": "d42136da6f6f8fea",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png"
+                "file": "week15/week15.1 - docker1.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c59caa4ab3873d39",
@@ -83,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
+                "file": "week15/week15.1 - docker1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
+                "file": "week15/week15.1 - docker1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png"
+                "file": "week15/week15.1 - docker1.md"
               }
             }
           }
@@ -144,14 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8acbec674774c74",
+  "active": "d42136da6f6f8fea",
   "lastOpenFiles": [
+    "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
+    "week15/week15.1 - docker1.md",
+    "week15",
     "tailwind/notes.md",
     "week4/week4.2 - react, effects and custom hooks.md",
     "week4/week4.1 - react + state.md",
     "week3/week3.1 - frontend basics.md",
     "week16/week16.1 - graphql intro.md",
-    "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week16",
     "week14/week 14.2 - trpc advanced.md",
     "week14/week14.1- trpc Intro.md",
@@ -183,7 +188,6 @@
     "week5/week5.1 - practising react.md",
     "week7/week7.2 - Intro to Typescript.md",
     "week6/gmeet using webrtc.md",
-    "week6",
     "week3/week3.4- Databases(MongoDB).md"
   ]
 }
