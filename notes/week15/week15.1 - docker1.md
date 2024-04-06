@@ -44,9 +44,17 @@
 - Images define the initial filesystem of new containers.Bundle our application's source code and its dependencies into a self-contained package which is ready to use with a container runtime. Within the image, the filesystem contentn is represented as multiple independent layers.
 
 
+### Starting a Dockerfile:
 - Create a single Dockerfile in the root of your application to setup the Docker instance.
 - we start from a base image(ubutnu/alpine/node)
 - add all software to install
 - copy over the files we want to present in the container.
 - build the project(npm install/ npm run dev,npm run build)
-- 
+- expose the right set of ports
+- start your process
+
+### Running the Image:
+- Build the image:
+	- docker build -t \<image-name>
+- Running the image:
+	- docker run \<image-name>
