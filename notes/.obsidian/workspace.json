@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "844340e733d60dd5",
+        "id": "7032f553fa6facff",
         "type": "tabs",
         "children": [
           {
-            "id": "43aadcf2c9894adf",
+            "id": "9ece59f8d010f995",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week3/week3.1 - frontend basics.md",
+                "file": "week4/week4.2 - react, effects and custom hooks.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week3/week3.1 - frontend basics.md",
+                "file": "week4/week4.2 - react, effects and custom hooks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week3/week3.1 - frontend basics.md",
+                "file": "week4/week4.2 - react, effects and custom hooks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week3/week3.1 - frontend basics.md"
+                "file": "week4/week4.2 - react, effects and custom hooks.md"
               }
             }
           }
@@ -147,10 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "43aadcf2c9894adf",
+  "active": "9ece59f8d010f995",
   "lastOpenFiles": [
-    "week16/week16.1 - graphql intro.md",
+    "week4/week4.1 - react + state.md",
+    "week4/week4.2 - react, effects and custom hooks.md",
     "week3/week3.1 - frontend basics.md",
+    "week16/week16.1 - graphql intro.md",
     "Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week16",
     "week14/week 14.2 - trpc advanced.md",
