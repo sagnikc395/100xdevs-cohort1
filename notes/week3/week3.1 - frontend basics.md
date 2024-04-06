@@ -1,0 +1,9 @@
+- databases, storage and basic frontend work.
+- Recap:
+	- Backend
+		- HTTP Servers
+		- Auth
+		- Databases
+		- Middlewares
+- Foundations for Databases;Connecting Frontend to backend;AJAX;CORS;DOM
+- 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week16/week16.1 - graphql intro.md",
+                "file": "week3/week3.1 - frontend basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week16/week16.1 - graphql intro.md",
+                "file": "week3/week3.1 - frontend basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week16/week16.1 - graphql intro.md",
+                "file": "week3/week3.1 - frontend basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week16/week16.1 - graphql intro.md"
+                "file": "week3/week3.1 - frontend basics.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "43aadcf2c9894adf",
   "lastOpenFiles": [
-    "Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week16/week16.1 - graphql intro.md",
+    "week3/week3.1 - frontend basics.md",
+    "Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week16",
     "week14/week 14.2 - trpc advanced.md",
     "week14/week14.1- trpc Intro.md",
@@ -169,7 +170,6 @@
     "week13/week13.2/Screenshot 2024-04-02 at 8.12.44 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 8.09.24 AM.png",
     "week13/week13.2/Screenshot 2024-04-02 at 8.05.57 AM.png",
-    "week13/week13.2/Screenshot 2024-04-02 at 7.46.46 AM.png",
     "week13/week13.2/Prisma ORM.md",
     "week13/week13.2",
     "week13/week13.1/SQL.md",
