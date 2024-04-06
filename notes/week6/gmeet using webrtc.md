@@ -74,3 +74,4 @@
 - how do i as a browser find the other side ?
 - the way to do that is using **[STUN](https://www.3cx.com/pbx/what-is-a-stun-server/)**
 	- from 1:11:39
+- 
