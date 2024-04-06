@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7032f553fa6facff",
+        "id": "4ce9a3c27e5c187a",
         "type": "tabs",
         "children": [
           {
-            "id": "9ece59f8d010f995",
+            "id": "d42136da6f6f8fea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "week4/week4.2 - react, effects and custom hooks.md",
-                "mode": "source",
-                "source": false
+                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png"
               }
             }
           }
@@ -69,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c59caa4ab3873d39",
@@ -86,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week4/week4.2 - react, effects and custom hooks.md",
+                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week4/week4.2 - react, effects and custom hooks.md",
+                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week4/week4.2 - react, effects and custom hooks.md"
+                "file": "week16/Screenshot 2024-04-05 at 7.44.31 AM.png"
               }
             }
           }
@@ -147,13 +144,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ece59f8d010f995",
+  "active": "c8acbec674774c74",
   "lastOpenFiles": [
-    "week4/week4.1 - react + state.md",
+    "tailwind/notes.md",
     "week4/week4.2 - react, effects and custom hooks.md",
+    "week4/week4.1 - react + state.md",
     "week3/week3.1 - frontend basics.md",
     "week16/week16.1 - graphql intro.md",
-    "Screenshot 2024-04-05 at 7.44.31 AM.png",
+    "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week16",
     "week14/week 14.2 - trpc advanced.md",
     "week14/week14.1- trpc Intro.md",
@@ -180,7 +178,6 @@
     "week8/week8.2 - deploying npm packages, monorepos intro.md",
     "week8/week8.1 - optimizing types, custom hooks.md",
     "week8",
-    "tailwind/notes.md",
     "week7/week7.1 - recoil and typescript.md",
     "tailwind",
     "week5/week5.1 - practising react.md",
