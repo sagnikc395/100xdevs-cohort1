@@ -73,5 +73,24 @@
 - the way to identify a server is via url and port 
 - how do i as a browser find the other side ?
 - the way to do that is using **[STUN](https://www.3cx.com/pbx/what-is-a-stun-server/)**
-	- from 1:11:39
+- what if there is a public ip and port to send to the machine here ?
+	- to find the port and ip , people can find me easily ->
+		- using a STUN server, whenever we send it a request, it returns with a IP and the port through which it returns to the server.
+	- the general lifecycle:
+		- browser1 will connect to a stun server and stun will respond back, same with browser2 and same thing. and then they connect with each other.
+		- ip,port from b1 and connect with websocket to b2 with the given ip and port.
+		- ws in the signalling server.
+	- for the initial handshake that we need to go and complete the initial handshake.
+	- creating offer and receiving the offer.
+	- signalling , websocket server and p2p.
+- webrtc protocol:
+	- stun server 
+	- ice candidates
+	- PeerConnection object 
+	- localDescription
+	- remoteDescription 
+	- tracks
+
+- localDescription and rootDescription is where we store the candidate information.
+
 - 

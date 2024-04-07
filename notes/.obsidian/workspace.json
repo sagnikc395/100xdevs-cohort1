@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week6/gmeet using webrtc.md",
+                "file": "week9/Github Actions and Deployment.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week6/gmeet using webrtc.md",
+                "file": "week9/Github Actions and Deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week6/gmeet using webrtc.md",
+                "file": "week9/Github Actions and Deployment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week6/gmeet using webrtc.md"
+                "file": "week9/Github Actions and Deployment.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "d42136da6f6f8fea",
   "lastOpenFiles": [
+    "week6/gmeet using webrtc.md",
+    "week9/Github Actions and Deployment.md",
+    "week9",
     "week15/week15.1 - docker1.md",
     "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
     "week15",
@@ -184,10 +187,8 @@
     "week8/week8.1 - optimizing types, custom hooks.md",
     "week8",
     "week7/week7.1 - recoil and typescript.md",
-    "tailwind",
     "week5/week5.1 - practising react.md",
     "week7/week7.2 - Intro to Typescript.md",
-    "week6/gmeet using webrtc.md",
     "week3/week3.4- Databases(MongoDB).md"
   ]
 }

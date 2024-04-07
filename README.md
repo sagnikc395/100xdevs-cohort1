@@ -35,8 +35,8 @@ Course Notes and Solutions for 100x devs Cohort1.
    - [ ]  Week 5.5 Assignment 
 
 6. Project 2: Building a GMeet Clone 
-   - [ ] Part 1
-   - [ ] Part 2
+   - [x] Part 1
+   - [x] Part 2
    
 7. State Management React 
    - [x] Week 7.1 Recoil and State Management 
