@@ -1,0 +1,21 @@
+- understanding reconciliation in react and diving into legacy frontends(until 2014)
+- why react, vue and other were introduced as frameworks , and what was the problem with the legacy way to do it ?
+- Why learn this ?
+	- Good for foundations 
+	- Knowing about reconcilation and knowing about internal working on stuff and learn fundamentals properly.
+- Dynamic Website :
+	- know all of the html and the pairs before hand 
+	- data not coming from backend and not having a HTML upfront and once it comes we need to insert a HTML 
+	- very similar to what data is coming and need to slowly insert it into the DOM.
+- DOM Object :
+	- programmatically insert into DOM objects using document.createElement(\<element type>), this wont be added to DOM, add to DOM and then add html using innerHTML property.
+	- and can add child element using appendChild() method and insert div inside another div.
+	- for the longest time, we were writing this long amount of code, to add some minimum functionality on the DOM and make changes on it.
+- What is reconciliation ?
+	- putting stuff on dom , being explicit , remove etc. done till 2014, is very repetitive and boring.
+	- createChild,appendChild and removeChild etc are methods that are done under the hood for any website.
+	- frmaeworks like react and vue hide these complexity.
+	- here we only have to care about only putting the right thing in the right varibale and only care about converting one state to another in there.
+	- taking the update of the state and translating into dom using updatechild and removechild.
+- creating a reconciler of our own ?
+	- function (todos) and creates the right things here.

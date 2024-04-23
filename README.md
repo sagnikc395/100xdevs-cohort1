@@ -74,8 +74,8 @@ Course Notes and Solutions for 100x devs Cohort1.
     - [ ]  Advanced SQL 
 
 15. Docker
-    - [ ] Docker 1 
-    - [ ] Docker 2    
+    - [x] Docker 1 
+    - [x] Docker 2    
 
 16. GraphQL and alternative backend tech 
     - [ ]  GraphQL

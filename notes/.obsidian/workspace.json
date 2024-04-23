@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4ce9a3c27e5c187a",
+        "id": "5808117b8f912ad3",
         "type": "tabs",
         "children": [
           {
-            "id": "d42136da6f6f8fea",
+            "id": "787bff8480bb5a6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week9/Github Actions and Deployment.md",
+                "file": "week3/week3.2 - foundations of frontend.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week9/Github Actions and Deployment.md",
+                "file": "week3/week3.2 - foundations of frontend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week9/Github Actions and Deployment.md",
+                "file": "week3/week3.2 - foundations of frontend.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week9/Github Actions and Deployment.md"
+                "file": "week3/week3.2 - foundations of frontend.md"
               }
             }
           }
@@ -147,10 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d42136da6f6f8fea",
+  "active": "787bff8480bb5a6c",
   "lastOpenFiles": [
-    "week6/gmeet using webrtc.md",
+    "week3/week3.1 - frontend basics.md",
+    "week3/week3.2 - foundations of frontend.md",
+    "week11/week11.1 -> creating a monorepo with nextjs + ts.md",
     "week9/Github Actions and Deployment.md",
+    "week11",
+    "week6/gmeet using webrtc.md",
     "week9",
     "week15/week15.1 - docker1.md",
     "week16/Screenshot 2024-04-05 at 7.44.31 AM.png",
@@ -158,7 +162,6 @@
     "tailwind/notes.md",
     "week4/week4.2 - react, effects and custom hooks.md",
     "week4/week4.1 - react + state.md",
-    "week3/week3.1 - frontend basics.md",
     "week16/week16.1 - graphql intro.md",
     "week16",
     "week14/week 14.2 - trpc advanced.md",
@@ -185,7 +188,6 @@
     "week13",
     "week8/week8.2 - deploying npm packages, monorepos intro.md",
     "week8/week8.1 - optimizing types, custom hooks.md",
-    "week8",
     "week7/week7.1 - recoil and typescript.md",
     "week5/week5.1 - practising react.md",
     "week7/week7.2 - Intro to Typescript.md",
