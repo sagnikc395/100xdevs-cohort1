@@ -19,3 +19,6 @@
 	- taking the update of the state and translating into dom using updatechild and removechild.
 - creating a reconciler of our own ?
 	- function (todos) and creates the right things here.
+- if in react , if the state ever changes, it compares the difference of the DOM , and only applies the changes of the DOM.
+- do a parentElement.removeChild() and remove the element from it.
+- 

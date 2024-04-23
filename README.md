@@ -16,16 +16,16 @@ Course Notes and Solutions for 100x devs Cohort1.
    - [ ] Week 2.3 Assignment
    
 3. Week3 : Backend and Frontend Integration 
-   - [ ] Week 3.1 Finishing backend , starting frontend 
-   - [ ] Week 3.2 Foundation of frontend and reconcilation 
+   - [x] Week 3.1 Finishing backend , starting frontend 
+   - [x] Week 3.2 Foundation of frontend and reconcilation 
    - [ ] Week 3.3 (Extra) System Design of a Video Transcoder 
    - [ ] Week 3.4 Authentication and Assignment 
    - [ ] Week 3.5 MongoDB and Intro to DBs
 
 4. Week4: React 
-   - [x] Week 4.1 More reconcilers, Intro to React using Vite 
-   - [x] Week 4.2 React, effects and custom hooks 
-   - [x] Week 4.3 Assignment 
+   - [ ] Week 4.1 More reconcilers, Intro to React using Vite 
+   - [ ] Week 4.2 React, effects and custom hooks 
+   - [ ] Week 4.3 Assignment 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
    - [x] Week 5.1 Recapping few things 
