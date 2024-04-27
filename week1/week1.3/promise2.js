@@ -13,3 +13,4 @@ function printThing() {
 
 let medicine = medicine1Get();
 medicine.then(printThing);
+medicine.finally();
