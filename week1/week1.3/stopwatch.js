@@ -20,7 +20,7 @@ console.log(counter2);
 
 // long running synchronous task
 for (let i = 0; i < 100_000_000_000_000_000; i++) {
-    // this will essentially will be blocked.
+  // this will essentially will be blocked.
   counter2 += i;
 }
 
