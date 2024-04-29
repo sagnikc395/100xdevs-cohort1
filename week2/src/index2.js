@@ -12,13 +12,13 @@ function smallMiddleware(req, res, next) {
 
 app.use(smallMiddleware);
 
-const calculateSum = (arg) => {
-  let res = 0;
-  for (let i = 0; i < arg; i++) {
-    res += i;
-  }
-  return res;
-};
+function calculateSum(counter){
+    let sum =0 ;
+    for(let i=0;i<counter;i++){
+        sum += i;
+    }
+    return sum;
+}
 
 app.get("/handleSum", function (req, res) {
   console.log("hit the route on handleSum");
@@ -30,7 +30,7 @@ app.post("/handleSum", function (req, res) {
   //log the queries and log the headers
   console.log(req.query);
   console.log(req.headers);
-  let counter = req.headers.counter;
+  let counter = req.body.counter;
   if (counter < 10000) {
     let calcSum = calculateSum(Number(counter));
     res.status(200).send(`post requests succesfull, result is ${calcSum}`);
