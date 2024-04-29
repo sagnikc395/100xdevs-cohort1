@@ -3,13 +3,11 @@ const app = express();
 
 const PORT = 3000;
 
-
-
-//adding middleware 
-function smallMiddleware(req,res,next){
-    console.log(`form inside middleware ${req.headers.counter}`);
-    res.send('error from inside the midleware');
-   // next();
+//adding middleware
+function smallMiddleware(req, res, next) {
+  console.log(`form inside middleware ${req.headers.counter}`);
+  //res.send('error from inside the midleware');
+  next();
 }
 
 app.use(smallMiddleware);
@@ -29,10 +27,16 @@ app.get("/handleSum", function (req, res) {
 
 app.post("/handleSum", function (req, res) {
   //log the results
+  //log the queries and log the headers
+  console.log(req.query);
   console.log(req.headers);
   let counter = req.headers.counter;
-  let calcSum = calculateSum(Number(counter));  
-  res.send(`post requests succesfull, result is ${calcSum}`);
+  if (counter < 10000) {
+    let calcSum = calculateSum(Number(counter));
+    res.status(200).send(`post requests succesfull, result is ${calcSum}`);
+  } else {
+    res.status(411).send("you have sent a very big number!!!");
+  }
 });
 
 function init() {
