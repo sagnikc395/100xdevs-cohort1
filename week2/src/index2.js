@@ -1,0 +1,42 @@
+const express = require("express");
+const app = express();
+
+const PORT = 3000;
+
+
+
+//adding middleware 
+function smallMiddleware(req,res,next){
+    console.log(`form inside middleware ${req.headers.counter}`);
+    res.send('error from inside the midleware');
+   // next();
+}
+
+app.use(smallMiddleware);
+
+const calculateSum = (arg) => {
+  let res = 0;
+  for (let i = 0; i < arg; i++) {
+    res += i;
+  }
+  return res;
+};
+
+app.get("/handleSum", function (req, res) {
+  console.log("hit the route on handleSum");
+  res.send("help me!!!!!1");
+});
+
+app.post("/handleSum", function (req, res) {
+  //log the results
+  console.log(req.headers);
+  let counter = req.headers.counter;
+  let calcSum = calculateSum(Number(counter));  
+  res.send(`post requests succesfull, result is ${calcSum}`);
+});
+
+function init() {
+  console.log(`Started server on http://localhost:${PORT}/`);
+}
+
+app.listen(PORT, init);

@@ -138,7 +138,7 @@ function postHandlerSum4(req, res) {
 function givePage(req, res) {
   res.status(200).send(`<html>
   <body>
-    <h1>lOL</h1>
+    <h1>lol</h1>
   </body>
 </html>`);
 }
