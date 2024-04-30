@@ -1,21 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { todo } = require("node:test");
 
 const app = express();
 
 //central state
 let todos = [];
-
-//find the given index
-function findIndex(arr, idx) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].id == id) {
-      return i;
-    }
-  }
-  return -1;
-}
 
 //get todo
 app.get("/todos", (req, res) => {
@@ -23,7 +12,14 @@ app.get("/todos", (req, res) => {
 });
 
 //get a single todo
-app.get("/todos/:id", (req, res) => {});
+app.get("/todos/:id", (req, res) => {
+    const todo = todos.find(t => t.id === parseInt(req.params.id));
+    if(!todo){
+        res.status(404).send();
+    } else {
+        res.json(todo);
+    }
+});
 
 //post todos
 app.post("/todos", (req, res) => {
@@ -39,17 +35,25 @@ app.post("/todos", (req, res) => {
 });
 
 //post a new todo
-app.post("/todos/:id", (req, res) => {});
+//app.post("/todos/:id", (req, res) => {});
 
 //delete a specific todo
-app.delete("/todo/:id", (req, res) => {
-  const todoIdx = todos.findIndex(todos, parseInt(req.param.id));
+app.delete("/todos/:id", (req, res) => {
+  const todoIdx = todos.findIndex((t) => t.id === parseInt(req.params.id));
   if (todoIdx == -1) {
     res.status(404).send("no item found for delete!");
   } else {
-    todos = removeAtIndex(todos, todoIdx);
+    //todos = removeAtIndex(todos, todoIdx);
+    todos.splice(todoIdx, 1);
     res.status(200).send("deleted successfully!");
   }
 });
 
 //for all other routes, return 404
+app.use((req, res, next) => {
+  res.status(404).send();
+});
+
+app.listen(3000, () => {
+  console.log(`Server started at http://localhost:3000`);
+});
