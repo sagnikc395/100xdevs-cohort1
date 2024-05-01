@@ -50,8 +50,9 @@ function parsedResponse(data) {
 function callback(resp) {
   resp.json().then(parsedResponse);
 }
-
+//16:54
 function onPress() {
+  const input = document.getElementById("title").value;
   fetch("http://localhost:3000/todos", {
     method: "POST",
     body: JSON.stringify({
