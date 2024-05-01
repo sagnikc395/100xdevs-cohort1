@@ -13,7 +13,7 @@ Course Notes and Solutions for 100x devs Cohort1.
 2. Week2 : Express and Making Backend using Nodejs
    - [x] Week 2.1 Express ,Node.js and Intro to Backend Systems 
    - [x] Week 2.2 Middleware , Requests and Responses 
-   - [ ] Week 2.3 Assignment
+   - [x] Week 2.3 Assignment
    
 3. Week3 : Backend and Frontend Integration 
    - [x] Week 3.1 Finishing backend , starting frontend 
