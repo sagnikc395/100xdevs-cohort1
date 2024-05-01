@@ -58,5 +58,8 @@ function onPress() {
       title: "gym",
       description: "go to gym at 7",
     }),
-  });
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then(callback);
 }
