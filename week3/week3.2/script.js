@@ -52,7 +52,8 @@ function callback(resp) {
 }
 //16:54
 function onPress() {
-  const input = document.getElementById("title").value;
+  const title = document.getElementById("title").value;
+  const description = document.getElementById("description").value;
   fetch("http://localhost:3000/todos", {
     method: "POST",
     body: JSON.stringify({
@@ -63,4 +64,18 @@ function onPress() {
       "Content-Type": "application/json",
     },
   }).then(callback);
+}
+function todosCallback(data) {
+  console.log(data);
+  const parentElement = document.getElementById("mainArea");
+  parentElement.innerHTML = JSON.stringify(data);
+}
+function callback2(resp) {
+  resp.json().then(todosCallback);
+}
+
+function getData() {
+  fetch(`http://localhost:3000/todos`, {
+    method: "GET",
+  }).then(callback2);
 }
