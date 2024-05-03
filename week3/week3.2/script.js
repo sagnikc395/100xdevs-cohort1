@@ -50,7 +50,6 @@ function parsedResponse(data) {
 function callback(resp) {
   resp.json().then(parsedResponse);
 }
-//16:54
 function onPress() {
   const title = document.getElementById("title").value;
   const description = document.getElementById("description").value;
@@ -68,7 +67,11 @@ function onPress() {
 function todosCallback(data) {
   console.log(data);
   const parentElement = document.getElementById("mainArea");
-  parentElement.innerHTML = JSON.stringify(data);
+  //way for us to insert js variables into HTMl
+  const childElement = document.createElement("div");
+  childElement.innerHTML = "something";
+  parentElement.appendChild(childElement)
+  //parentElement.innerHTML = JSON.stringify(data);
 }
 function callback2(resp) {
   resp.json().then(todosCallback);
