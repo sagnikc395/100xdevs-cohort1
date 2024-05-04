@@ -19,7 +19,7 @@ Course Notes and Solutions for 100x devs Cohort1.
    - [x] Week 3.1 Finishing backend , starting frontend 
    - [x] Week 3.2 Foundation of frontend and reconcilation 
    - [ ] Week 3.3 (Extra) System Design of a Video Transcoder 
-   - [ ] Week 3.4 Authentication and Assignment 
+   - [ ] Week 3.4 Authentication and Assignment
    - [ ] Week 3.5 MongoDB and Intro to DBs
 
 4. Week4: React 
