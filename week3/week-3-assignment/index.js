@@ -1,6 +1,25 @@
 const express = require("express");
 const app = express();
 
+let ADMINS = [];
+let USERS = [];
+let COURSES = [];
+
+const adminAuthentication = (req, res, next) => {
+  //get username and password details from headers
+  const { username, password } = req.headers;
+  const admin = ADMINS.find(
+    (a) => a.username === username && a.password === password
+  );
+  if (admin) {
+    next();
+  } else {
+    res.status(403).json({
+      message: "Admin authentication failed",
+    });
+  }
+};
+
 app.useExpress.json();
 
 //routes
