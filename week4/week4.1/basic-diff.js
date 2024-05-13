@@ -26,3 +26,4 @@ function findDiff(oldArr, newArr) {
 }
 
 console.log(findDiff([1, 2, 3], [1, 2, 3, 4, 5]));
+console.log(findDiff([1, 2, 3], [1]));
