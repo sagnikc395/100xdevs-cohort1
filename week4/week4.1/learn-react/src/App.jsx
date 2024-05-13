@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // const todos = [
 //   {
 //     title: "go to gym",
@@ -32,7 +33,7 @@ function App() {
       description: " eat food",
       id: Math.random() * 100,
     });
-  }, 5000);
+  }, 7000);
 
   return (
     <>
@@ -43,8 +44,19 @@ function App() {
         {todo.description}
         <br />
         {todo.title}
+        <br />
       </div>
+      <PersonName firstName={"sagnik"} lastName={"chatterjee"} />
     </>
+  );
+}
+
+function PersonName(props) {
+  return (
+    <div>
+      {props.firstName}
+      {props.lastName}
+    </div>
   );
 }
 
