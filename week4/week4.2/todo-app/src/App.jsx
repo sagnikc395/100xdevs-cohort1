@@ -14,6 +14,14 @@ function App() {
     },
   ]);
 
+  setInterval(() => {
+    setTodoState({
+      title: "go to gym please please" + Math.random(),
+      descp: "hit ym from 7-9",
+      id: 1,
+    });
+  }, 10000);
+
   return (
     <>
       <div>
@@ -31,7 +39,7 @@ function App() {
 
 function Todo(props) {
   return (
-    <div style={{background: 'orange'}}>
+    <div style={{ background: "orange" }}>
       {props.title}
       {props.descp}
     </div>
