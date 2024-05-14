@@ -14,23 +14,27 @@ function App() {
     },
   ]);
 
- 
   return (
     <>
       <div>
         {todoState.map((item) => {
           return (
             <div key={item.id}>
-              <h3>Title</h3>  {item.title}
-              <br />
-              <h3>Description</h3> {item.descp}
-              <br />
-              <h3>Id</h3> {item.id}
+              <Todo title={item.title} descp={item.descp} />
             </div>
           );
         })}
       </div>
     </>
+  );
+}
+
+function Todo(props) {
+  return (
+    <div style={{background: 'orange'}}>
+      {props.title}
+      {props.descp}
+    </div>
   );
 }
 
