@@ -42,3 +42,4 @@ const isAllowed = (array) =>
   );
 
 console.log(isAllowed(array));
+
