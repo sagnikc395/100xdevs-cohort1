@@ -1,27 +1,34 @@
 import { useState } from "react";
 
 function App() {
-  const [todoState, setTodoState] = useState({
-    title: "",
-    descp: "",
-    id: 1,
-  });
-  setInterval(() => {
-    setTodoState({
-      title: "new todo" + Math.random().toString(),
-      descp: "new todo descp " + Math.random().toString(),
-      id: Math.random() * 100,
-    });
-  }, 8000);
+  const [todoState, setTodoState] = useState([
+    {
+      title: "Go to Gym",
+      descp: "Hit gym from 5-7",
+      id: 1,
+    },
+    {
+      title: "Go to class",
+      descp: "Go to classroom from 9-11",
+      id: 2,
+    },
+  ]);
 
+ 
   return (
     <>
       <div>
-        {todoState.id}
-        <br />
-        {todoState.descp}
-        <br />
-        {todoState.id}
+        {todoState.map((item) => {
+          return (
+            <div key={item.id}>
+              <h3>Title</h3>  {item.title}
+              <br />
+              <h3>Description</h3> {item.descp}
+              <br />
+              <h3>Id</h3> {item.id}
+            </div>
+          );
+        })}
       </div>
     </>
   );
