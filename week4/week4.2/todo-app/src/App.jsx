@@ -24,31 +24,17 @@ function App() {
   console.log(b);
   console.log(todoState);
 
-  // setInterval(() => {
-  //   setTodoState({
-  //     title: "go to gym please please" + Math.random(),
-  //     descp: "hit gym from 7-9",
-  //     id: 1,
-  //   });
-  // }, 10000);
-  // this is getting called again and again and re-rendering too many times.
-  // setTimeout(() => {
-  //   setTodoState({
-  //     title: "go to gym please please" ,
-  //     descp: "hit gym from 7-9",
-  //     id: 3,
-  //   });
-  // }, 10000);
-  setTodoState([
-    {
-      title: "Go to gym pwease",
-      descp: "hit gym from 7-9",
-      id: 1,
-    },
-  ]);
-
   useEffect(() => {
-    console.log("hi from useEffect");
+    //  console.log("hi from useEffect");
+    setInterval(() => {
+      setTodoState([
+        {
+          title: "Go to gym pwease",
+          descp: "hit gym from 7-9",
+          id: 1,
+        },
+      ]);
+    }, 1000);
   }, []);
 
   return (
