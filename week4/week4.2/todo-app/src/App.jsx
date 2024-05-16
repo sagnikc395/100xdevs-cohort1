@@ -1,34 +1,15 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+
+import useTodos from "./useTodos";
 
 function App() {
   //state change will lead to re-render of code
   //happens only once inside the code.
-  const [todos, setTodos] = useState([]);
-  useEffect(() => {
-    //  console.log("hi from useEffect");
-    // similarly we would put our fetch request here
-
-    fetch("http://localhost:3000/todos", {
-      method: "GET",
-    }).then((res) => {
-      res.json().then((data) => {
-        // console.log(data);
-        //update the todos
-        setTodos(data);
-      });
-    });
-    // setInterval(() => {
-    //   setTodoState([
-    //     {
-    //       title: "Go to gym pwease",
-    //       descp: "hit gym from 7-9",
-    //       id: 1,
-    //     },
-    //   ]);
-    // }, 1000);
-  }, []);
+ 
+  //using our own hook
+  const todos = useTodos();
+  
 
   return (
     <>
