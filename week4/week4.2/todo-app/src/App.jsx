@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   //state change will lead to re-render of code
@@ -17,7 +17,7 @@ function App() {
       id: 2,
     },
   ]);
-
+  const [counter, setCounter] = useState(Math.random());
   const [a, setA] = useState(1);
   let b = Math.random();
   console.log(a);
@@ -39,11 +39,17 @@ function App() {
   //     id: 3,
   //   });
   // }, 10000);
-  setTodoState([{
-    title: "Go to gym pwease",
-    descp: "hit gym from 7-9",
-    id: 1,
-  }]);
+  setTodoState([
+    {
+      title: "Go to gym pwease",
+      descp: "hit gym from 7-9",
+      id: 1,
+    },
+  ]);
+
+  useEffect(() => {
+    console.log("hi from useEffect");
+  }, []);
 
   return (
     <>
