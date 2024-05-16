@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 function App() {
@@ -14,13 +15,22 @@ function App() {
     },
   ]);
 
-  setInterval(() => {
-    setTodoState({
-      title: "go to gym please please" + Math.random(),
-      descp: "hit ym from 7-9",
-      id: 1,
-    });
-  }, 10000);
+  // setInterval(() => { 
+  //   setTodoState({
+  //     title: "go to gym please please" + Math.random(),
+  //     descp: "hit gym from 7-9",
+  //     id: 1,
+  //   });
+  // }, 10000);
+  // this is getting called again and again and re-rendering too many times.
+  // setTimeout(() => { 
+  //   setTodoState({
+  //     title: "go to gym please please" ,
+  //     descp: "hit gym from 7-9",
+  //     id: 3,
+  //   });
+  // }, 10000);
+
 
   return (
     <>
