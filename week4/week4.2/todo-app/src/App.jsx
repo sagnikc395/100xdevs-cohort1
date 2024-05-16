@@ -17,26 +17,26 @@ function App() {
       id: 2,
     },
   ]);
-  const [counter, setCounter] = useState(Math.random());
-  const [a, setA] = useState(1);
-  let b = Math.random();
-  console.log(a);
-  console.log(b);
-  console.log(todoState);
-
   useEffect(() => {
     //  console.log("hi from useEffect");
     // similarly we would put our fetch request here
-    fetch("http://localhost:9000/todos");
-    setInterval(() => {
-      setTodoState([
-        {
-          title: "Go to gym pwease",
-          descp: "hit gym from 7-9",
-          id: 1,
-        },
-      ]);
-    }, 1000);
+
+    fetch("http://localhost:3000/todos", {
+      method: "GET",
+    }).then((res) => {
+      res.json().then((data) => {
+        console.log(data);
+      });
+    });
+    // setInterval(() => {
+    //   setTodoState([
+    //     {
+    //       title: "Go to gym pwease",
+    //       descp: "hit gym from 7-9",
+    //       id: 1,
+    //     },
+    //   ]);
+    // }, 1000);
   }, []);
 
   return (
