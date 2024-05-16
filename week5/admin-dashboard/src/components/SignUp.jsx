@@ -1,8 +1,7 @@
-import {Button, TextField} from '@mui/material'
-
+import { Button, TextField, Card } from "@mui/material";
 
 export default function SignUp() {
-  return ( 
+  return (
     <div>
       <center>
         <div style={{ marginTop: 150, marginBottom: 10 }}>
@@ -10,18 +9,20 @@ export default function SignUp() {
         </div>
       </center>
       <center>
-        <div
+        <Card
+          variant="outlined"
           style={{
-            border: "2px solid black",
             width: "400px",
-            marginTop:"20px",
-            padding:"10px",
           }}
         >
-          <TextField variant='outlined' label="Username" />
-          <TextField variant='outlined' label="Password" />
-          <Button variant="contained">Sign Up</Button>
-        </div>
+          <TextField fullWidth variant="outlined" label="Email" />
+          <br />
+          <TextField fullWidth variant="outlined" label="Password" />
+          <br />
+          <Button size="large" variant="contained">
+            Sign Up
+          </Button>
+        </Card>
       </center>
     </div>
   );
