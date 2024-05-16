@@ -1,11 +1,13 @@
-import { Button, TextField, Card } from "@mui/material";
+import { Button, TextField, Card, Typography } from "@mui/material";
 
 export default function SignUp() {
   return (
     <div>
       <center>
-        <div style={{ marginTop: 150, marginBottom: 10 }}>
-          welcome to coursera. Sign up above.
+        <div style={{ marginBottom: 10 }}>
+          <Typography variant="h6">
+            Welcome to Coursera. Sign up below.
+          </Typography>
         </div>
       </center>
       <center>
