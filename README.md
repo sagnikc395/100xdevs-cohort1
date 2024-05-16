@@ -24,7 +24,7 @@ Course Notes and Solutions for 100x devs Cohort1.
 
 4. Week4: React 
    - [x] Week 4.1 More reconcilers, Intro to React using Vite 
-   - [ ] Week 4.2 React, effects and custom hooks 
+   - [x] Week 4.2 React, effects and custom hooks 
    - [ ] Week 4.3 Assignment 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
