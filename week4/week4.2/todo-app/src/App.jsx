@@ -26,6 +26,8 @@ function App() {
 
   useEffect(() => {
     //  console.log("hi from useEffect");
+    // similarly we would put our fetch request here
+    fetch("http://localhost:9000/todos");
     setInterval(() => {
       setTodoState([
         {
