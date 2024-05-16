@@ -5,18 +5,7 @@ import { useEffect, useState } from "react";
 function App() {
   //state change will lead to re-render of code
   //happens only once inside the code.
-  const [todoState, setTodoState] = useState([
-    {
-      title: "Go to Gym",
-      descp: "Hit gym from 5-7",
-      id: 1,
-    },
-    {
-      title: "Go to class",
-      descp: "Go to classroom from 9-11",
-      id: 2,
-    },
-  ]);
+  const [todos, setTodos] = useState([]);
   useEffect(() => {
     //  console.log("hi from useEffect");
     // similarly we would put our fetch request here
@@ -25,7 +14,9 @@ function App() {
       method: "GET",
     }).then((res) => {
       res.json().then((data) => {
-        console.log(data);
+        // console.log(data);
+        //update the todos
+        setTodos(data);
       });
     });
     // setInterval(() => {
@@ -42,11 +33,12 @@ function App() {
   return (
     <>
       <div>
-        {[...todoState].map((item) => {
+        {[...todos].map((item) => {
           //this js code , needs to return some html
           return (
             <div key={item.id}>
-              <Todo title={item.title} descp={item.descp} />
+              <Todo title={item.title} descp={item.descp} id={item.id}/>
+              <button>Delete</button>
             </div>
           );
         })}
@@ -60,6 +52,8 @@ function Todo(props) {
     <div style={{ background: "orange" }}>
       {props.title}
       {props.descp}
+      <br />
+      {props.id}
     </div>
   );
 }
