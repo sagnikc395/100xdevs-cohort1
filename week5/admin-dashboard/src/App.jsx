@@ -1,3 +1,4 @@
+import AppBar from "./components/AppBar";
 import SignUp from "./components/SignUp";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         backgroundColor: "#eeeeee",
       }}
     >
+      <AppBar />
       <SignUp />
     </div>
   );
