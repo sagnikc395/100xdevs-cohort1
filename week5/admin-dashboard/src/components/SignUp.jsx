@@ -1,5 +1,6 @@
 import { Button, TextField, Card, Typography } from "@mui/material";
 import { useState } from "react";
+import axios from "axios";
 
 export default function SignUp() {
   const [username, setUsername] = useState("");
@@ -50,25 +51,38 @@ export default function SignUp() {
           <Button
             size="large"
             variant="contained"
-            onClick={() => {
+            onClick={async () => {
               //set a fetch request , need to know what was sent here
               // const username = document.getElementById("username").value;
               // const password = document.getElementById("password").value;
               // // console.log(username.value);
               // console.log(password.value);
 
-              fetch("http://localhost:3000/admin/signup", {
-                method: "POST",
-                headers: {
-                  "Content-type": "application/json",
-                },
-                body: JSON.stringify({ username, password }),
-              }).then((res) => {
-                //store the token
-                res.json().then((data) => {
-                  localStorage.setItem("token", data.token);
-                });
-              });
+              // fetch("http://localhost:3000/admin/signup", {
+              //   method: "POST",
+              //   headers: {
+              //     "Content-type": "application/json",
+              //   },
+              //   body: JSON.stringify({ username, password }),
+              // }).then((res) => {
+              //   //store the token
+              //   res.json().then((data) => {
+              //     localStorage.setItem("token", data.token);
+              //     window.location = "/";
+              //   });
+              // });
+
+              //much cleaner syntax using axios
+              const response = await axios.post(
+                "http://localhost:3000/admin/signup",
+                {
+                  username: username,
+                  password: password,
+                }
+              );
+              let data = response.data;
+              localStorage.setItem("token", data.token);
+              window.location = "/";
             }}
           >
             Sign Up

@@ -1,6 +1,13 @@
-import { Button, TextField, Card, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import { Card, Typography } from "@mui/material";
+import { useState } from "react";
+import axios from "axios";
 
-export default function Login() {
+function Signin() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div>
       <div
@@ -11,31 +18,57 @@ export default function Login() {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6">
-         Login below, welcome back.
+        <Typography variant={"h6"}>
+          Welcome to Coursera. Sign up below
         </Typography>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Card
-          variant="outlined"
-          style={{
-            width: "400px",
-            padding: "20px",
-          }}
-        >
-          <TextField fullWidth variant="outlined" label="Email" type="text" />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Card varint={"outlined"} style={{ width: 400, padding: 20 }}>
           <TextField
-            fullWidth
+            onChange={(evant11) => {
+              let elemt = evant11.target;
+              setEmail(elemt.value);
+            }}
+            fullWidth={true}
+            label="Email"
             variant="outlined"
-            label="Password"
-            type="password"
           />
-          <Button size="large" variant="contained">
+          <br />
+          <br />
+          <TextField
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            fullWidth={true}
+            label="Password"
+            variant="outlined"
+            type={"password"}
+          />
+          <br />
+          <br />
+
+          <Button
+            size={"large"}
+            variant="contained"
+            onClick={async () => {
+              const res = await axios.post(
+                "http://localhost:3000/admin/login",
+                {
+                  username: email,
+                  password: password,
+                },
+                {
+                  headers: {
+                    "Content-type": "application/json",
+                  },
+                }
+              );
+              const data = res.data;
+
+              localStorage.setItem("token", data.token);
+              window.location = "/";
+            }}
+          >
             Login
           </Button>
         </Card>
@@ -43,3 +76,5 @@ export default function Login() {
     </div>
   );
 }
+
+export default Signin;

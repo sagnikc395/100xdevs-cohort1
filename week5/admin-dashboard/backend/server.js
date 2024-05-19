@@ -1,8 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import fs from "fs";
-import cors from 'cors';
-
+import cors from "cors";
 
 const app = express();
 app.use(cors());
@@ -160,6 +159,13 @@ app.get("/users/purchasedCourses", authenticateJwt, (req, res) => {
   } else {
     res.status(403).json({ message: "User not found" });
   }
+});
+
+//route after loggin in
+app.get("/admin/me", authenticateJwt, (req, res) => {
+  res.json({
+    username: req.user.username,
+  });
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));

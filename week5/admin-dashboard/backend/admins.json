@@ -1,16 +1,1 @@
-[
-  { "username": "golang@gmail.com", "password": "golang123" },
-  { "username": "golang1234@gmail.com", "password": "golang12567" },
-  { "username": "train1@gmail.com", "password": "train123" },
-  { "username": "train112312312@gmail.com", "password": "train123" },
-  { "username": "train1123123142@gmail.com", "password": "train123" },
-  {
-    "username": "train1234567@gmail.com",
-    "password": "12313123123123131312313123"
-  },
-  {
-    "username": "train123456723@gmail.com",
-    "password": "12313123123123131312313123"
-  },
-  { "username": "abcde@gmail.com", "password": "defghujl" }
-]
+[{"username":"sagnik321@gmail.com","password":"sagnik321"},{"username":"sagnik456@gmail.com","password":"sagnik"},{"username":"sagnik3219@gmail.com","password":"sagnik3219"}]
