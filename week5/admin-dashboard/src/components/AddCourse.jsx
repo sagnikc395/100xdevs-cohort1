@@ -42,8 +42,14 @@ function AddCourse() {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
+                Authorization: localStorage.getItem("token"),
               },
-              body: JSON.stringify({ title, descp }),
+              body: JSON.stringify({
+                title,
+                descp,
+                published: true,
+                imageLink: "",
+              }),
             });
           }}
         >
