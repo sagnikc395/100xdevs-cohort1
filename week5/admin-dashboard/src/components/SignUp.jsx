@@ -49,10 +49,18 @@ export default function SignUp() {
             variant="contained"
             onClick={() => {
               //set a fetch request , need to know what was sent here
-              const username = document.getElementById("username");
-              const password = document.getElementById("password");
-              console.log(username.value);
-              console.log(password.value);
+              const username = document.getElementById("username").value;
+              const password = document.getElementById("password").value;
+              // console.log(username.value);
+              // console.log(password.value);
+
+              fetch("http://localhost:3000/admin/signup", {
+                method: "POST",
+                headers: {
+                  "Content-type": "application/json",
+                },
+                body: JSON.stringify({ username, password }),
+              });
             }}
           >
             Sign Up
@@ -62,3 +70,4 @@ export default function SignUp() {
     </div>
   );
 }
+  
