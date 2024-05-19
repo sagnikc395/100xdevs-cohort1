@@ -8,15 +8,16 @@ export default function AppBar() {
         justifyContent: "space-between",
       }}
     >
-      <div style={{}}>
+      <div style={{ margin: 10 }}>
         <Typography variant="h6">Coursera</Typography>
       </div>
-      <div>
+      <div style={{ margin: 10 }}>
         <Button
           variant="contained"
           onClick={() => {
             //route to /signup
             window.location = "/signup";
+            // navigate("/signup");
           }}
         >
           Sign Up
@@ -26,6 +27,7 @@ export default function AppBar() {
           onClick={() => {
             //route to /login
             window.location = "/login";
+            //navigate("/login");
           }}
         >
           Login

@@ -28,14 +28,33 @@ export default function SignUp() {
             padding: "20px",
           }}
         >
-          <TextField fullWidth variant="outlined" label="Email" type="text" />
+          <TextField
+            fullWidth
+            id="username"
+            variant="outlined"
+            label="Email"
+            type="text"
+          />
           <TextField
             fullWidth
             variant="outlined"
             label="Password"
             type="password"
+            id="password"
           />
-          <Button size="large" variant="contained">
+          <br />
+          <br />
+          <Button
+            size="large"
+            variant="contained"
+            onClick={() => {
+              //set a fetch request , need to know what was sent here
+              const username = document.getElementById("username");
+              const password = document.getElementById("password");
+              console.log(username.value);
+              console.log(password.value);
+            }}
+          >
             Sign Up
           </Button>
         </Card>
