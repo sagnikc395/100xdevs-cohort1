@@ -25,18 +25,18 @@ Course Notes and Solutions for 100x devs Cohort1.
 4. Week4: React 
    - [x] Week 4.1 More reconcilers, Intro to React using Vite 
    - [x] Week 4.2 React, effects and custom hooks 
-   - [ ] Week 4.3 Assignment 
+   - [x] Week 4.3 Assignment 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
-   - [x] Week 5.1 Recapping few things 
-   - [x] Week 5.2 Axios,object destructuring, grids and complete assignment 
-   - [x]  Week 5.2 Axios,object destructuring, grids and complete assignment - 2
+   - [ ] Week 5.1 Recapping few things 
+   - [ ] Week 5.2 Axios,object destructuring, grids and complete assignment 
+   - [ ]  Week 5.2 Axios,object destructuring, grids and complete assignment - 2
    - [ ]  Week 5.4 Context , Recoil and Prop Drilling 
    - [ ]  Week 5.5 Assignment 
 
 6. Project 2: Building a GMeet Clone 
-   - [x] Part 1
-   - [x] Part 2
+   - [ ] Part 1
+   - [ ] Part 2
    
 7. State Management React 
    - [x] Week 7.1 Recoil and State Management 
