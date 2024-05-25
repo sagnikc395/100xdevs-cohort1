@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { createContext, useContext, useState } from "react";
 import { Card, Typography, Button } from "@mui/material";
+import CompRecoil from "./CompRecoil";
 
 //using context api for prop drilling
 const CountContext = createContext();
@@ -27,6 +28,7 @@ const App = () => {
           <CountComponent />
         </Card>
       </div>
+      <CompRecoil />
     </CountContext.Provider>
   );
 };

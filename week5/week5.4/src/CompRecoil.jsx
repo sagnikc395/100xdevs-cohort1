@@ -2,24 +2,11 @@
 /* eslint-disable no-unused-vars */
 import { createContext, useContext, useState } from "react";
 import { Card, Typography, Button } from "@mui/material";
-import { atom, useRecoilValue } from "recoil";
-
-//using context api for prop drilling
-const CountContext = createContext();
+import { atom, RecoilRoot, useRecoilValue, useSetRecoilState } from "recoil";
 
 const CompRecoil = () => {
-  const [count, setCount] = useState(0);
-
   return (
-    //similar to us doing useState but helps in providing only things that are required
-    // useState for the global level.
-
-    <CountContext.Provider
-      value={{
-        count: count,
-        setCount: setCount,
-      }}
-    >
+    <RecoilRoot>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Card style={{ padding: 20, width: 500 }}>
           <Typography>welcome to the counter game</Typography>
@@ -28,7 +15,7 @@ const CompRecoil = () => {
           <CountComponent />
         </Card>
       </div>
-    </CountContext.Provider>
+    </RecoilRoot>
   );
 };
 
@@ -45,7 +32,7 @@ const Increase = () => {
   //stopped the problem of prop drilling, using directly the context
   // and taking them globally
   // and can take wherever we want them!
-  const { count, setCount } = useContext(CountContext);
+  const setCount = useSetRecoilState(countState);
   return (
     <div
       style={{
@@ -56,7 +43,7 @@ const Increase = () => {
       <Button
         variant="contained"
         onClick={() => {
-          setCount(count + 1);
+          setCount((existing) => existing + 1);
         }}
       >
         Increase
@@ -66,7 +53,7 @@ const Increase = () => {
 };
 
 const Decrease = () => {
-  const { count, setCount } = useContext(CountContext);
+  const setCount = useSetRecoilState(countState);
   return (
     <div
       style={{
@@ -77,7 +64,7 @@ const Decrease = () => {
       <Button
         variant="contained"
         onClick={() => {
-          setCount(count - 1);
+          setCount((existing) => existing - 1);
         }}
       >
         Decrease
@@ -87,7 +74,7 @@ const Decrease = () => {
 };
 
 const CountComponent = () => {
-    //whenever 
+  //whenever
   const count = useRecoilValue(countState);
   return (
     <div>
