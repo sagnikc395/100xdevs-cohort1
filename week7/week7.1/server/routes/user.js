@@ -114,3 +114,5 @@ router.get("/purchasedCourses", authenticateJWT, async (req, res) => {
     });
   }
 });
+
+export { router };
