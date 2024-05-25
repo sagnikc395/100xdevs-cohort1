@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { Card, Typography, Button } from "@mui/material";
 
 //using context api for prop drilling
@@ -41,6 +41,10 @@ const Buttons = () => {
 };
 
 const Increase = () => {
+  //stopped the problem of prop drilling, using directly the context
+  // and taking them globally
+  // and can take wherever we want them!
+  const { count, setCount } = useContext(CountContext);
   return (
     <div
       style={{
@@ -61,6 +65,7 @@ const Increase = () => {
 };
 
 const Decrease = () => {
+  const { count, setCount } = useContext(CountContext);
   return (
     <div
       style={{
@@ -81,6 +86,7 @@ const Decrease = () => {
 };
 
 const CountComponent = () => {
+  const { count } = useContext(CountContext);
   return (
     <div>
       <Typography variant="h5" textAlign={"center"}>
