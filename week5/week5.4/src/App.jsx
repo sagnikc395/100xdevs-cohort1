@@ -10,9 +10,9 @@ const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    //similar to us doing useState but helps in providing only things that are required 
+    //similar to us doing useState but helps in providing only things that are required
     // useState for the global level.
-    
+
     <CountContext.Provider
       value={{
         count: count,
@@ -23,24 +23,24 @@ const App = () => {
         <Card style={{ padding: 20, width: 500 }}>
           <Typography>welcome to the counter game</Typography>
           <br />
-          <Buttons count={count} setCount={setCount} />
-          <CountComponent count={count} />
+          <Buttons />
+          <CountComponent />
         </Card>
       </div>
     </CountContext.Provider>
   );
 };
 
-const Buttons = ({ count, setCount }) => {
+const Buttons = () => {
   return (
     <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <Increase count={count} setCount={setCount} />
-      <Decrease count={count} setCount={setCount} />
+      <Increase />
+      <Decrease />
     </div>
   );
 };
 
-const Increase = ({ count, setCount }) => {
+const Increase = () => {
   return (
     <div
       style={{
@@ -60,7 +60,7 @@ const Increase = ({ count, setCount }) => {
   );
 };
 
-const Decrease = ({ count, setCount }) => {
+const Decrease = () => {
   return (
     <div
       style={{
@@ -76,6 +76,16 @@ const Decrease = ({ count, setCount }) => {
       >
         Decrease
       </Button>
+    </div>
+  );
+};
+
+const CountComponent = () => {
+  return (
+    <div>
+      <Typography variant="h5" textAlign={"center"}>
+        {count}
+      </Typography>
     </div>
   );
 };
