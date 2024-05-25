@@ -3,6 +3,7 @@ import express from "express";
 import { authenticateJWT, SECRET } from "../middleware/auth";
 import { User, Course, Admin } from "../db";
 import jwt from "jsonwebtoken";
+import fs from "fs";
 
 const router = express.Router();
 
@@ -62,9 +63,54 @@ router.post("/signin", async (req, res) => {
 });
 
 //get all the courses for the signed in user
-router.get("/course", authenticateJWT, async (req, res) => {
+router.get("/courses", authenticateJWT, async (req, res) => {
   //print all the available couses for the given user
   const availCourses = await Course.find({ published: true });
   res.status(200).json({ availCourses });
 });
 
+//get all the course for the given courseId
+
+router.get("/courses/:courseId", authenticateJWT, async (req, res) => {
+  const course = await Course.findById(req.params.courseId);
+
+  //log all queries!!!
+  await fs.writeFile("./logger.json", course);
+
+  if (course) {
+    const user = await User.findOne({ username: req.user.username });
+    if (user) {
+      //add to our db
+      user.purchasedCourses.push(course);
+      //save transaction
+      await user.save();
+      res.json({
+        message: "Course purchased successfully!",
+      });
+    } else {
+      //user not found !
+      res.status(403).json({ message: "User not found" });
+    }
+  } else {
+    //course not found
+    res.status(404).json({ message: " Course not found !" });
+  }
+});
+
+//get all the purchased courses for the given user
+router.get("/purchasedCourses", authenticateJWT, async (req, res) => {
+  const user = await User.findOne({
+    username: req.user.username,
+  }).populate("purchasedCourses");
+
+  if (user) {
+    res.json({
+      purchasedCourses: user.purchasedCourses || [],
+    });
+  } else {
+    //user not found !
+    res.status(403).json({
+      message: "User not found !",
+    });
+  }
+});
