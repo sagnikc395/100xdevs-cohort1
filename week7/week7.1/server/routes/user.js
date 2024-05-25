@@ -31,3 +31,40 @@ router.post("/signup", async (req, res) => {
     });
   }
 });
+
+//post handler for user sign in validation
+router.post("/signin", async (req, res) => {
+  const { username, password } = req.headers;
+  //async db call
+  const user = await User.findOne({ username, password });
+
+  if (user) {
+    const token = jwt.sign(
+      {
+        username,
+        role: "user",
+      },
+      SECRET,
+      {
+        expiresIn: "1h",
+      }
+    );
+    //log in successful!
+    res.status(200).json({
+      message: "Login Successful!",
+    });
+  } else {
+    //invalid username or password
+    res.status(403).json({
+      message: "Invalid username or password present !",
+    });
+  }
+});
+
+//get all the courses for the signed in user
+router.get("/course", authenticateJWT, async (req, res) => {
+  //print all the available couses for the given user
+  const availCourses = await Course.find({ published: true });
+  res.status(200).json({ availCourses });
+});
+
