@@ -28,20 +28,20 @@ Course Notes and Solutions for 100x devs Cohort1.
    - [x] Week 4.3 Assignment 
 
 5. Project 1 : Todoapp using MUI,Flexbox and Basic State Management 
-   - [ ] Week 5.1 Recapping few things 
-   - [ ] Week 5.2 Axios,object destructuring, grids and complete assignment 
-   - [ ]  Week 5.2 Axios,object destructuring, grids and complete assignment - 2
-   - [ ]  Week 5.4 Context , Recoil and Prop Drilling 
-   - [ ]  Week 5.5 Assignment 
+   - [x] Week 5.1 Recapping few things 
+   - [x] Week 5.2 Axios,object destructuring, grids and complete assignment 
+   - [x]  Week 5.2 Axios,object destructuring, grids and complete assignment - 2
+   - [x]  Week 5.4 Context , Recoil and Prop Drilling 
+   - [x]  Week 5.5 Assignment 
 
 6. Project 2: Building a GMeet Clone 
    - [ ] Part 1
    - [ ] Part 2
    
 7. State Management React 
-   - [x] Week 7.1 Recoil and State Management 
-   - [x] Week 7.2 Intro to TS.
-   - [x] Week 7.3 Assignment on TS 
+   - [ ] Week 7.1 Recoil and State Management 
+   - [ ] Week 7.2 Intro to TS.
+   - [ ] Week 7.3 Assignment on TS 
 
 8. Hooks and React 
    - [x] Week 8.1 Custom hooks, generics and zod 
