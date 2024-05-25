@@ -53,7 +53,7 @@ const Increase = () => {
       }}
     >
       <Button
-        variant="container"
+        variant="contained"
         onClick={() => {
           setCount(count + 1);
         }}
@@ -74,7 +74,7 @@ const Decrease = () => {
       }}
     >
       <Button
-        variant="container"
+        variant="contained"
         onClick={() => {
           setCount(count - 1);
         }}
